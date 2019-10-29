@@ -1,73 +1,107 @@
-    <style type="text/css">
-    .weteachcs-event {	
-        background-color: #333333;
-        color: #ffffff;
-        padding: 20px;
-        margin: 30px 0px 20px 0px;
-    }
-    .weteachcs-event a,
-    .weteachcs-event a:link,
-    .weteachcs-event a:active,
-    .weteachcs-event a:visited {
-        /* color: #80a0ff; */
-    }
-    .weteachcs-event__text {
-        color: #ffffff;
-    }
-    .weteachcs-event__title {
-        margin-top: 0;
-    }
-    </style>
-    <div style="background-color: #f1f1f1; margin: 0px 0px 20px 0px; padding:20px;">
-        <div class="row">
-            <div class="col-sm-3">
-                <img class="img-responsive" src="/documents/1084364/1750990/wtcs-Lightbulb-5color.png/" style="margin:4px 0px 0px 0px; padding:0px;" /></div>
-            <div class="col-sm-9">
-                <p style="font-size:16px;">
-                    WeTeach_CS is the K-12 teacher professional development component of EPIC. This program educates, empowers, and inspires K-12 CS teachers to realize the vision of CSforALL. The WeTeach_CS Collaboratives are comprised of 31 projects across the state of Texas, including institutions of higher education, educational service centers (ESCs), local education agencies, and nonprofit entities.</p>
+<style type="text/css">
+    /* TODO: Use this component instead of `style` tags */
+        /*
+        WeTeach CS - Card
+        
+        An independent piece of figure/text content that can be an item of a greater context.
+        
+        .weteachcs-card--highlight - This card is distinct from other cards so as to draw more attention.
+        
+        Markup:
+        <div class="weteachcs-card weteachcs-card--highlight" <!--style="background-color: #f1f1f1; margin: 30px 0px 20px 0px; padding:20px;"-->>
+            <!-- FAQ: The media could also be the `__figure`, but do not apply media-specific CSS to the core component styles -->
+            <div class="weteachcs-card__figure">
+                <img  data-cke-saved-src="https://www.tacc.utexas.edu/tacc-new-theme/images/logo.svg" src="https://www.tacc.utexas.edu/tacc-new-theme/images/logo.svg" />
             </div>
+            <div class="weteachcs-card__content">
+                <h3 class="weteachcs-card__title">TACC</h3>
+                <!-- FAQ: The `<time>` could also be the `__datetime`, but do not apply `<time>`-specific CSS to the core component styles -->
+                <h5 class="weteachcs-card__datetime">
+                    <time datetime="2020-06-22">June 22, 2020</time>
+                </h5>
+                <p>The Texas Advanced Computing Center (TACC) designs and operates some of the world's most powerful computing resources. The center's mission is to enable discoveries that advance science and society through the application of advanced computing technologies.</p>
+                <a class="weteachcs-card__cta"  data-cke-saved-href="https://www.tacc.utexas.edu/about/" href="https://www.tacc.utexas.edu/about/" target="_blank">Learn more about TACC.</a></div>
+        </div>
+        
+        Style guide: components.weteachcs.card
+        */
+        .weteachcs-card {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+        .weteachcs-card + .weteachcs-card {
+            margin-top: 30px;
+        }
+    
+        .weteachcs-card--highlight {
+            padding: 20px;
+            background-color: #f1f1f1;
+            font-size: 16px;
+        }
+    
+        .weteachcs-card__title {
+            margin-top: 0;
+        }</style>
+    <div class="row weteachcs-card weteachcs-card--highlight">
+        <!--<div class="row" style="background-color: #f1f1f1; margin: 0px 0px 20px 0px; padding:20px;">-->
+        <div class="col-sm-3 weteachcs-card__figure">
+            <img class="img-responsive" src="/documents/1084364/1750990/wtcs-Lightbulb-5color.png/" style="margin:4px 0px 0px 0px; padding:0px;" /></div>
+        <div class="col-sm-9 weteachcs-card__content">
+            <p>
+                WeTeach_CS is the K-12 teacher professional development component of EPIC. This program educates, empowers, and inspires K-12 CS teachers to realize the vision of CSforALL. The WeTeach_CS Collaboratives are comprised of 31 projects across the state of Texas, including institutions of higher education, educational service centers (ESCs), local education agencies, and nonprofit entities.</p>
         </div>
     </div>
-    <div class="row" style="margin-top:30px;">
-        <div class="col-sm-5">
+    <div class="row weteachcs-card">
+        <!--<div class="row" style="margin-top: 30px;">-->
+        <div class="col-sm-5 weteachcs-card__figure">
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/183874056"></iframe></div>
         </div>
-        <div class="col-sm-7">
+        <div class="col-sm-7 weteachcs-card__content">
             <h3>
                 Goals and Outcomes</h3>
             <p>
                 WeTeach_CS educates, empowers, and inspires K-12 CS teachers, administrators, professional development providers, and university instructors to realize the vision of CSforALL.</p>
             <p>
-                <i><a href="/web/website/weteachcs/goals-and-outcomes">Learn more</a></i></p>
+                <em><a href="/web/website/weteachcs/goals-and-outcomes">Learn more<span class="sr-only"> about WeTeach_CS goals and outcomes</span></a></em></p>
         </div>
     </div>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-sm-5">
+    <div class="row weteachcs-card">
+        <!--<div class="row" style="margin-top: 30px;">-->
+        <div class="col-sm-5 weteachcs-card__figure">
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/254041542"></iframe></div>
         </div>
-        <div class="col-sm-7">
+        <div class="col-sm-7 weteachcs-card__content">
             <h3>
                 Certification and Professional Development</h3>
             <p>
                 Our certification and professional development programs are helping to increase the number of CS teachers in Texas while improving the quality of CS classroom instruction.</p>
             <p>
-                <i><a href="/web/website/weteachcs/certification">Learn more</a></i></p>
+                <em><a href="/web/website/weteachcs/certification">Learn more<span class="sr-only"> about WeTeach_CS certification and professional development</span></a></em></p>
         </div>
     </div>
-    <div class="row weteachcs-event">
-        <div class="col-sm-3 weteachcs-event__figure">
-        <img class="img-responsive" src="/documents/1084364/1750990/weteach_cybersecurity-2020.png" /></div>
-        <!-- <img class="img-responsive" src="/documents/1084364/1750990/weteach_cybersecurity-2020-alt-color.png" /></div> -->
-        <div class="col-sm-9 weteachcs-event__content">
-            <h3 class="weteachcs-event__text weteachcs-event__title">
+    <div class="row weteachcs-card weteachcs-card--highlight">
+        <!--<div class="row" style="background-color: #f1f1f1; margin: 30px 0px 20px 0px; padding:20px;">-->
+        <div class="col-sm-3 weteachcs-card__figure">
+            <img class="img-responsive" src="/documents/1084364/1750990/weteach_cybersecurity-2020.png" /></div>
+        <div class="col-sm-9 weteachcs-card__content">
+            <h3 class="weteachcs-card__title">
                 <a href="https://utakeit.stemcenter.utexas.edu/weteach_cs-summit-2020/" target="_blank">WeTeach_CS Summit 2020</a></h3>
-            <h5 class="weteachcs-event__text weteachcs-event__date">
-                <time datetime="2020-07-22">July 22</time>–<time datetime="2020-07-24"></time>24, 2020</time></h5>
-            <p class="weteachcs-event__text weteachcs-event__desc">
+            <h5 class="weteachcs-card__datetime">
+                &nbsp;</h5>
+            <time datetime="2020-06-22">
+                June 22</time>
+            <span>–</span>
+            <time datetime="2020-06-24">
+                24, 2020</time>
+            <p>
                 The WeTeach_CS Summit is a 3-day event which educates, empowers, and inspires K-12 CS teachers, advocates, administrators, professional development providers, university instructors, and policy-makers to advance the goal of CS for all in Texas and beyond.</p>
-            <p class="weteachcs-event__text weteachcs-event__desc">
-                Call for proposals now open:<br /><strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSck4-4dL0r9ek9qK1IuCL8wRq1dar1o1qt81V_9x3k6nJJhbQ/viewform" title="Online form to propose presentation at WeTeach_CS Summit 2020">WeTeach_CS Summit Presentation Proposal Form</a></strong></p>
-            <a href="https://utakeit.stemcenter.utexas.edu/weteach_cs-summit-2020/" target="_blank">Learn more</a></div>
+            <p>
+                <strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSck4-4dL0r9ek9qK1IuCL8wRq1dar1o1qt81V_9x3k6nJJhbQ/viewform" title="Online form to propose presentation at WeTeach_CS Summit 2020">Call for proposals now open<span class="sr-only">, submit a WeTeach_CS Summit Presentation Proposal Form</span>.</a></strong></p>
+            <p>
+                <em><a href="https://utakeit.stemcenter.utexas.edu/weteach_cs-summit-2020/" target="_blank">Learn more<span class="sr-only"> about WeTeach_CS Summit 2020</span></a></em></p>
+        </div>
     </div>
+    
