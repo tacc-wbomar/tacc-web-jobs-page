@@ -1,130 +1,285 @@
 <style type="text/css">
-	#sc19-wrapper_1 {
-		background-color:#0e0520;
-		margin:0px 0px -56px 0px;
-		padding:0px 25px 30px 25px;
-	}
+	/* HACK */
+		/* Resolves whitespace in a simpler manner than `/sc18` failed to do */
+		#main-content {
+			margin-bottom: 0;
+		}
+		/* Avoids adding more superfluous `.row` and `.col-…` divs */
+		#sc19-booth-events {
+			margin-bottom: 30px; /* replicate `.col-… { margin-*: 15px; }` pair */
+		}
 	
-	#sc19-wrapper_2 {
-		margin:0px auto 0px auto;
-		padding: 0px;
-		max-width:1200px;
-	}
+		/* COMPONENTS */
+		/* COMPONENTS: SC19 Content */
+		.sc19-content,
+		[class*="sc19-content--"] {
+			background-color: #FFF;
+			margin: 0px;
+			padding: 20px;
+		}
+		.sc19-content__title {
+			margin: 0px;
+			padding: 0px;
+		}
+		.sc19-content__sub-title {
+			margin: 20px 0px 0px 0px;
+			padding: 0px;
+		}
+		/* FAQ: We should decorate the `…__title`, but only brittle CSS can do that;
+				so, we continue to use an `<hr />` (common on TACC, circa 2019) */
+		.sc19-content__sub-title-decoration {
+			margin: 3px 0px 15px 0px;
+			padding: 0px;
+		}
+		.sc19-content--primary .sc19-content__title     { font-size: 2.5em; }
+		.sc19-content--primary .sc19-content__sub-title { font-size: 1.75em; }
+		.sc19-content--secondary .sc19-content__title     { font-size: 2em; }
+		.sc19-content--secondary .sc19-content__sub-title { font-size: 1.5em; }
 	
-	.sc19-content-col {
-		background-color:#FFF;
-		margin:0px;
-		padding:20px;
-	}
+		/* COMPONENTS: SC19 Event */
+		.sc19-event + .sc19-event {
+			margin-top: 20px;
+		}
+		/* SEE: https://stackoverflow.com/a/21261303 */
+		/* NOTE: Flexbox considered, but this is less code */
+		/* WARN: ITCSS: This should be "TRUMPS: Scope" code (`.s-`),
+						but do not implement Namepsaces until team is on board. */
+		.sc19-event__data,
+		.sc19-event__desc {
+			margin-bottom: 10px; /* redundant for `p.sc19-event__desc` */
+		}
+		.sc19-event__data dt {
+			display: inline-block;
+			min-width: 10ch;
 	
-	.sc19-section--primary .sc19-heading {
-		margin:0px;
-		padding:0px;
-		font-size:2.5em;
-	}
+			font-weight: normal; /* override `tacc-new-theme/css/main.css` */
+		}
+		.sc19-event__data dt:after {
+			display: inline-block;
+			content: ':';
+			margin-right: 1ch;
+		}
+		.sc19-event__data dd {
+			display: inline;
+		}
+		.sc19-event__data dd:after {
+			display: block;
+			content: '';
+		}
+		.sc19-event__data p {
+			display: inline;
+		}
 	
-	.sc19-section--secondary .sc19-heading {
-		margin:0px;
-		padding:0px;
-		font-size:2em;
-	}
+		/* PAGE-SPECIFIC */
+		/* NOTE: Page-specific styles should not need IDs;
+				 but, am not allowed to edit global styles, yet;
+				 so, we need to artifically scope these styles */
+		#sc19 {
+			background-color: #0e0520;
+			/* WARN: There are two `#main-content`'s! (bug origin: clone `/sc18`) */
+			margin-bottom: -4em; /* hide `#main-content { padding-bottom: -2em }` */
+			padding: 0px 25px 30px 25px;
+		}
+		#sc19 dl {
+			margin: 0; /* override `…/main.css` */
+		}
+		#sc19 dd,
+		#sc19 dt {
+			line-height: 1.5; /* override `tacc-new-theme/css/main.css`; match `body` */
+		}
+		#sc19 dd {
+			margin-left: 0; /* override `html/css/main.css` *//* match `tacc-new-theme/css/main.css` */
+		}
 	
-	sc19-section--primary .sc19-sub_heading {
-		margin:20px 0px 0px 0px;
-		padding:0px;
-		font-size: 1.75em;
-	}
-	
-	sc19-section--secondary .sc19-sub_heading {
-		margin:20px 0px 0px 0px;
-		padding:0px;
-		font-size: 1.5em;
-	}
-	
-	.sc19-date_lines {
-		margin:3px 0px 15px 0px;
-		padding:0px;
-	}</style>
-	<div id="sc19-wrapper_1">
-		<div id="sc19-wrapper_2">
-			<div id="sc19-content-schedule" class="sc19-content-col sc19-section--primary">
-				<h1 class="sc19-heading" data-test="true">
+		/* MARKUP NOTES */
+		/* FAQ: `#sc19` and `.container` __must not__ be together,
+				because `#sc19` sets wide background color
+				(without reliance on variable containers)
+				and `.container` restricts content width. */</style>
+	<div id="sc19">
+		<div class="container">
+			<section class="sc19-content--primary" id="sc19-booth-events">
+				<h1 class="sc19-content__title">
 					SC19 TACC Booth Schedule</h1>
 				<div class="row">
 					<div class="col-md-6">
-						<h2 class="sc19-sub_heading">
-							Someday, Month NN</h2>
-						<hr class="sc19-date_lines" />
-						<p>
-							<b>Event Title</b><br />
-							Presenters: …, …, …<br />
-							Length: … minutes<br />
-							Time: __:__xm-__:__xm</p>
-						<p>
-							Description…</p>
-						<p>
-							<b>Event Title</b><br />
-							Presenters: …, …, …<br />
-							Length: … minutes<br />
-							Time: __:__xm-__:__xm</p>
-						<p>
-							Description…</p>
+						<h2 class="sc19-content__sub-title">
+							&nbsp;</h2>
+						<time datetime="2019-11-____">
+							Someday, Month NN</time>
+						<hr class="sc19-content__sub-title-decoration" />
+						<article class="sc19-event">
+							<strong class="sc19-event__title">__Event_Title__</strong>
+							<dl class="sc19-event__data">
+								<dt>
+									Presenters</dt>
+								<dd>
+									…, …, …</dd>
+								<dt>
+									Length</dt>
+								<dd>
+									<time datetime="PT__M">
+										… minutes</time>
+								</dd>
+								<dt>
+									Time</dt>
+								<dd>
+									<time datetime="____-__-__T__:__">
+										__:__xm</time>
+									-
+									<time datetime="____-__-__T__:__">
+										__:__xm</time>
+								</dd>
+							</dl>
+							<p class="sc19-event__desc">
+								__Description__</p>
+						</article>
+						<article class="sc19-event">
+							<strong class="sc19-event__title">__Event_Title__</strong>
+							<dl class="sc19-event__data">
+								<dt>
+									Presenters</dt>
+								<dd>
+									…, …, …</dd>
+								<dt>
+									Length</dt>
+								<dd>
+									<time datetime="PT__M">
+										… minutes</time>
+								</dd>
+								<dt>
+									Time</dt>
+								<dd>
+									<time datetime="____-__-__T__:__">
+										__:__xm</time>
+									-
+									<time datetime="____-__-__T__:__">
+										__:__xm</time>
+								</dd>
+							</dl>
+							<p class="sc19-event__desc">
+								__Description__</p>
+						</article>
 					</div>
 					<div class="col-md-6">
-						<h2 class="sc19-sub_heading">
-							Someday, Month NN</h2>
-						<hr class="sc19-date_lines" />
-						<p>
-							<b>Event Title</b><br />
-							Presenters: …, …, …<br />
-							Length: … minutes<br />
-							Time: __:__xm-__:__xm</p>
-						<p>
-							Description…</p>
+						<h2 class="sc19-content__sub-title">
+							&nbsp;</h2>
+						<time datetime="2019-11-____">
+							Someday, Month NN</time>
+						<hr class="sc19-content__sub-title-decoration" />
+						<article class="sc19-event">
+							<strong class="sc19-event__title">__Event_Title__</strong>
+							<dl class="sc19-event__data">
+								<dt>
+									Presenters</dt>
+								<dd>
+									…, …, …</dd>
+								<dt>
+									Length</dt>
+								<dd>
+									<time datetime="PT__M">
+										… minutes</time>
+								</dd>
+								<dt>
+									Time</dt>
+								<dd>
+									<time datetime="____-__-__T__:__">
+										__:__xm</time>
+									-
+									<time datetime="____-__-__T__:__">
+										__:__xm</time>
+								</dd>
+							</dl>
+							<p class="sc19-event__desc">
+								__Description__</p>
+						</article>
 					</div>
 				</div>
-			</div>
-			<!--closing sc19-content-->
-			<p>
-				&nbsp;</p>
-			<div class="row sc19-section--secondary">
+			</section>
+			<div class="row">
 				<div class="col-md-8">
-					<div id="sc19-content-participation" class="sc19-content-col">
-						<h1 class="sc19-h1">
+					<section class="sc19-content--secondary" id="sc19-conf-events">
+						<h1 class="sc19-content__title">
 							SC19 TACC Participation</h1>
-						<h2 class="sc19-sub_heading">
-							Someday, Month NN</h2>
-						<hr class="sc19-date_lines" />
-						<p>
-							<b><a href="https://sc19.supercomputing.org/presentation/?id=___&amp;sess=___" target="_blank">Title of Event</a></b><br />
-							Presenter: …, …<br />
-							Time: _:__xm-_:__xm</p>
-						<p>
-							<b><a href="https://sc19.supercomputing.org/presentation/?id=___&amp;sess=___" target="_blank">Title of Event</a></b><br />
-							Presenter: …, …<br />
-							Time: _:__xm-_:__xm</p>
-						<h2 class="sc19-subhead2">
-							Someday, Month NN</h2>
-						<hr class="sc19-date_lines" />
-						<p>
-							<b><a href="https://sc19.supercomputing.org/presentation/?id=___&amp;sess=___" target="_blank">Title of Event</a></b><br />
-							Presenter: …, …<br />
-							Time: _:__xm-_:__xm</p>
-					</div>
-					<!--closing sc19-content-col1--></div>
-
-				<!-- !!!: Temporary content -->
-				<div class="col-md-4">
-					<blockquote id="sc19-content-social_media-noitce" class="sc19-content-col">
-						<p><strong>Notice:</strong> Twitter feed URL is missing value for <code>ref_src</code> parameter. Cannot find documentation. When/if Twitter is used, then replace URL with that provided by Public Relations and remove this notice.</p>
-					<!--closing sc19-content-social_media--></blockquote>
+						<div>
+							<h2 class="sc19-content__sub-title">
+								Someday, Month NN</h2>
+							<hr class="sc19-content__sub-title-decoration" />
+							<article class="sc19-event">
+								<strong class="sc19-event__title"><a href="https://sc19.supercomputing.org/presentation/?id=___&amp;sess=___" target="_blank">__Event_Title__</a> </strong>
+								<dl class="sc19-event__data">
+									<dt>
+										Presenters</dt>
+									<dd>
+										…, …, …</dd>
+									<dt>
+										Time</dt>
+									<dd>
+										<time datetime="____-__-__T__:__">
+											__:__xm</time>
+										-
+										<time datetime="____-__-__T__:__">
+											__:__xm</time>
+									</dd>
+								</dl>
+								<p class="sc19-event__desc">
+									__Description__</p>
+							</article>
+							<article class="sc19-event">
+								<strong class="sc19-event__title"><a href="https://sc19.supercomputing.org/presentation/?id=___&amp;sess=___" target="_blank">__Event_Title__</a> </strong>
+								<dl class="sc19-event__data">
+									<dt>
+										Presenters</dt>
+									<dd>
+										…, …, …</dd>
+									<dt>
+										Time</dt>
+									<dd>
+										<time datetime="____-__-__T__:__">
+											__:__xm</time>
+										-
+										<time datetime="____-__-__T__:__">
+											__:__xm</time>
+									</dd>
+								</dl>
+								<p class="sc19-event__desc">
+									__Description__</p>
+							</article>
+						</div>
+						<div>
+							<h2 class="sc19-content__sub-title">
+								Someday, Month NN</h2>
+							<hr class="sc19-content__sub-title-decoration" />
+							<article class="sc19-event">
+								<strong class="sc19-event__title"><a href="https://sc19.supercomputing.org/presentation/?id=___&amp;sess=___" target="_blank">__Event_Title__</a> </strong>
+								<dl class="sc19-event__data">
+									<dt>
+										Presenters</dt>
+									<dd>
+										…, …, …</dd>
+									<dt>
+										Time</dt>
+									<dd>
+										<time datetime="____-__-__T__:__">
+											__:__xm</time>
+										-
+										<time datetime="____-__-__T__:__">
+											__:__xm</time>
+									</dd>
+								</dl>
+								<p class="sc19-event__desc">
+									__Description__</p>
+							</article>
+						</div>
+					</section>
 				</div>
-				<p>
-					&nbsp;</p>
-				<!-- closing "!!!: Temporary content"-->
-
 				<div class="col-md-4">
-					<div id="sc19-content-social-media" class="sc19-content-col">
+					<section class="sc19-content" id="sc19-social_media">
+						<!-- !!!: Temporary content -->
+						<blockquote class="sc19-content" id="sc19-social_media-noitce" style="border-width: 20px 0; border-style: solid; border-color: #0e0520; margin-bottom: 0">
+							<p>
+								<strong>Notice:</strong> Twitter feed URL is missing value for <code>ref_src</code> parameter. Cannot find documentation. When/if Twitter is used, then replace URL with that provided by Public Relations and remove this notice.</p>
+						</blockquote>
 						<h1 class="sc19-h1">
 							Connect with TACC</h1>
 						<h2 class="sc19-subhead2" style="margin-bottom:15px;">
@@ -134,9 +289,9 @@
 							Featured Video</h2>
 						<div class="embed-responsive embed-responsive-16by9">
 							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_____"></iframe></div>
-					</div>
-					<!--closing sc19-content-social_media--></div>
+					</section>
+				</div>
 			</div>
 		</div>
-		<!--closing sc19-wrapper_2--></div>
-	<!--closing sc19-wrapper_1-->
+	</div>
+	
