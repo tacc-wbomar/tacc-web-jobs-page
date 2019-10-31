@@ -1,8 +1,9 @@
 <style type="text/css">
 	/* HACK */
+		/* WARN: There are two `#main-content`'s! (bug origin: clone `/sc18`) */
 		/* Resolves whitespace in a simpler manner than `/sc18` failed to do */
 		#main-content {
-			margin-bottom: 0;
+			padding-bottom: 0;
 		}
 		/* Avoids adding more superfluous `.row` and `.col-…` divs */
 		#sc19-booth-events {
@@ -69,6 +70,14 @@
 		.sc19-event__data p {
 			display: inline;
 		}
+
+		/* COMPONENTS: SC19 Media */
+		.sc19-media + .sc19-media {
+			margin-top: 30px;
+		}
+		.sc19-media .sc19-media__title {
+			margin-bottom: 15px;
+		}
 	
 		/* PAGE-SPECIFIC */
 		/* NOTE: Page-specific styles should not need IDs;
@@ -76,12 +85,10 @@
 				 so, we need to artifically scope these styles */
 		#sc19 {
 			background-color: #0e0520;
-			/* WARN: There are two `#main-content`'s! (bug origin: clone `/sc18`) */
-			margin-bottom: -4em; /* hide `#main-content { padding-bottom: -2em }` */
 			padding: 0px 25px 30px 25px;
 		}
 		#sc19 dl {
-			margin: 0; /* override `…/main.css` */
+			margin-left: 0; /* override `…/main.css` */
 		}
 		#sc19 dd,
 		#sc19 dt {
@@ -104,9 +111,8 @@
 				<div class="row">
 					<div class="col-md-6">
 						<h2 class="sc19-content__sub-title">
-							&nbsp;</h2>
-						<time datetime="2019-11-____">
-							Someday, Month NN</time>
+							<time datetime="2019-11-____">
+							Someday, Month NN</time></h2>
 						<hr class="sc19-content__sub-title-decoration" />
 						<article class="sc19-event">
 							<strong class="sc19-event__title">__Event_Title__</strong>
@@ -163,9 +169,8 @@
 					</div>
 					<div class="col-md-6">
 						<h2 class="sc19-content__sub-title">
-							&nbsp;</h2>
-						<time datetime="2019-11-____">
-							Someday, Month NN</time>
+							<time datetime="2019-11-____">
+							Someday, Month NN</time></h2>
 						<hr class="sc19-content__sub-title-decoration" />
 						<article class="sc19-event">
 							<strong class="sc19-event__title">__Event_Title__</strong>
@@ -274,24 +279,27 @@
 					</section>
 				</div>
 				<div class="col-md-4">
-					<section class="sc19-content" id="sc19-social_media">
+					<section class="sc19-content--secondary" id="sc19-social_media">
 						<!-- !!!: Temporary content -->
-						<blockquote class="sc19-content" id="sc19-social_media-noitce" style="border-width: 20px 0; border-style: solid; border-color: #0e0520; margin-bottom: 0">
+						<blockquote class="sc19-content" id="sc19-social_media__noitce" style="border-width: 20px 0; border-style: solid; border-color: #0e0520; margin-bottom: 1em;">
 							<p>
 								<strong>Notice:</strong> Twitter feed URL is missing value for <code>ref_src</code> parameter. Cannot find documentation. When/if Twitter is used, then replace URL with that provided by Public Relations and remove this notice.</p>
 						</blockquote>
-						<h1 class="sc19-h1">
+						<h1 class="sc19-content__title">
 							Connect with TACC</h1>
-						<h2 class="sc19-subhead2" style="margin-bottom:15px;">
-							Twitter Feed</h2>
-						<a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit="2" href="https://twitter.com/TACC?ref_src=___">Tweets by TACC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-						<h2 class="sc19-subhead2" style="margin:30px 0px 15px 0px;">
-							Featured Video</h2>
-						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_____"></iframe></div>
+						<article class="sc19-media">
+							<h2 class="sc19-content__sub-title sc19-media__title">
+								Twitter Feed</h2>
+							<a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit="2" href="https://twitter.com/TACC?ref_src=___">Tweets by TACC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</article>
+						<article class="sc19-media">
+							<h2 class="sc19-content__sub-title sc19-media__title" style="margin:30px 0px 15px 0px;">
+								Featured Video</h2>
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_____"></iframe></div>
+						</article>
 					</section>
 				</div>
 			</div>
 		</div>
 	</div>
-	
