@@ -1,191 +1,199 @@
-[ {
-	"title": "Aggregating Local Storage for Scalable Deep Learning I/O",
-	"speakers": {
-		"type": "Author/Presenters",
-		"names": [ "Zhao Zhang", "Lei Huang", "J. Gregory Pauloski", "Ian T. Foster" ]
-	},
-	"type": "Workshop",
-	"categories": [ "W" ],
-	"tags": [ "Deep Learning", "Scientific Computing" ],
-	"date": "Sunday, 17 November 2019",
-	"date-datetime": "2019-11-17",
-	"time_start": "12:10pm",
-	"time_start-datetime": "12:10",
-	"time_end": "12:30pm",
-	"time_end-datetime": "12:30",
-	"location": "502-503-504"
-}, {
-	"title": "Deep Facial Recognition using Tensorflow",
-	"speakers": {
-		"type": "Author/Presenters",
-		"names": [ "Chris A. Mattmann", "Zhao Zhang" ]
-	},
-	"type": "Workshop",
-	"categories": [ "W" ],
-	"tags": [ "Deep Learning", "Scientific Computing" ],
-	"date": "Sunday, 17 November 2019",
-	"date-datetime": "2019-11-17",
-	"time_start": "10:55am",
-	"time_start-datetime": "10:55",
-	"time_end": "11:20am",
-	"time_end-datetime": "11:20",
-	"location": "502-503-504"
-}, {
-	"title": "Deep Learning on Supercomputers",
-	"speakers": {
-		"type": "Organizers",
-		"names": [ "Zhao Zhang", "Valeriu Codreanu", "Ian T. Foster" ]
-	},
-	"type": "Workshop",
-	"categories": [ "W" ],
-	"tags": [ "Deep Learning", "Scientific Computing" ],
-	"date": "Sunday, 17 November 2019",
-	"date-datetime": "2019-11-17",
-	"time_start": "9am",
-	"time_start-datetime": "09:00",
-	"time_end": "9:05am",
-	"time_end-datetime": "09:05",
-	"location": "502-503-504"
-}, {
-	"title": "Getting Scientific Software Installed",
-	"leader": {
-		"type": "Session Leader",
-		"name": "Robert McLay"
-	},
-	"speakers": {
-		"type": "Additional Session Leaders",
-		"names": [ "Davide Vanzo", "Kenneth Hoste" ]
-	},
-	"type": "Birds of a Feather",
-	"categories": [ "TP", "EX", "EXH" ],
-	"tags": [ "State of the Practice" ],
-	"date": "Wednesday, 20 November 2019",
-	"date-datetime": "2019-11-20",
-	"time_start": "12:15pm",
-	"time_start-datetime": "12:15",
-	"time_end": "1:15pm",
-	"time_end-datetime": "14:15",
-	"location": "405-406-407"
-}, {
-	"title": "HUST19 Panel: HPC User tickets discussion",
-	"session": "6th International Workshop on HPC User Support Tools (HUST-19)",
-	"speakers": {
-		"type": "Panelists",
-		"names": [ "Robert McLay", "Lissa Moore" ]
-	},
-	"type": "Workshop",
-	"categories": [ "W" ],
-	"tags": [ "Datacenter", "HPC Center Planning and Operations", "Parallel Application Frameworks", "Tools" ],
-	"date": "Monday, 18 November 2019",
-	"date-datetime": "2019-11-18",
-	"time_start": "12pm",
-	"time_start-datetime": "12:00",
-	"time_end": "12:30pm",
-	"time_end-datetime": "12:30",
-	"location": "507"
-}, {
-	"title": "Science and Technology Requirements for Leadership Computing in Open Science",
-	"leader": {
-		"type": "Session Leader",
-		"name": "Dan Stanzione"
-	},
-	"speakers": {
-		"type": "Additional Session Leaders",
-		"names": [ "Omar Ghattas", "Rick Stevens", "John West" ]
-	},
-	"type": "Birds of a Feather",
-	"categories": [ "TP", "EX", "EXH" ],
-	"tags": [ "HPC Center Planning and Operations", "Requirements", "Scientific Computing" ],
-	"date": "Thursday, 21 November 2019",
-	"date-datetime": "2019-11-21",
-	"time_start": "12:15pm",
-	"time_start-datetime": "12:15",
-	"time_end": "1:15pm",
-	"time_end-datetime": "13:15",
-	"location": "702"
-}, {
-	"title": "SIGHPC Annual Member Meeting",
-	"leader": {
-		"type": "Session Leader",
-		"name": "John West"
-	},
-	"type": "Birds of a Feather",
-	"categories": [ "TP", "EX", "EXH" ],
-	"tags": [ "HPC", "SIG", "HPC Workshop" ],
-	"date": "Tuesday, 19 November 2019",
-	"date-datetime": "2019-11-19",
-	"time_start": "12:15pm",
-	"time_start-datetime": "12:15",
-	"time_end": "1:15pm",
-	"time_end-datetime": "13:15",
-	"location": "401-402-403-404"
-}, {
-	"title": "SOLAR Consortium: Accelerated Ray Tracing for Scientific Simulations",
-	"leader": {
-		"type": "Session Leader",
-		"name": "Paul Navratil"
-	},
-	"speakers": {
-		"type": "Additional Session Leaders",
-		"names": [ "Estelle Dirand", "Pascal Grosset", "Peter Messmer", "Jeff Amstutz", "Dmitry Kozlov" ]
-	},
-	"type": "Birds of a Feather",
-	"categories": [ "TP", "EX", "EXH" ],
-	"tags": [ "Accelerators", "Ray Tracing", "Scientific Computing" ],
-	"date": "Wednesday, 20 November 2019",
-	"date-datetime": "2019-11-20",
-	"time_start": "12:15pm",
-	"time_start-datetime": "12:15",
-	"time_end": "1:15pm",
-	"time_end-datetime": "13:15",
-	"location": "505"
-}, {
-	"title": "Tools and Best Practices for Distributed Deep Learning on Supercomputers",
-	"speakers": {
-		"type": "Presenters",
-		"names": [ "Xu WeijiaZhao Zhang", "David Walling" ]
-	},
-	"type": "Tutorial",
-	"categories": [ TUT ],
-	"tags": [ "Best Practices", "Deep Learning", "Tools" ],
-	"date": "Sunday, 17 November 2019",
-	"date-datetime": "2019-11-17",
-	"time_start": "1:30pm",
-	"time_start-datetime": "13:30pm",
-	"time_end": "5pm",
-	"time_end-datetime": "17:00",
-	"location": "207"
-}, {
-	"title": "Tools for Monitoring CPU Usage and Affinity in Multicore Supercomputers",
-	"session": "6th International Workshop on HPC User Support Tools (HUST-19)",
-	"speakers": {
-		"type": "Author/Presenters",
-		"names": [ "Lei Huang", "Kent Milfeld", "Si Liu" ]
-	},
-	"type": "Workshop",
-	"categories": [ "W" ],
-	"tags": [ "Best Practices", "Build Systems", "Datacenter", "HPC Center Planning and Operations", "Parallel Application Frameworks", "System TestingTools" ],
-	"date": "Monday, 18 November 2019",
-	"date-datetime": "2019-11-18",
-	"time_start": "11:30am",
-	"time_start-datetime": "11:30",
-	"time_end": "12pm",
-	"time_end-datetime": "12:00",
-	"location": "507"
-}, {
-	"title": "The 3rd Industry/University Joint International Workshop on Data-Center Automation, Analytics, and Control (DAAC)",
-	"speakers": {
-		"type": "Session Chairs",
-		"names": [ "Yong Chen", "Texas Tech University", "Texas Tech University", "Dong Dai", "University of North Carolina", CharlotteTim CockerillTexas Advanced Computing Center (TACC)Alan SillTexas Tech UniversityTexas Tech "University" ]
-	},
-	"type": "Workshop",
-	"categories": [ "W" ],
-	"tags": [ "Big Data", "Collaborative Environments", "Data Analytics", "Data ManagementDatacenter" ],
-	"date": "Friday, 22 November 2019",
-	"date-datetime": "2019-11-22",
-	"time_start": "8:30am",
-	"time_start-datetime": "08:30",
-	"time_end": "12pm",
-	"time_end-datetime": "12:00",
-	"location": "501-502",
-} ]
+{
+	"days": [ {
+		"date": "Sunday, November 17",
+		"date-iso": "2019-11-17",
+		"events": [ {
+			"title": "Aggregating Local Storage for Scalable Deep Learning I/O",
+			"speakers": {
+				"type": "Author/Presenters",
+				"names": [ "Zhao Zhang", "Lei Huang", "J. Gregory Pauloski", "Ian T. Foster" ]
+			},
+			"type": "Workshop",
+			"categories": [ "W" ],
+			"tags": [ "Deep Learning", "Scientific Computing" ],
+			"time_start": "12:10pm",
+			"time_start-iso": "12:10",
+			"time_end": "12:30pm",
+			"time_end-iso": "12:30",
+			"location": "502-503-504"
+		}, {
+			"title": "Deep Facial Recognition using Tensorflow",
+			"speakers": {
+				"type": "Author/Presenters",
+				"names": [ "Chris A. Mattmann", "Zhao Zhang" ]
+			},
+			"type": "Workshop",
+			"categories": [ "W" ],
+			"tags": [ "Deep Learning", "Scientific Computing" ],
+			"time_start": "10:55am",
+			"time_start-iso": "10:55",
+			"time_end": "11:20am",
+			"time_end-iso": "11:20",
+			"location": "502-503-504"
+		}, {
+			"title": "Deep Learning on Supercomputers",
+			"speakers": {
+				"type": "Organizers",
+				"names": [ "Zhao Zhang", "Valeriu Codreanu", "Ian T. Foster" ]
+			},
+			"type": "Workshop",
+			"categories": [ "W" ],
+			"tags": [ "Deep Learning", "Scientific Computing" ],
+			"date": "Sunday, 17 November 2019",
+			"date-iso": "2019-11-17",
+			"time_start": "9am",
+			"time_start-iso": "09:00",
+			"time_end": "9:05am",
+			"time_end-iso": "09:05",
+			"location": "502-503-504"
+		}, {
+			"title": "Tools and Best Practices for Distributed Deep Learning on Supercomputers",
+			"speakers": {
+				"type": "Presenters",
+				"names": [ "Xu WeijiaZhao Zhang", "David Walling" ]
+			},
+			"type": "Tutorial",
+			"categories": [ "TUT" ],
+			"tags": [ "Best Practices", "Deep Learning", "Tools" ],
+			"time_start": "1:30pm",
+			"time_start-iso": "13:30pm",
+			"time_end": "5pm",
+			"time_end-iso": "17:00",
+			"location": "207"
+		} ]
+	}, {
+		"date": "Monday, November 18",
+		"date-iso": "2019-11-18",
+		"events": [ {
+			"title": "HUST19 Panel: HPC User tickets discussion",
+			"session": "6th International Workshop on HPC User Support Tools (HUST-19)",
+			"speakers": {
+				"type": "Panelists",
+				"names": [ "Robert McLay", "Lissa Moore" ]
+			},
+			"type": "Workshop",
+			"categories": [ "W" ],
+			"tags": [ "Datacenter", "HPC Center Planning and Operations", "Parallel Application Frameworks", "Tools" ],
+			"time_start": "12pm",
+			"time_start-iso": "12:00",
+			"time_end": "12:30pm",
+			"time_end-iso": "12:30",
+			"location": "507"
+		}, {
+			"title": "Tools for Monitoring CPU Usage and Affinity in Multicore Supercomputers",
+			"session": "6th International Workshop on HPC User Support Tools (HUST-19)",
+			"speakers": {
+				"type": "Author/Presenters",
+				"names": [ "Lei Huang", "Kent Milfeld", "Si Liu" ]
+			},
+			"type": "Workshop",
+			"categories": [ "W" ],
+			"tags": [ "Best Practices", "Build Systems", "Datacenter", "HPC Center Planning and Operations", "Parallel Application Frameworks", "System TestingTools" ],
+			"time_start": "11:30am",
+			"time_start-iso": "11:30",
+			"time_end": "12pm",
+			"time_end-iso": "12:00",
+			"location": "507"
+		} ]
+	}, {
+		"date": "Tuesday, November 19",
+		"date-iso": "2019-11-19",
+		"events": [ {
+			"title": "SIGHPC Annual Member Meeting",
+			"leader": {
+				"type": "Session Leader",
+				"name": "John West"
+			},
+			"type": "Birds of a Feather",
+			"categories": [ "TP", "EX", "EXH" ],
+			"tags": [ "HPC", "SIG", "HPC Workshop" ],
+			"time_start": "12:15pm",
+			"time_start-iso": "12:15",
+			"time_end": "1:15pm",
+			"time_end-iso": "13:15",
+			"location": "401-402-403-404"
+		} ]
+	}, {
+		"date": "Wednesday, November 20",
+		"date-iso": "2019-11-20",
+		"events": [ {
+			"title": "Getting Scientific Software Installed",
+			"leader": {
+				"type": "Session Leader",
+				"name": "Robert McLay"
+			},
+			"speakers": {
+				"type": "Additional Session Leaders",
+				"names": [ "Davide Vanzo", "Kenneth Hoste" ]
+			},
+			"type": "Birds of a Feather",
+			"categories": [ "TP", "EX", "EXH" ],
+			"tags": [ "State of the Practice" ],
+			"time_start": "12:15pm",
+			"time_start-iso": "12:15",
+			"time_end": "1:15pm",
+			"time_end-iso": "14:15",
+			"location": "405-406-407"
+		}, {
+			"title": "SOLAR Consortium: Accelerated Ray Tracing for Scientific Simulations",
+			"leader": {
+				"type": "Session Leader",
+				"name": "Paul Navratil"
+			},
+			"speakers": {
+				"type": "Additional Session Leaders",
+				"names": [ "Estelle Dirand", "Pascal Grosset", "Peter Messmer", "Jeff Amstutz", "Dmitry Kozlov" ]
+			},
+			"type": "Birds of a Feather",
+			"categories": [ "TP", "EX", "EXH" ],
+			"tags": [ "Accelerators", "Ray Tracing", "Scientific Computing" ],
+			"time_start": "12:15pm",
+			"time_start-iso": "12:15",
+			"time_end": "1:15pm",
+			"time_end-iso": "13:15",
+			"location": "505"
+		} ]
+	}, {
+		"date": "Thursday, November 21",
+		"date-iso": "2019-11-21",
+		"events": [ {
+			"title": "Science and Technology Requirements for Leadership Computing in Open Science",
+			"leader": {
+				"type": "Session Leader",
+				"name": "Dan Stanzione"
+			},
+			"speakers": {
+				"type": "Additional Session Leaders",
+				"names": [ "Omar Ghattas", "Rick Stevens", "John West" ]
+			},
+			"type": "Birds of a Feather",
+			"categories": [ "TP", "EX", "EXH" ],
+			"tags": [ "HPC Center Planning and Operations", "Requirements", "Scientific Computing" ],
+			"time_start": "12:15pm",
+			"time_start-iso": "12:15",
+			"time_end": "1:15pm",
+			"time_end-iso": "13:15",
+			"location": "702"
+		} ]
+	}, {
+		"date": "Friday, November 22",
+		"date-iso": "2019-11-22",
+		"events": [ {
+			"title": "The 3rd Industry/University Joint International Workshop on Data-Center Automation, Analytics, and Control (DAAC)",
+			"speakers": {
+				"type": "Session Chairs",
+				"names": [ "Yong Chen, Texas Tech University", "Dong Dai, University of North Carolina, Charlotte", "Tim Cockerill, Texas Advanced Computing Center (TACC)", "Alan Sill, Texas Tech University" ]
+			},
+			"type": "Workshop",
+			"categories": [ "W" ],
+			"tags": [ "Big Data", "Collaborative Environments", "Data Analytics", "Data ManagementDatacenter" ],
+			"date": "Friday, 22 November 2019",
+			"date-iso": "2019-11-22",
+			"time_start": "8:30am",
+			"time_start-iso": "08:30",
+			"time_end": "12pm",
+			"time_end-iso": "12:00",
+			"location": "501-502"
+		} ]
+	} ]
+}

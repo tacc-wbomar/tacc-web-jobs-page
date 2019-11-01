@@ -105,10 +105,18 @@
 				and `.container` restricts content width. */</style>
 	<div id="sc19">
 		<div class="container">
-			{booth-events}
+			<section class="sc19-content--primary" id="sc19-booth-events">
+				<h1 class="sc19-content__title">SC19 TACC Booth Schedule</h1>
+				<div class="row">
+					{{booth-events}}
+				</div>
+			</section>
 			<div class="row">
 				<div class="col-md-8">
-					{conf-events}
+					<section class="sc19-content--secondary" id="sc19-conf-events">
+						<h1 class="sc19-content__title">SC19 TACC Participation</h1>
+						{{conf-events}}
+					</section>
 				</div>
 				<div class="col-md-4">
 					<section class="sc19-content--secondary" id="sc19-social_media">
@@ -122,7 +130,7 @@
 						<article class="sc19-media">
 							<h2 class="sc19-content__sub-title sc19-media__title">
 								Twitter Feed</h2>
-							<a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit="2" href="https://twitter.com/TACC?ref_src=twsrc%5Etfw">Tweets by TACC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit="2" href="https://twitter.com/TACC?ref_src=___">Tweets by TACC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 						</article>
 						<article class="sc19-media">
 							<h2 class="sc19-content__sub-title sc19-media__title" style="margin:30px 0px 15px 0px;">

@@ -1,0 +1,37 @@
+{{#days}}
+	{{#is_column}}
+	<div class="col-md-6">
+	{{/is_column}}
+	{{^is_column}}
+	<div>
+	{{/is_column}}
+		<h2 class="sc19-content__sub-title">
+			<time datetime="{{date-iso}}">{{date}}</time>
+		</h2>
+		<hr class="sc19-content__sub-title-decoration" />
+	{{#events}}
+		<article class="sc19-event">
+			<strong class="sc19-event__title"><a href="{{url}}" target="_blank">{{title}}</a></strong>
+			<dl class="sc19-event__data">
+				<dt>Presenters</dt>
+				{{#presenters}}
+					<dd>{{.}}</dd>
+				{{/presenters}}
+				{{#duration}}
+				<dt>Length</dt>
+					<dd>
+						<time datetime="{{duration-iso}}">{{duration}}</time>
+					</dd>
+				{{/duration}}
+				<dt>Time</dt>
+					<dd>
+						<time datetime="{{date-iso}}T{{time_start-iso}}–06">{{time_start}}</time>
+						<span>-</span>
+						<time datetime="{{date-iso}}T{{time_end-iso}}–06">{{time_end}}</time>
+					</dd>
+			</dl>
+			<p class="sc19-event__desc">{{description}}</p>
+		</article>
+	{{/events}}
+	</div>
+{{/days}}
