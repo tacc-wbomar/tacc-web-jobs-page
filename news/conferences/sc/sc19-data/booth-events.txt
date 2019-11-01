@@ -1,0 +1,139 @@
+
+--
+
+Aggregating Local Storage for Scalable Deep Learning I/O
+Author/Presenters: [ Zhao Zhang, Lei Huang, J. Gregory Pauloski, Ian T. Foster ]
+Event TypeWorkshop
+Registration Categories
+W
+Tags
+Deep LearningScientific Computing
+TimeSunday, 17 November 201912:10pm - 12:30pm
+Location502-503-504
+
+--
+
+Deep Facial Recognition using Tensorflow
+Author/Presenters Chris A. Mattmann, Zhao Zhang
+Event TypeWorkshop
+Registration Categories
+W
+Tags
+Deep LearningScientific Computing
+TimeSunday, 17 November 201910:55am - 11:20am
+Location502-503-504
+
+--
+
+Deep Learning on Supercomputers
+Organizers Zhao Zhang, Valeriu Codreanu, Ian T. Foster
+Event TypeWorkshop
+Registration Categories
+W
+Tags
+Deep LearningScientific Computing
+TimeSunday, 17 November 20199am - 9:05am
+Location502-503-504
+
+--
+
+Getting Scientific Software Installed
+Session LeaderRobert McLay
+Additional Session Leaders, Davide Vanzo, Kenneth Hoste
+Event TypeBirds of a Feather
+Registration Categories
+TPEXEXH
+Tags
+State of the Practice
+TimeWednesday, 20 November 201912:15pm - 1:15pm
+Location405-406-407
+
+--
+
+HUST19 Panel: HPC User tickets discussion
+Session6th International Workshop on HPC User Support Tools (HUST-19)
+PanelistsRobert McLay, Lissa Moore
+Event TypeWorkshop
+Registration Categories
+W
+Tags
+DatacenterHPC Center Planning and OperationsParallel Application FrameworksTools
+TimeMonday, 18 November 201912pm - 12:30pm
+Location507
+
+--
+
+Science and Technology Requirements for Leadership Computing in Open Science
+Session LeaderDan Stanzione
+Additional Session LeadersOmar Ghattas, Rick Stevens, John West
+Event TypeBirds of a Feather
+Registration Categories
+TPEXEXH
+Tags
+HPC Center Planning and OperationsRequirementsScientific Computing
+TimeThursday, 21 November 201912:15pm - 1:15pm
+Location702
+
+--
+
+SIGHPC Annual Member Meeting
+Session LeaderJohn West
+Event TypeBirds of a Feather
+Registration Categories
+TPEXEXH
+Tags
+HPCSIGHPC Workshop
+TimeTuesday, 19 November 201912:15pm - 1:15pm
+Location401-402-403-404
+
+--
+
+SOLAR Consortium: Accelerated Ray Tracing for Scientific Simulations
+Session LeaderPaul Navratil
+Additional Session LeadersEstelle Dirand, Pascal Grosset, Peter Messmer, Jeff Amstutz, Dmitry Kozlov
+Event TypeBirds of a Feather
+Registration Categories
+TPEXEXH
+Tags
+AcceleratorsRay TracingScientific Computing
+TimeWednesday, 20 November 201912:15pm - 1:15pm
+Location505
+
+--
+
+Tools and Best Practices for Distributed Deep Learning on Supercomputers
+PresentersXu WeijiaZhao Zhang, David Walling
+Event TypeTutorial
+Registration Categories
+TUT
+Tags
+Best PracticesDeep LearningTools
+TimeSunday, 17 November 20191:30pm - 5pm
+Location207
+
+--
+
+Tools for Monitoring CPU Usage and Affinity in Multicore Supercomputers
+Session6th International Workshop on HPC User Support Tools (HUST-19)
+Author/PresentersLei Huang, Kent Milfeld, Si Liu
+Event TypeWorkshop
+Registration Categories
+W
+Tags
+Best PracticesBuild SystemsDatacenterHPC Center Planning and OperationsParallel Application FrameworksSystem TestingTools
+TimeMonday, 18 November 201911:30am - 12pm
+Location507
+
+--
+
+The 3rd Industry/University Joint International Workshop on Data-Center Automation, Analytics, and Control (DAAC)
+Session ChairsYong ChenTexas Tech UniversityTexas Tech UniversityDong DaiUniversity of North Carolina, CharlotteTim CockerillTexas Advanced Computing Center (TACC)Alan SillTexas Tech UniversityTexas Tech University
+Event TypeWorkshop
+Registration Categories
+W
+Tags
+Big DataCollaborative EnvironmentsData AnalyticsData ManagementDatacenter
+TimeFriday, 22 November 20198:30am - 12pm
+Location501-502
+
+--
