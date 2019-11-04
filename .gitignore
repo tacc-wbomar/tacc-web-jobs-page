@@ -1,2 +1,9 @@
+# Dynamically created directories
+dist/
+
+# Manually created templates or template directories
 _*/
+_*
+
+# Operating System files
 .DS_Store
