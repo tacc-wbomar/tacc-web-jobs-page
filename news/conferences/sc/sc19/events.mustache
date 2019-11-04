@@ -44,6 +44,12 @@
 						<span>-</span>
 						<time datetime="{{date-iso}}T{{time_end-iso}}–06">{{time_end}}</time>
 					</dd>
+				{{#warning}}
+				<!-- !!!: Temporary content -->
+				<blockquote style="border-width: 20px 0; border-style: solid; border-color: #0e0520; margin-bottom: 0">
+					<p><strong>Notice:</strong> {{warning}}</p>
+				</blockquote>
+				{{/warning}}
 			</dl>
 			<p class="sc19-event__desc">{{description}}</p>
 		</article>
