@@ -1,0 +1,145 @@
+<style type="text/css">
+	/* HACK */
+		/* WARN: There are two `#main-content`'s! (bug origin: clone `/sc18`) */
+		/* Resolves whitespace in a simpler manner than `/sc18` failed to do */
+		#main-content {
+			padding-bottom: 0;
+		}
+		/* Avoids adding more superfluous `.row` and `.col-…` divs */
+		#sc19-booth-events {
+			margin-bottom: 30px; /* replicate `.col-… { margin-*: 15px; }` pair */
+		}
+	
+		/* COMPONENTS */
+		/* COMPONENTS: SC19 Content */
+		.sc19-content,
+		[class*="sc19-content--"] {
+			background-color: #FFF;
+			margin: 0px;
+			padding: 20px;
+		}
+		.sc19-content__title {
+			margin: 0px;
+			padding: 0px;
+		}
+		.sc19-content__sub-title {
+			margin: 20px 0px 0px 0px;
+			padding: 0px;
+		}
+		/* FAQ: We should decorate the `…__title`, but only brittle CSS can do that;
+				so, we continue to use an `<hr />` (common on TACC, circa 2019) */
+		.sc19-content__sub-title-decoration {
+			margin: 3px 0px 15px 0px;
+			padding: 0px;
+		}
+		.sc19-content--primary .sc19-content__title     { font-size: 2.5em; }
+		.sc19-content--primary .sc19-content__sub-title { font-size: 1.75em; }
+		.sc19-content--secondary .sc19-content__title     { font-size: 2em; }
+		.sc19-content--secondary .sc19-content__sub-title { font-size: 1.5em; }
+	
+		/* COMPONENTS: SC19 Event */
+		.sc19-event + .sc19-event {
+			margin-top: 20px;
+		}
+		/* SEE: https://stackoverflow.com/a/21261303 */
+		/* NOTE: Flexbox considered, but this is less code */
+		/* WARN: ITCSS: This should be "TRUMPS: Scope" code (`.s-`),
+						but do not implement Namepsaces until team is on board. */
+		.sc19-event__data,
+		.sc19-event__desc {
+			margin-bottom: 10px; /* redundant for `p.sc19-event__desc` */
+		}
+		.sc19-event__data dt {
+			display: inline-block;
+			min-width: 10ch;
+	
+			font-weight: normal; /* override `tacc-new-theme/css/main.css` */
+		}
+		.sc19-event__data dt:after {
+			display: inline-block;
+			content: ':';
+			margin-right: 1ch;
+		}
+		.sc19-event__data dd {
+			display: inline;
+		}
+		.sc19-event__data dd:after {
+			display: block;
+			content: '';
+		}
+		.sc19-event__data p {
+			display: inline;
+		}
+
+		/* COMPONENTS: SC19 Media */
+		.sc19-media + .sc19-media {
+			margin-top: 30px;
+		}
+		.sc19-media .sc19-media__title {
+			margin-bottom: 15px;
+		}
+	
+		/* PAGE-SPECIFIC */
+		/* NOTE: Page-specific styles should not need IDs;
+				 but, am not allowed to edit global styles, yet;
+				 so, we need to artifically scope these styles */
+		#sc19 {
+			background-color: #0e0520;
+			padding: 0px 25px 30px 25px;
+		}
+		#sc19 dl {
+			margin-left: 0; /* override `…/main.css` */
+		}
+		#sc19 dd,
+		#sc19 dt {
+			line-height: 1.5; /* override `tacc-new-theme/css/main.css`; match `body` */
+		}
+		#sc19 dd {
+			margin-left: 0; /* override `html/css/main.css` *//* match `tacc-new-theme/css/main.css` */
+		}
+	
+		/* MARKUP NOTES */
+		/* FAQ: `#sc19` and `.container` __must not__ be together,
+				because `#sc19` sets wide background color
+				(without reliance on variable containers)
+				and `.container` restricts content width. */</style>
+	<div id="sc19">
+		<div class="container">
+			<section class="sc19-content--primary" id="sc19-booth-events">
+				<h1 class="sc19-content__title">SC19 TACC Booth Schedule</h1>
+				<div class="row">
+					{{booth-events}}
+				</div>
+			</section>
+			<div class="row">
+				<div class="col-md-8">
+					<section class="sc19-content--secondary" id="sc19-conf-events">
+						<h1 class="sc19-content__title">SC19 TACC Participation</h1>
+						{{conf-events}}
+					</section>
+				</div>
+				<div class="col-md-4">
+					<section class="sc19-content--secondary" id="sc19-social_media">
+						<!-- !!!: Temporary content -->
+						<blockquote class="sc19-content" id="sc19-social_media__noitce" style="border-width: 20px 0; border-style: solid; border-color: #0e0520; margin-bottom: 1em;">
+							<p>
+								<strong>Notice:</strong> Twitter feed URL is missing value for <code>ref_src</code> parameter. Cannot find documentation. When/if Twitter is used, then replace URL with that provided by Public Relations and remove this notice.</p>
+						</blockquote>
+						<h1 class="sc19-content__title">
+							Connect with TACC</h1>
+						<article class="sc19-media">
+							<h2 class="sc19-content__sub-title sc19-media__title">
+								Twitter Feed</h2>
+							<a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit="2" href="https://twitter.com/TACC?ref_src=___">Tweets by TACC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</article>
+						<article class="sc19-media">
+							<h2 class="sc19-content__sub-title sc19-media__title" style="margin:30px 0px 15px 0px;">
+								Featured Video</h2>
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_____"></iframe></div>
+						</article>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
