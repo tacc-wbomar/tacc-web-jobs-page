@@ -17,4 +17,5 @@ mustache \
     -p sc19/social-media.mustache\
     sc19/events.booth.json sc19/body.mustache sc19-body.html
 
+# We should clean up (even though the temp files should be ignored)
 rm sc19/_events.*
