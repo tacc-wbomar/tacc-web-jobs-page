@@ -16,3 +16,5 @@ mustache \
     -p sc19/_events.conf.mustache\
     -p sc19/social-media.mustache\
     sc19/events.booth.json sc19/body.mustache sc19-body.html
+
+rm sc19/_events.*
