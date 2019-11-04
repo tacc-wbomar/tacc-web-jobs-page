@@ -3,7 +3,7 @@
 		"date": "Sunday, November 17",
 		"date-iso": "2019-11-17",
 		"events": [ {
-			"url": "__EVENT_URL__",
+			"url": "https://sc19.supercomputing.org/presentation/?id=ws_dls106&sess=sess101",
 			"title": "Aggregating Local Storage for Scalable Deep Learning I/O",
 			"speakers": {
 				"type": "Author/Presenters",
@@ -18,7 +18,7 @@
 			"time_end-iso": "12:30",
 			"location": "502-503-504"
 		}, {
-			"url": "__EVENT_URL__",
+			"url": "https://sc19.supercomputing.org/presentation/?id=ws_dls123&sess=sess101",
 			"title": "Deep Facial Recognition using Tensorflow",
 			"speakers": {
 				"type": "Author/Presenters",
@@ -33,7 +33,7 @@
 			"time_end-iso": "11:20",
 			"location": "502-503-504"
 		}, {
-			"url": "__EVENT_URL__",
+			"url": "https://sc19.supercomputing.org/presentation/?id=wksp118&sess=sess101",
 			"title": "Deep Learning on Supercomputers",
 			"speakers": {
 				"type": "Organizers",
@@ -50,7 +50,7 @@
 			"time_end-iso": "09:05",
 			"location": "502-503-504"
 		}, {
-			"url": "__EVENT_URL__",
+			"url": "https://sc19.supercomputing.org/presentation/?id=tut144&sess=sess208",
 			"title": "Tools and Best Practices for Distributed Deep Learning on Supercomputers",
 			"speakers": {
 				"type": "Presenters",
@@ -69,7 +69,7 @@
 		"date": "Monday, November 18",
 		"date-iso": "2019-11-18",
 		"events": [ {
-			"url": "__EVENT_URL__",
+			"url": "https://sc19.supercomputing.org/presentation/?id=pec420&sess=sess116",
 			"title": "HUST19 Panel: HPC User tickets discussion",
 			"session": "6th International Workshop on HPC User Support Tools (HUST-19)",
 			"speakers": {
@@ -85,7 +85,7 @@
 			"time_end-iso": "12:30",
 			"location": "507"
 		}, {
-			"url": "__EVENT_URL__",
+			"url": "https://sc19.supercomputing.org/presentation/?id=ws_hust101&sess=sess116",
 			"title": "Tools for Monitoring CPU Usage and Affinity in Multicore Supercomputers",
 			"session": "6th International Workshop on HPC User Support Tools (HUST-19)",
 			"speakers": {
@@ -105,7 +105,7 @@
 		"date": "Tuesday, November 19",
 		"date-iso": "2019-11-19",
 		"events": [ {
-			"url": "__EVENT_URL__",
+			"url": "https://sc19.supercomputing.org/presentation/?id=bof144&sess=sess413",
 			"title": "SIGHPC Annual Member Meeting",
 			"leader": {
 				"type": "Session Leader",
@@ -124,7 +124,7 @@
 		"date": "Wednesday, November 20",
 		"date-iso": "2019-11-20",
 		"events": [ {
-			"url": "__EVENT_URL__",
+			"url": "https://sc19.supercomputing.org/presentation/?id=bof148&sess=sess299",
 			"title": "Getting Scientific Software Installed",
 			"leader": {
 				"type": "Session Leader",
@@ -140,10 +140,10 @@
 			"time_start": "12:15pm",
 			"time_start-iso": "12:15",
 			"time_end": "1:15pm",
-			"time_end-iso": "14:15",
+			"time_end-iso": "13:15",
 			"location": "405-406-407"
 		}, {
-			"url": "__EVENT_URL__",
+			"url": "https://sc19.supercomputing.org/presentation/?id=bof203&sess=sess315",
 			"title": "SOLAR Consortium: Accelerated Ray Tracing for Scientific Simulations",
 			"leader": {
 				"type": "Session Leader",
@@ -161,12 +161,27 @@
 			"time_end": "1:15pm",
 			"time_end-iso": "13:15",
 			"location": "505"
+		}, {
+			"url": "https://sc19.supercomputing.org/session/?sess=sess457",
+			"title": "HPC Impact Showcase 4",
+			"leader": {
+				"type": "Session Chair",
+				"name": "Melyssa Fratkin"
+			},
+			"type": "HPC Impact Showcase",
+			"categories": [ "TP", "EX", "EXH" ],
+			"tags": [],
+			"time_start": "3:30pm",
+			"time_start-iso": "15:30",
+			"time_end": "4:30pm",
+			"time_end-iso": "16:30",
+			"location": "503-504"
 		} ]
 	}, {
 		"date": "Thursday, November 21",
 		"date-iso": "2019-11-21",
 		"events": [ {
-			"url": "__EVENT_URL__",
+			"url": "https://sc19.supercomputing.org/presentation/?id=bof141&sess=sess335",
 			"title": "Science and Technology Requirements for Leadership Computing in Open Science",
 			"leader": {
 				"type": "Session Leader",
@@ -189,7 +204,7 @@
 		"date": "Friday, November 22",
 		"date-iso": "2019-11-22",
 		"events": [ {
-			"url": "__EVENT_URL__",
+			"url": "https://sc19.supercomputing.org/session/?sess=sess133",
 			"title": "The 3rd Industry/University Joint International Workshop on Data-Center Automation, Analytics, and Control (DAAC)",
 			"speakers": {
 				"type": "Session Chairs",
@@ -197,7 +212,7 @@
 			},
 			"type": "Workshop",
 			"categories": [ "W" ],
-			"tags": [ "Big Data", "Collaborative Environments", "Data Analytics", "Data ManagementDatacenter" ],
+			"tags": [ "Big Data", "Collaborative Environments", "Data Analytics", "Data Management", "Datacenter" ],
 			"date": "Friday, 22 November 2019",
 			"date-iso": "2019-11-22",
 			"time_start": "8:30am",
