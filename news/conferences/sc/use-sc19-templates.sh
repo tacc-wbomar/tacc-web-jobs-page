@@ -1,1 +1,0 @@
-mustache sc19-data/conf-events.json sc19-body--events.mustache > ./dist/sc19-body--conf-events.html && mustache sc19-data/booth-events.json sc19-body--events.mustache > ./dist/sc19-body--booth-events.html

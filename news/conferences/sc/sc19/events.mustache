@@ -11,12 +11,27 @@
 		<hr class="sc19-content__sub-title-decoration" />
 	{{#events}}
 		<article class="sc19-event">
-			<strong class="sc19-event__title"><a href="{{url}}" target="_blank">{{title}}</a></strong>
+			<strong class="sc19-event__title">
+			{{#url}}
+				<a href="{{url}}" target="_blank">{{title}}</a>
+			{{/url}}
+			{{^url}}
+				{{title}}
+			{{/url}}
+			</strong>
 			<dl class="sc19-event__data">
-				<dt>Presenters</dt>
-				{{#presenters}}
-					<dd>{{.}}</dd>
-				{{/presenters}}
+				{{#leader}}
+				<dt>{{leader.type}}</dt>
+					<dd>{{leader.name}}</dd>
+				{{/leader}}
+				{{#speakers}}
+				<dt>{{speakers.type}}</dt>
+					<dd><ul>
+					{{#speakers.names}}
+						<li>{{.}}</li>
+					{{/speakers.names}}
+					</ul></dd>
+				{{/speakers}}
 				{{#duration}}
 				<dt>Length</dt>
 					<dd>
