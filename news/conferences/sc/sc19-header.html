@@ -1,7 +1,107 @@
-<!-- !!!: Temporary content -->
-<blockquote style="border-width: 20px 0; border-style: solid; border-color: #0e0520; margin-bottom: 0">
-		<p>
-			<strong>Notice:</strong> This content is awaiting a new header. Remove this message after new header is uploaded and used on this page.</p>
-	</blockquote>
-	<img class="ing-responsive" src="/documents/1084364/1594392/SC-Site-Header.jpg/" style="margin:0px; padding:0px;" width="100%" />
-	
+<style type="text/css">
+/* COMPONENTS */
+/* COMPONENTS: SC19 Banner */
+.sc19-banner {
+	padding-top: 100px;
+	padding-bottom: 45px;
+
+	background-image: url("/documents/1084364/1797126/sc19-banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #0e0520; /* match `#sc19` */
+}
+.sc19-banner > * {
+    max-width: 680px;
+	margin: 0 auto;
+	text-align: center;
+}
+.sc19-banner__header {
+	padding: 0; /* override `.sc19-banner__marquee:last-child` */
+}
+.sc19-banner__content {
+	height: 380px;
+}
+.sc19-banner__marquee {
+	margin-bottom: 45px;
+}
+.sc19-banner__marquee:last-child {
+	margin-bottom: 0;
+}
+
+/* COMPONENTS: SC19 CTA */
+.sc19-cta {
+	display: inline-block;
+
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.sc19-cta a {
+	color: #ffffff;
+}
+
+/* COMPONENTS: SC19 Logo List */
+.sc19-logo-list {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 490px;
+}
+
+/* COMPONENTS: SC19 Logo */
+.sc19-logo {
+	width: 100%;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* PAGE-SPECIFIC */
+#sc19-logo,
+#sc19-logo-nsf		{ height: 90px; }
+#sc19-logo-tacc,
+#sc19-logo-utaustin	{ height: 45px; }
+#sc19-logo {
+	background-image: url("/documents/1084364/1797126/sc19-logo.svg");
+}
+#sc19-logo-nsf {
+	background-image: url("/documents/1084364/1797126/sc19-logo-nsf.svg");
+}
+#sc19-logo-tacc {
+	background-image: url("/documents/1084364/1797126/sc19-logo-tacc.svg");
+}
+#sc19-logo-utaustin {
+	background-image: url("/documents/1084364/1797126/sc19-logo-utaustin.svg");
+}
+</style>
+<section id="#sc19-header" class="sc19-banner">
+	<!-- <img class="sc19-banner__bkgd img-responsive" src="/documents/1084364/1797126/SC19-banner.jpg" style="margin:0px; padding:0px;" width="100%" /> -->
+	<header id="sc19-logo" class="sc19-banner__header sc19-banner__marquee sc19-logo">
+		<h1 class="sr-only">
+			<abbr title="Super Computing 2019">SC19<abbr>
+		</h1>
+		<h2 class="sr-only">
+			<address>Denver, <abbr title="Colorado">CO</abbr></address>
+			<span><abbr title="High Performance Computing">HPC</abbr> is <strong>now</strong>.</span>
+		</h2>
+	</header>
+    <div class="sc19-banner__content sc19-banner__marquee embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MZJGgJmgtPU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<footer class="sc19-banner__footer">
+		<p class="sc19-cta sc19-banner__marquee"><strong><a href="https://sc19.supercomputing.org/organization/?inst=4981622864563449910" target="_blank">Learn more at Booth #3901</a></strong></p>
+		<ul class="sc19-logo-list sc19-banner__marquee">
+			<li id="sc19-logo-tacc" class="sc19-logo-list__item sc19-logo">
+				<dl class="sr-only"><dt>TACC</dt><dd>Texas Advanced Computing Center</dd></dl>
+			</li>
+			<li id="sc19-logo-nsf" class="sc19-logo-list__item sc19-logo">
+				<dl class="sr-only"><dt>NSF</dt><dd>National Science Foundation</dd></dl>
+			</li>
+			<li id="sc19-logo-utaustin" class="sc19-logo-list__item sc19-logo">
+				<dl class="sr-only"><dt>Texas</dt><dd>The University of Texas at Austin</dd></dl>
+			</li>
+		</ul>
+	</footer>
+</section>
