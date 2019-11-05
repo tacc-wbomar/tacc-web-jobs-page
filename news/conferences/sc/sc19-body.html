@@ -38,6 +38,15 @@
 .sc19-content--secondary .sc19-content__title     { font-size: 2em; }
 .sc19-content--secondary .sc19-content__sub-title { font-size: 1.5em; }
 
+/* COMPONENTS: SC19 Content-Pair */
+/* Used to force `#sc19-conf-events` and `#sc19-social_media` to have same height */
+.sc19-content-pair {
+    display: flex;
+}
+.sc19-content-pair__item {
+    height: 100%;
+}
+
 /* COMPONENTS: SC19 Event */
 .sc19-event + .sc19-event {
     margin-top: 20px;
@@ -314,9 +323,9 @@
 					<!--close booth-events-->
 				</div>
 			</section>
-			<div class="row">
+			<div class="row sc19-content-pair">
 				<div class="col-md-8">
-					<section class="sc19-content--secondary" id="sc19-conf-events">
+					<section class="sc19-content--secondary sc19-content-pair__item" id="sc19-conf-events">
 						<h1 class="sc19-content__title">SC19 TACC Participation</h1>
 						<!--open conf-events-->
 							<div>
@@ -598,14 +607,14 @@
 					</section>
 				</div>
 				<div class="col-md-4">
-					<section class="sc19-content--secondary" id="sc19-social_media">
+					<section class="sc19-content--secondary sc19-content-pair__item" id="sc19-social_media">
 						<!--open social-media-->
 						<h1 class="sc19-content__title">
 						    Connect with TACC</h1>
 						<article class="sc19-media">
 						    <h2 class="sc19-content__sub-title sc19-media__title">
 						        Twitter Feed</h2>
-						    <a class="twitter-timeline" href="https://twitter.com/TACC?ref_src=twsrc%5Etfw">Tweets by TACC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+						    <a class="twitter-timeline" href="https://twitter.com/TACC?ref_src=twsrc%5Etfw" data-tweet-limit="3">Tweets by TACC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 						</article>						<!--close social-media-->
 					</section>
 				</div>
