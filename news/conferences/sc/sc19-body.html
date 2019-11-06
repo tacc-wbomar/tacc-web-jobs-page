@@ -38,15 +38,6 @@
 .sc19-content--secondary .sc19-content__title     { font-size: 2em; }
 .sc19-content--secondary .sc19-content__sub-title { font-size: 1.5em; }
 
-/* COMPONENTS: SC19 Content-Pair */
-/* Used to force `#sc19-conf-events` and `#sc19-social_media` to have same height */
-.sc19-content-pair {
-    display: flex;
-}
-.sc19-content-pair__item {
-    height: 100%;
-}
-
 /* COMPONENTS: SC19 Event */
 .sc19-event + .sc19-event {
     margin-top: 20px;
@@ -241,9 +232,7 @@
 										</dd>
 									<dt>Time</dt>
 										<dd>
-											<time datetime="2019-11-19T10:00–06">10:00am</time>
-											<span>-</span>
-											<time datetime="2019-11-19T10:30–06">10:30am</time>
+											<time datetime="2019-11-19T10:00–06">10:00am</time><span>–</span><time datetime="2019-11-19T10:30–06">10:30am</time>
 										</dd>
 								</dl>
 								<!-- WARN: Titles may have characters prohibitted in `id` attribute -->
@@ -269,9 +258,7 @@
 										</dd>
 									<dt>Time</dt>
 										<dd>
-											<time datetime="2019-11-19T10:30–06">10:30am</time>
-											<span>-</span>
-											<time datetime="2019-11-19T11:00–06">11:00am</time>
+											<time datetime="2019-11-19T10:30–06">10:30am</time><span>–</span><time datetime="2019-11-19T11:00–06">11:00am</time>
 										</dd>
 								</dl>
 								<!-- WARN: Titles may have characters prohibitted in `id` attribute -->
@@ -297,9 +284,7 @@
 										</dd>
 									<dt>Time</dt>
 										<dd>
-											<time datetime="2019-11-19T14:00–06">2:00pm</time>
-											<span>-</span>
-											<time datetime="2019-11-19T14:30–06">2:30pm</time>
+											<time datetime="2019-11-19T14:00–06">2:00pm</time><span>–</span><time datetime="2019-11-19T14:30–06">2:30pm</time>
 										</dd>
 								</dl>
 								<!-- WARN: Titles may have characters prohibitted in `id` attribute -->
@@ -325,9 +310,7 @@
 										</dd>
 									<dt>Time</dt>
 										<dd>
-											<time datetime="2019-11-19T15:00–06">3:00pm</time>
-											<span>-</span>
-											<time datetime="2019-11-19T15:30–06">3:30pm</time>
+											<time datetime="2019-11-19T15:00–06">3:00pm</time><span>–</span><time datetime="2019-11-19T15:30–06">3:30pm</time>
 										</dd>
 								</dl>
 								<!-- WARN: Titles may have characters prohibitted in `id` attribute -->
@@ -359,9 +342,7 @@
 										</dd>
 									<dt>Time</dt>
 										<dd>
-											<time datetime="2019-11-20T10:30am–06">10:30am</time>
-											<span>-</span>
-											<time datetime="2019-11-20T11:00am–06">11:00am</time>
+											<time datetime="2019-11-20T10:30am–06">10:30am</time><span>–</span><time datetime="2019-11-20T11:00am–06">11:00am</time>
 										</dd>
 								</dl>
 								<!-- WARN: Titles may have characters prohibitted in `id` attribute -->
@@ -389,9 +370,7 @@
 										</dd>
 									<dt>Time</dt>
 										<dd>
-											<time datetime="2019-11-20T12:00–06">12:00pm</time>
-											<span>-</span>
-											<time datetime="2019-11-20T12:30–06">12:30pm</time>
+											<time datetime="2019-11-20T12:00–06">12:00pm</time><span>–</span><time datetime="2019-11-20T12:30–06">12:30pm</time>
 										</dd>
 								</dl>
 								<!-- WARN: Titles may have characters prohibitted in `id` attribute -->
@@ -417,9 +396,7 @@
 										</dd>
 									<dt>Time</dt>
 										<dd>
-											<time datetime="2019-11-20T14:00–06">2:00pm</time>
-											<span>-</span>
-											<time datetime="2019-11-20T14:30–06">2:30pm</time>
+											<time datetime="2019-11-20T14:00–06">2:00pm</time><span>–</span><time datetime="2019-11-20T14:30–06">2:30pm</time>
 										</dd>
 								</dl>
 								<!-- WARN: Titles may have characters prohibitted in `id` attribute -->
@@ -445,9 +422,7 @@
 										</dd>
 									<dt>Time</dt>
 										<dd>
-											<time datetime="2019-11-20T14:30–06">2:30pm</time>
-											<span>-</span>
-											<time datetime="2019-11-20T15:00–06">3:00pm</time>
+											<time datetime="2019-11-20T14:30–06">2:30pm</time><span>–</span><time datetime="2019-11-20T15:00–06">3:00pm</time>
 										</dd>
 								</dl>
 								<!-- WARN: Titles may have characters prohibitted in `id` attribute -->
@@ -462,9 +437,9 @@
 					<!--close booth-events-->
 				</div>
 			</section>
-			<div class="row sc19-content-pair">
+			<div class="row">
 				<div class="col-md-8">
-					<section class="sc19-content--secondary sc19-content-pair__item" id="sc19-conf-events">
+					<section class="sc19-content--secondary" id="sc19-conf-events">
 						<h1 class="sc19-content__title">SC19 TACC Participation</h1>
 						<!--open conf-events-->
 							<div>
@@ -485,9 +460,7 @@
 											</ul></dd>
 										<dt>Time</dt>
 											<dd>
-												<time datetime="2019-11-17T09:00–06">9:00am</time>
-												<span>-</span>
-												<time datetime="2019-11-17T09:05–06">9:05am</time>
+												<time datetime="2019-11-17T09:00–06">9:00am</time><span>–</span><time datetime="2019-11-17T09:05–06">9:05am</time>
 											</dd>
 									</dl>
 								</article>
@@ -503,9 +476,7 @@
 											</ul></dd>
 										<dt>Time</dt>
 											<dd>
-												<time datetime="2019-11-17T10:55–06">10:55am</time>
-												<span>-</span>
-												<time datetime="2019-11-17T11:20–06">11:20am</time>
+												<time datetime="2019-11-17T10:55–06">10:55am</time><span>–</span><time datetime="2019-11-17T11:20–06">11:20am</time>
 											</dd>
 									</dl>
 								</article>
@@ -523,9 +494,7 @@
 											</ul></dd>
 										<dt>Time</dt>
 											<dd>
-												<time datetime="2019-11-17T12:10–06">12:10pm</time>
-												<span>-</span>
-												<time datetime="2019-11-17T12:30–06">12:30pm</time>
+												<time datetime="2019-11-17T12:10–06">12:10pm</time><span>–</span><time datetime="2019-11-17T12:30–06">12:30pm</time>
 											</dd>
 									</dl>
 								</article>
@@ -542,9 +511,7 @@
 											</ul></dd>
 										<dt>Time</dt>
 											<dd>
-												<time datetime="2019-11-17T13:30pm–06">1:30pm</time>
-												<span>-</span>
-												<time datetime="2019-11-17T17:00–06">5:00pm</time>
+												<time datetime="2019-11-17T13:30pm–06">1:30pm</time><span>–</span><time datetime="2019-11-17T17:00–06">5:00pm</time>
 											</dd>
 									</dl>
 								</article>
@@ -567,9 +534,7 @@
 											</ul></dd>
 										<dt>Time</dt>
 											<dd>
-												<time datetime="2019-11-18T11:30–06">11:30am</time>
-												<span>-</span>
-												<time datetime="2019-11-18T12:00–06">12:00pm</time>
+												<time datetime="2019-11-18T11:30–06">11:30am</time><span>–</span><time datetime="2019-11-18T12:00–06">12:00pm</time>
 											</dd>
 									</dl>
 								</article>
@@ -585,9 +550,7 @@
 											</ul></dd>
 										<dt>Time</dt>
 											<dd>
-												<time datetime="2019-11-18T12:00–06">12:00pm</time>
-												<span>-</span>
-												<time datetime="2019-11-18T12:30–06">12:30pm</time>
+												<time datetime="2019-11-18T12:00–06">12:00pm</time><span>–</span><time datetime="2019-11-18T12:30–06">12:30pm</time>
 											</dd>
 									</dl>
 								</article>
@@ -606,9 +569,7 @@
 											<dd>John West</dd>
 										<dt>Time</dt>
 											<dd>
-												<time datetime="2019-11-19T12:15–06">12:15pm</time>
-												<span>-</span>
-												<time datetime="2019-11-19T13:15–06">1:15pm</time>
+												<time datetime="2019-11-19T12:15–06">12:15pm</time><span>–</span><time datetime="2019-11-19T13:15–06">1:15pm</time>
 											</dd>
 									</dl>
 								</article>
@@ -632,9 +593,7 @@
 											</ul></dd>
 										<dt>Time</dt>
 											<dd>
-												<time datetime="2019-11-20T12:15–06">12:15pm</time>
-												<span>-</span>
-												<time datetime="2019-11-20T13:15–06">1:15pm</time>
+												<time datetime="2019-11-20T12:15–06">12:15pm</time><span>–</span><time datetime="2019-11-20T13:15–06">1:15pm</time>
 											</dd>
 									</dl>
 								</article>
@@ -655,9 +614,7 @@
 											</ul></dd>
 										<dt>Time</dt>
 											<dd>
-												<time datetime="2019-11-20T12:15–06">12:15pm</time>
-												<span>-</span>
-												<time datetime="2019-11-20T13:15–06">1:15pm</time>
+												<time datetime="2019-11-20T12:15–06">12:15pm</time><span>–</span><time datetime="2019-11-20T13:15–06">1:15pm</time>
 											</dd>
 									</dl>
 								</article>
@@ -670,9 +627,7 @@
 											<dd>Melyssa Fratkin</dd>
 										<dt>Time</dt>
 											<dd>
-												<time datetime="2019-11-20T15:30–06">3:30pm</time>
-												<span>-</span>
-												<time datetime="2019-11-20T16:30–06">4:30pm</time>
+												<time datetime="2019-11-20T15:30–06">3:30pm</time><span>–</span><time datetime="2019-11-20T16:30–06">4:30pm</time>
 											</dd>
 									</dl>
 								</article>
@@ -697,9 +652,7 @@
 											</ul></dd>
 										<dt>Time</dt>
 											<dd>
-												<time datetime="2019-11-21T12:15–06">12:15pm</time>
-												<span>-</span>
-												<time datetime="2019-11-21T13:15–06">1:15pm</time>
+												<time datetime="2019-11-21T12:15–06">12:15pm</time><span>–</span><time datetime="2019-11-21T13:15–06">1:15pm</time>
 											</dd>
 									</dl>
 								</article>
@@ -723,9 +676,7 @@
 											</ul></dd>
 										<dt>Time</dt>
 											<dd>
-												<time datetime="2019-11-22T08:30–06">8:30am</time>
-												<span>-</span>
-												<time datetime="2019-11-22T12:00–06">12:00pm</time>
+												<time datetime="2019-11-22T08:30–06">8:30am</time><span>–</span><time datetime="2019-11-22T12:00–06">12:00pm</time>
 											</dd>
 									</dl>
 								</article>
@@ -734,7 +685,7 @@
 					</section>
 				</div>
 				<div class="col-md-4">
-					<section class="sc19-content--secondary sc19-content-pair__item" id="sc19-social_media">
+					<section class="sc19-content--secondary" id="sc19-social_media">
 						<!--open social-media-->
 						<h1 class="sc19-content__title">
 						    Connect with TACC</h1>
