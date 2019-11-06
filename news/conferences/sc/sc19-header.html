@@ -5,7 +5,7 @@
 	padding-top: 100px;
 	padding-bottom: 45px;
 
-	background-image: url("/documents/1084364/1797126/sc19-banner.jpg");
+	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-color: #0e0520; /* match `#sc19` */
@@ -82,9 +82,13 @@
 }
 
 /* COMPONENTS: SC19 Logo */
-/* .sc19-logo {} */
+/* .sc19-logo {} *//* Noop, but fully identified in markup */
 
 /* PAGE-SPECIFIC */
+/* NOTE: The __not__ page-specific styles __above__ should be global;
+         but, am not allowed to edit global styles, yet;
+         so, we need to artifically scope these styles */
+/* PAGE-SPECIFIC: Logos */
 #sc19-logo-sc19,
 #sc19-logo-nsf		{ height: 90px; }
 #sc19-logo-tacc,
@@ -94,9 +98,20 @@
 #sc19-logo-tacc,
 #sc19-logo-utaustin	{ height: 45px; }
 */
+
+/* PAGE-SPECIFIC: Banner */
+@media (-webkit-max-device-pixel-ratio: 1.9), (max-resolution: 191dpi) {
+	#sc19-banner {
+		background-image: url("/documents/1084364/1797126/sc19-banner.jpg");
+	}
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	#sc19-banner {
+		background-image: url("/documents/1084364/1797126/sc19-banner%402x.jpg");
+	}
+}
 </style>
-<section id="#sc19-header" class="sc19-banner">
-	<!-- <img class="sc19-banner__bkgd img-responsive" src="/documents/1084364/1797126/SC19-banner.jpg" style="margin:0px; padding:0px;" width="100%" /> -->
+<section id="sc19-banner" class="sc19-banner">
 	<header class="sc19-banner__header sc19-banner__marquee sc19-logo">
 		<figure class="sc19-logo">
 			<img id="sc19-logo-sc19" class="sc19-logo__image" src="/documents/1084364/1797126/sc19-logo.svg">
