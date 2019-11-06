@@ -27,80 +27,119 @@
 .sc19-banner__marquee:last-child {
 	margin-bottom: 0;
 }
+.sc19-banner__footer {
+	display: flex;
+	flex-direction: column;
+}
 
 /* COMPONENTS: SC19 CTA */
 .sc19-cta {
 	display: inline-block;
 
-	font-size: 30px;
-	font-weight: bold;
+	font-size: 40px;
+	/* TODO: Use whatever variable that `main.css` `h1` may be using */
+	font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", "Helvetica", sans-serif;
 	text-transform: uppercase;
+	letter-spacing: 0.025em;
 }
 .sc19-cta a {
 	color: #ffffff;
 }
 
 /* COMPONENTS: SC19 Logo List */
-.sc19-logo-list {
-	margin-left: auto;
-	margin-right: auto;
+.sc19-gallery {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	width: 490px;
+	margin-left: auto;
+	margin-right: auto;
+
+	list-style: none;
+}
+.sc19-gallery__item {
+	position: relative;
+
+	display: grid;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.sc19-gallery__item             { padding-left: 20px;  padding-right: 20px; }
+/* WARN: Ideally, child elements do not have modifiers (supports overly complex modules) */
+.sc19-gallery__item--focus      { padding-left: 40px;  padding-right: 40px; }
+.sc19-gallery__item:first-child { padding-left: 0; }
+.sc19-gallery__item:last-child  { padding-right: 0; }
+.sc19-gallery__item + .sc19-gallery__item::after {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 2px;
+	height: 74px;
+	margin-top: -37px;
+	top: 50%;
+
+	background-color: #d1b681;
 }
 
 /* COMPONENTS: SC19 Logo */
-.sc19-logo {
-	width: 100%;
-	background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
+/* .sc19-logo {} */
 
 /* PAGE-SPECIFIC */
-#sc19-logo,
+#sc19-logo-sc19,
 #sc19-logo-nsf		{ height: 90px; }
 #sc19-logo-tacc,
+#sc19-logo-utaustin	{ height: 30px; }
+/* TODO: Upload and use the taller logos (that have text) */
+/*
+#sc19-logo-tacc,
 #sc19-logo-utaustin	{ height: 45px; }
-#sc19-logo {
-	background-image: url("/documents/1084364/1797126/sc19-logo.svg");
-}
-#sc19-logo-nsf {
-	background-image: url("/documents/1084364/1797126/sc19-logo-nsf.svg");
-}
-#sc19-logo-tacc {
-	background-image: url("/documents/1084364/1797126/sc19-logo-tacc.svg");
-}
-#sc19-logo-utaustin {
-	background-image: url("/documents/1084364/1797126/sc19-logo-utaustin.svg");
-}
+*/
 </style>
 <section id="#sc19-header" class="sc19-banner">
 	<!-- <img class="sc19-banner__bkgd img-responsive" src="/documents/1084364/1797126/SC19-banner.jpg" style="margin:0px; padding:0px;" width="100%" /> -->
-	<header id="sc19-logo" class="sc19-banner__header sc19-banner__marquee sc19-logo">
-		<h1 class="sr-only">
-			<abbr title="Super Computing 2019">SC19<abbr>
-		</h1>
-		<h2 class="sr-only">
-			<address>Denver, <abbr title="Colorado">CO</abbr></address>
-			<span><abbr title="High Performance Computing">HPC</abbr> is <strong>now</strong>.</span>
-		</h2>
+	<header class="sc19-banner__header sc19-banner__marquee sc19-logo">
+		<figure class="sc19-logo">
+			<img id="sc19-logo-sc19" class="sc19-logo__image" src="/documents/1084364/1797126/sc19-logo.svg">
+			<figcaption class="sc19-logo__text sr-only">
+				<h1>
+					<abbr title="Super Computing 2019">SC19<abbr>
+				</h1>
+				<h2>
+					<address>Denver, <abbr title="Colorado">CO</abbr></address>
+					<span><abbr title="High Performance Computing">HPC</abbr> is <strong>now</strong>.</span>
+				</h2>
+			</figcaption>
+		</figure>
 	</header>
     <div class="sc19-banner__content sc19-banner__marquee embed-responsive embed-responsive-16by9">
 		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MZJGgJmgtPU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 	<footer class="sc19-banner__footer">
-		<p class="sc19-cta sc19-banner__marquee"><strong><a href="https://sc19.supercomputing.org/organization/?inst=4981622864563449910" target="_blank">Learn more at Booth #3901</a></strong></p>
-		<ul class="sc19-logo-list sc19-banner__marquee">
-			<li id="sc19-logo-tacc" class="sc19-logo-list__item sc19-logo">
-				<dl class="sr-only"><dt>TACC</dt><dd>Texas Advanced Computing Center</dd></dl>
+		<p class="sc19-cta sc19-banner__marquee"><a href="https://sc19.supercomputing.org/organization/?inst=4981622864563449910" target="_blank">Learn more at Booth #1353</a></p>
+		<ul class="sc19-gallery sc19-banner__marquee">
+			<li class="sc19-gallery__item">
+				<figure class="sc19-logo">
+					<img id="sc19-logo-tacc" class="sc19-logo__image" src="/documents/1084364/1797126/sc19-logo-tacc.svg" />
+					<figcaption class="sc19-logo__text sr-only">
+						<dl><dt>TACC</dt><dd>Texas Advanced Computing Center</dd></dl>
+					</figcaption>
+				</figure>
 			</li>
-			<li id="sc19-logo-nsf" class="sc19-logo-list__item sc19-logo">
-				<dl class="sr-only"><dt>NSF</dt><dd>National Science Foundation</dd></dl>
+			<li class="sc19-gallery__item sc19-gallery__item--focus">
+				<figure class="sc19-logo">
+					<img id="sc19-logo-nsf" class="sc19-logo__image" src="/documents/1084364/1797126/sc19-logo-nsf.svg" />
+					<figcaption class="sc19-logo__text sr-only">
+						<dl><dt>NSF</dt><dd>National Science Foundation</dd></dl>
+					</figcaption>
+				</figure>
 			</li>
-			<li id="sc19-logo-utaustin" class="sc19-logo-list__item sc19-logo">
-				<dl class="sr-only"><dt>Texas</dt><dd>The University of Texas at Austin</dd></dl>
+			<li class="sc19-gallery__item">
+				<figure class="sc19-logo">
+					<img id="sc19-logo-utaustin" class="sc19-logo__image" src="/documents/1084364/1797126/sc19-logo-utaustin.svg" />
+					<figcaption class="sc19-logo__text sr-only">
+						<dl><dt>Texas</dt><dd>The University of Texas at Austin</dd></dl>
+					</figcaption>
+				</figure>
 			</li>
 		</ul>
 	</footer>
