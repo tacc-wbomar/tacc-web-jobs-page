@@ -5,9 +5,9 @@
 	padding-top: 100px;
 	padding-bottom: 45px;
 
-	background-size: auto 100%;
+	background-size: auto 900px;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center top;
 	background-color: #0e0520; /* match `#sc19` */
 }
 .sc19-banner > * {
@@ -19,9 +19,6 @@
 .sc19-banner__header {
 	padding: 0; /* override `.sc19-banner__marquee:last-child` */
 }
-.sc19-banner__content {
-	height: 380px;
-}
 .sc19-banner__marquee {
 	margin-bottom: 45px;
 }
@@ -31,6 +28,7 @@
 .sc19-banner__footer {
 	display: flex;
 	flex-direction: column;
+	padding: 0 10px;
 }
 
 /* COMPONENTS: SC19 CTA */
@@ -65,21 +63,52 @@
 	align-items: center;
 	justify-content: center;
 }
-.sc19-gallery__item             { padding-left: 20px;  padding-right: 20px; }
-/* WARN: Ideally, child elements do not have modifiers (supports overly complex modules) */
-.sc19-gallery__item--focus      { padding-left: 40px;  padding-right: 40px; }
-.sc19-gallery__item:first-child { padding-left: 0; }
-.sc19-gallery__item:last-child  { padding-right: 0; }
 .sc19-gallery__item + .sc19-gallery__item::after {
 	position: absolute;
 	display: block;
 	content: "";
-	width: 2px;
-	height: 74px;
-	margin-top: -37px;
-	top: 50%;
 
 	background-color: #d1b681;
+}
+/* Small Screen - Vertical Logos */
+@media (max-width: 474px) {
+	.sc19-gallery {
+		flex-direction: column;
+	}
+	.sc19-gallery__item             { padding-top: 20px;  padding-bottom: 20px; }
+	/* WARN: Ideally, child elements do not have modifiers (supports overly complex modules) */
+	.sc19-gallery__item--focus      { padding-top: 40px;  padding-bottom: 40px; }
+	.sc19-gallery__item:first-child { padding-top: 0; }
+	.sc19-gallery__item:last-child  { padding-bottom: 0; }
+	/* RFE: Wes used `background-color` instead of `border`,
+	        only because it seems like less code. Ideas? */
+	.sc19-gallery__item + .sc19-gallery__item::after {
+		height: 2px;
+		width: 74px;
+		margin-left: -37px;
+		left: 50%;
+		top: 0;
+	}
+}
+/* Large Screen - Horizontal Logos */
+@media (min-width: 475px) {
+	.sc19-gallery {
+		flex-direction: row;
+	}
+	.sc19-gallery__item             { padding-left: 20px;  padding-right: 20px; }
+	/* WARN: Ideally, child elements do not have modifiers (supports overly complex modules) */
+	.sc19-gallery__item--focus      { padding-left: 40px;  padding-right: 40px; }
+	.sc19-gallery__item:first-child { padding-left: 0; }
+	.sc19-gallery__item:last-child  { padding-right: 0; }
+	/* RFE: Wes used `background-color` instead of `border`,
+	        only because it seems like less code. Ideas? */
+	.sc19-gallery__item + .sc19-gallery__item::after {
+		width: 2px;
+		height: 74px;
+		margin-top: -37px;
+		top: 50%;
+		left: 0;
+	}
 }
 
 /* COMPONENTS: SC19 Logo */
