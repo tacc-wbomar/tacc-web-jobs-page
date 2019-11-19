@@ -9,9 +9,9 @@ The content for this `README.md` is broken into two sections, "Web Content Histo
 _The "CMS" referenced in this document, as of 2019, is [Liferay Portal 6.1.20 CE][lr-version]._
 
 
-# TACC Website Content - Web Content History
+## Web Content History
 
-## Usage
+### Usage
 
 1. Find the repository file content matching the relevant CMS web content.\*
 2. Compare CMS web content to repository file(s) content.
@@ -26,19 +26,19 @@ _The "CMS" referenced in this document, as of 2019, is [Liferay Portal 6.1.20 CE
 
 \* The directory of the page (in [Control Panel "Pages"][cp-pages] hierarchy) on which the web content exists is the directory in which you should find the relevant repository file.
 
-## Creation
+### Creation
 
 See [`./content/README.md`](./content/README.md).
 
 
-# TACC Website Content - Markup Templating
+## Markup Templating
 
-## Requirements
+### Requirements
 
 - Node.js 12 or LTS (whichever version is later)
 - NPM Packages (see [`package.json`](./package.json)
 
-## Setup
+### Setup
 
 > **To Do**
 >
@@ -60,7 +60,7 @@ See [`./content/README.md`](./content/README.md).
     (run specific script)
     ```npm run …```
 
-## Usage
+### Usage
 
 1. Find/Create relevant utility as a child directory of `src/`.
 2. Update utility source files as necessary.
@@ -68,7 +68,7 @@ See [`./content/README.md`](./content/README.md).
 4. Test, save, commit, and push the final working content.
     - _I.e. follow "Web Content History" > "Usage" for built content._
 
-## Development
+### Development
 
 See [`./src/README.md`](./src/README.md).
 
