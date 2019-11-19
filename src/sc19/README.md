@@ -2,6 +2,10 @@
 
 This is a project to parse and combine templates into markup for the body of the Supercomputing 2019 standalone webpage.
 
+> **Warning**
+>
+> This project relies on a bash script tested on OS X. It may not work completely on Linux, Unix, or Windows.
+
 ## Usage
 
 > **To Do**
