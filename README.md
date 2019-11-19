@@ -22,8 +22,6 @@ _The "CMS" referenced in this document, as of 2019, is [Liferay Portal 6.1.20 CE
 6. Commit and push changes to repository file(s).
 7. Save final working content as CMS web content.
 
-<!-- Footnotes (newlines after each are required for formatting) -->
-
 \* The directory of the page (in [Control Panel "Pages"][cp-pages] hierarchy) on which the web content exists is the directory in which you should find the relevant repository file.
 
 ### Creation
@@ -76,7 +74,7 @@ See [`./content/README.md`](./content/README.md).
 
 See [`./src/README.md`](./src/README.md).
 
-<!-- References (recommended for all links) -->
+
 
 [lr-web-content]: https://portal.liferay.dev/docs/6-1/user/-/knowledge_base/u/web-content-management "Liferay Portal: Web Content Management"
 [lr-version]: https://liferay.dev/blogs/-/blogs/liferay-portal-6-1-ce-ga2-release "Liferay Portal Enterprise Edition 6.1.20 EE"

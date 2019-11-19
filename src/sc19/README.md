@@ -22,14 +22,12 @@ This is a project to parse and combine templates into markup for the body of the
 6. Save CMS web content into `sc19-body.html` file.
 7. Commit and push changes.
 
-<!-- Footnotes (newlines after each are required for formatting) -->
-
 \* This script has only been tested on OS X. It may work on Linux/Unix. It may fail on Windows. If this is a problem, await Node version of project.
 
 ## Known Conflicts
 
 There could be a discrepancy between the built repository file content and the CMS web content; read about [examples and explanations for known content conflicts].
 
-<!-- References (recommended for all links) -->
+
 
 [doc-conflicts]: ../../docs/content-conflicts.md "Known Content Conflicts"
