@@ -30,7 +30,7 @@ This is a project to parse and combine templates into markup for the body of the
 
 ## Known Conflicts
 
-There could be a discrepancy between the built repository file content and the CMS web content; read about [examples and explanations for known content conflicts].
+There could be a discrepancy between the built repository file content and the CMS web content; read about [known content conflicts][doc-conflicts].
 
 
 
