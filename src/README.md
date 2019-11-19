@@ -12,9 +12,14 @@ This directory has directories that are each a self-contained utility to produce
     - If you are unsure how to do this, then refer to other utilities.
 4. Each utility **must** produce final content at `[page]--[content].[ext]`‡.
 
-\* This allows consistent behavior and similar usage across Operating Systems.
-† This allows utility to be easily used indpendent of this repository._
-‡ Where `[page]` is the filename of the page for the web content, `[content]` is a lowercase description of the relevant web content and `[ext]` is likely `.html` (if use cases for other extensions arise, discuss with team).
+<!-- Footnotes (newlines after each are required for formatting) -->
 
+\* This allows consistent behavior and similar usage across Operating Systems.
+
+† This allows utility to be easily used indpendent of this repository._
+
+‡ Where `[page]` is the filename of the page for the web content, `[content]` is a lowercase description of the relevant web content, and `[ext]` is likely `.html` (if use cases for other extensions arise, then discuss with team).
+
+<!-- References (recommended for all links) -->
 
 [cp-pages]: https://www.tacc.utexas.edu/group/control_panel/manage?p_p_id=156&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&doAsGroupId=1084364 "Control Panel > Website > Pages > Public Pages"

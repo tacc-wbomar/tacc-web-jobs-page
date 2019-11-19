@@ -1,10 +1,8 @@
 # TACC Website Content
 
-This is a project to maintain revision history for web content and a collection of markup templating utilities for Liferay Portal [Web Content][lr-web-content] in the [TACC Website][cp-website], but that are independent of the Liferay Portal infrastructure.
+This is a project to maintain revision history for web content (see "Web Content History" section) and a collection of markup templating utilities (see "Markup Templating Utilities" section) for Liferay Portal [Web Content][lr-web-content] in the [TACC Website][cp-website], but that are independent of the Liferay Portal infrastructure.
 
-It was created Nov 2019 by [Wesley B.][user-wb] so that the CMD (Communication Media & Design) team would be able to more easily perform, track, and review changes to the website but not require Liferay development knowledge.
-
-The content for this `README.md` is broken into two sections, "Web Content History" and "Markup Templating".
+It was created Nov 2019 by [Wesley B.][user-wb] so that the CMD (Communication, Media & Design) team would be able to more easily perform, track, and review changes to the website but not require Liferay development knowledge.
 
 _The "CMS" referenced in this document, as of 2019, is [Liferay Portal 6.1.20 CE][lr-version]._
 
@@ -24,6 +22,8 @@ _The "CMS" referenced in this document, as of 2019, is [Liferay Portal 6.1.20 CE
 6. Commit and push changes to repository file(s).
 7. Save final working content as CMS web content.
 
+<!-- Footnotes (newlines after each are required for formatting) -->
+
 \* The directory of the page (in [Control Panel "Pages"][cp-pages] hierarchy) on which the web content exists is the directory in which you should find the relevant repository file.
 
 ### Creation
@@ -31,7 +31,7 @@ _The "CMS" referenced in this document, as of 2019, is [Liferay Portal 6.1.20 CE
 See [`./content/README.md`](./content/README.md).
 
 
-## Markup Templating
+## Markup Templating Utilities
 
 ### Requirements
 
@@ -46,18 +46,22 @@ See [`./content/README.md`](./content/README.md).
 
 1. Install packages:
 
-    (normal install)
+    - (normal install)
+
     ```npm install```
 
-    (clean then install)
+    - (clean then install)
+    
     ```npm ci```
 
 2. Run script:
 
-    (see available scripts)
+    - (see available scripts)
+    
     ```npm run```
 
-    (run specific script)
+    - (run specific script)
+    
     ```npm run …```
 
 ### Usage
@@ -72,7 +76,7 @@ See [`./content/README.md`](./content/README.md).
 
 See [`./src/README.md`](./src/README.md).
 
-
+<!-- References (recommended for all links) -->
 
 [lr-web-content]: https://portal.liferay.dev/docs/6-1/user/-/knowledge_base/u/web-content-management "Liferay Portal: Web Content Management"
 [lr-version]: https://liferay.dev/blogs/-/blogs/liferay-portal-6-1-ce-ga2-release "Liferay Portal Enterprise Edition 6.1.20 EE"
@@ -82,4 +86,4 @@ See [`./src/README.md`](./src/README.md).
 
 [doc-conflicts]: ./docs/content-conflicts.md "Example Content Conflicts"
 
-[user-wb]: mailto:wesleyb@tacc.utexas.edu "Wesley B. of Communications, Media & Design"
+[user-wb]: https://tacc.utexas.edu/about/directory/wesley-bomar "Wesley B. of Communications, Media & Design"
