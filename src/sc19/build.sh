@@ -8,14 +8,14 @@
 # NOTE: Partials do not load from inner directory `dist/`,
 #       so name them prefixed by underscore (should be ignored by `.gitignore`)
 # SEE: https://github.com/janl/mustache.js/issues/726
-mustache sc19/events.booth.json sc19/events.mustache sc19/_events.booth.mustache
-mustache sc19/events.conf.json sc19/events.mustache sc19/_events.conf.mustache
+mustache ./events.booth.json ./events.mustache ./_events.booth.mustache
+mustache ./events.conf.json ./events.mustache ./_events.conf.mustache
 mustache \
-    -p sc19/styles.mustache\
-    -p sc19/_events.booth.mustache\
-    -p sc19/_events.conf.mustache\
-    -p sc19/social-media.mustache\
-    sc19/events.booth.json sc19/body.mustache sc19-body.html
+    -p ./styles.mustache\
+    -p ./_events.booth.mustache\
+    -p ./_events.conf.mustache\
+    -p ./social-media.mustache\
+    ./events.booth.json ./body.mustache ../../content/news/conferences/sc/sc19-body.html
 
 # We should clean up (even though the temp files should be ignored)
-rm sc19/_events.*
+rm ./_events.*

@@ -20,27 +20,13 @@ No external dependencies required.
 1. Compare CMS web content to repository file(s) content.
     1. Replace repository file(s) content with web content.
     2. Compare differences by reviewing the `git diff` of the repository file(s).
-    3. Resolve unexpected conflicts (for help, see "Example Conflicts").
+    3. Resolve unexpected conflicts (for help, see [example conflicts][doc-conflicts]).
 2. Update repository file(s) content.
 3. Test repository file(s) content as CMS web content.
 4. Copy final working CMS web content to repository file(s).
 5. Commit changes to repository file(s).
 6. Push repository commit(s).
 7. Save final working content as CMS web content.
-
-## Example Conflicts
-
-There could be a discrepancy between the CMS web content and the repository file content; some examples and explanations are documented. _All faults described assume that the current dev has not made an immediate mistake._
-
-### Web Content Markup Moved HTML Tags
-
-Reason may be that CMS parses HTML as HTML4.
-
-### Web Content Markup has Different Formatting, But Same Markup
-
-- CMS changes HTML whitespace and attribute order.
-- The last developer to save the repo file did not save CMS-formatted markup.
-
 
 # TACC Website Content - Markup Templating
 
@@ -78,5 +64,7 @@ Directories in `src/` are inidividual utilities to create markup for website usi
 
 [lr-web-content]: https://portal.liferay.dev/docs/6-1/user/-/knowledge_base/u/web-content-management "Liferay Portal: Web Content Management"
 [lr-version]: https://liferay.dev/blogs/-/blogs/liferay-portal-6-1-ce-ga2-release "Liferay Portal Enterprise Edition 6.1.20 EE"
+
+[doc-conflicts]: ./docs/content-conflicts.md "Example Content Conflicts"
 
 [user-wb]: mailto:wesleyb@tacc.utexas.edu "Wesley B. of Communications, Media & Design"
