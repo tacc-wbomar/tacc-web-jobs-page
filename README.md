@@ -1,6 +1,6 @@
 # TACC Website Content
 
-This is a project to maintain revision history for web content and a collection of markup templating utilities for Liferay Portal [Web Content][lr-web-content] in the TACC Website, but that are independent of the Liferay Portal infrastructure.
+This is a project to maintain revision history for web content and a collection of markup templating utilities for Liferay Portal [Web Content][lr-web-content] in the [TACC Website][cp-website], but that are independent of the Liferay Portal infrastructure.
 
 It was created Nov 2019 by [Wesley B.][user-wb] so that the CMD (Communication Media & Design) team would be able to more easily perform, track, and review changes to the website but not require Liferay development knowledge.
 
@@ -78,6 +78,7 @@ See [`./src/README.md`](./src/README.md).
 [lr-version]: https://liferay.dev/blogs/-/blogs/liferay-portal-6-1-ce-ga2-release "Liferay Portal Enterprise Edition 6.1.20 EE"
 
 [cp-pages]: https://www.tacc.utexas.edu/group/control_panel/manage?p_p_id=156&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&doAsGroupId=1084364 "Control Panel > Website > Pages > Public Pages"
+[cp-website]: https://www.tacc.utexas.edu "TACC Public Website"
 
 [doc-conflicts]: ./docs/content-conflicts.md "Example Content Conflicts"
 
