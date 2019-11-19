@@ -1,0 +1,5 @@
+# Dynamically created directories
+node_modules/
+
+# Operating System files
+.DS_Store

@@ -1,0 +1,17 @@
+{
+  "name": "tacc-web-content",
+  "version": "1.0.0",
+  "description": "A collection of web content history and markup templating utilities for Liferay Portal web content in the TACC Website",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/taccaci/tacc-web-content.git"
+  },
+  "license": "UNLICENSED",
+  "homepage": "https://bitbucket.org/taccaci/tacc-web-content#readme"
+}
