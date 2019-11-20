@@ -13,9 +13,9 @@
   },
   "// scripts": {
     "preinstall": "npm run preinstall:sc19",
-    "preinstall:sc19": "cd src/sc19 && npm install",
+    "preinstall:sc19": "shx cd src/sc19 && npm install",
     "test": "npm run pretest:sc19",
-    "test:sc19": "cd src/sc19 && npm install"
+    "test:sc19": "shx cd src/sc19 && npm install"
   },
   "repository": {
     "type": "git",

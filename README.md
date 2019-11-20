@@ -24,7 +24,7 @@ _The "CMS" referenced in this document, as of 2019, is [Liferay Portal 6.1.20 CE
 
 \* The directory of the page (in [Control Panel "Pages"][cp-pages] hierarchy) on which the web content exists is the directory in which you should find the relevant repository file.
 
-### Creation
+### Add Files
 
 See [`./content/README.md`](./content/README.md).
 
@@ -34,33 +34,33 @@ See [`./content/README.md`](./content/README.md).
 ### Requirements
 
 - Node.js 12 or LTS (whichever version is later)
-- NPM Packages (see [`package.json`](./package.json)
+- all NPM Packages (see [`package.json`](./package.json))
 
 ### Setup
 
 > **To Do**
 >
-> Move this documentation to Confluence as a basic intro to a Node project.
+> Move this documentation (and expand with external references) to Confluence as a basic intro to a Node project.
 
 1. Install packages:
 
     - (normal install)
 
-    ```npm install```
+        ```npm install```
 
     - (clean then install)
     
-    ```npm ci```
+        ```npm ci```
 
 2. Run script:
 
     - (see available scripts)
     
-    ```npm run```
+        ```npm run```
 
     - (run specific script)
     
-    ```npm run …```
+        ```npm run …```
 
 ### Usage
 
