@@ -5,8 +5,17 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {},
+  "// devDependencies": {
+    "shx": "^0.3.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "// scripts": {
+    "preinstall": "npm run preinstall:sc19",
+    "preinstall:sc19": "cd src/sc19 && npm install",
+    "test": "npm run pretest:sc19",
+    "test:sc19": "cd src/sc19 && npm install"
   },
   "repository": {
     "type": "git",

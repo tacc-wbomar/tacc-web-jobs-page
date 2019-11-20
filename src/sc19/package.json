@@ -1,0 +1,13 @@
+{
+    "name": "tacc-web-content--sc19",
+    "version": "1.0.0",
+    "description": "A utility to create markup for SC19 page based on flatfile data",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "license": "UNLICENSED"
+  }
+  
