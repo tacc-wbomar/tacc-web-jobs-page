@@ -18,6 +18,10 @@ This directory has directories that are each a self-contained utility to produce
 
 ‡ Where `[page]` is the filename of the page for the web content, `[content]` is a lowercase description of the relevant web content, and `[ext]` is likely `.html` (if use cases for other extensions arise, then discuss with team).
 
+## Dependencies
+
+- If adding a new dependency, then use the flag `--save-dev` (compile time dependency) **or** `--save` (runtime dependency).
+
 
 
 [cp-pages]: https://www.tacc.utexas.edu/group/control_panel/manage?p_p_id=156&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&doAsGroupId=1084364 "Control Panel > Website > Pages > Public Pages"

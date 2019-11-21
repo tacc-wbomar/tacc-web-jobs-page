@@ -42,6 +42,16 @@ See [`./content/README.md`](./content/README.md).
 >
 > Move this documentation (and expand with external references) to Confluence as a basic intro to a Node project.
 
+> **Notice**
+>
+> To be effectual, the following commands:
+>
+> - **must** be run from this (`./`) directory
+> - **must** have been preceeded by the command `npm install`\* _at least once_
+> - (for Windows only) **must** ensure that `node.exe` is on the `PATH` system variable
+>
+> \* If `npm install` produces an error that mentions `cannot run in wd`, you are likely trying to run the command as root/sudo. If so, add the flag `--unsafe-perm`.
+
 1. Install packages:
 
     - (normal install)
