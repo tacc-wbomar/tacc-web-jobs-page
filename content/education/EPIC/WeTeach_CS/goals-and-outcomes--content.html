@@ -1,143 +1,143 @@
 <style id="style--weteachcs-content" type="text/css">
     /* TODO: Add this to global CSS */
-        /* FAQ: The global CSS styles this with a border bottom,
-                but neglects to remove browsers' dotted underline style
-                (has style: Firefox, Chrome…; no style: Safari…) */
-                abbr[title] { text-decoration: none; }
-        /* TODO: Use this scope instead of `style` tags */
-        /* WARN: Duplicated in:
-                 - `epic/weteachcs/about`
-                 - `epic/weteachcs/goals-and-outcomes`
-        */
-            /*
-            WeTeach CS - Content (would be a `s-` i.e. "Scope" namespace)
-    
-            Any stakeholder-provided content on a WeTeach page. Later,
-    
-            > **Extra Information**
-            >
-            > The WeTeach CS website receives enough edits (as of 2019-10/11) to merit candidacy for testing out changes to generic scope styling of stakeholder-provided content through scope styles.
-    
-            Markup:
-            <!--<div class="weteachcs-content">-->
-            <section class="weteachcs-content">
-                <h3>About</h3>
-                <div><pre>(introductory content or media)</pre></div>
-                <h4>What We Do to Things</h4>
-                <ul>
-                    <li>
-                        Improve things.</li>
-                    <li>
-                        Increase things.</li>
-                    <li>
-                        Better things.</li>
-                    <li>
-                        Strengthen things.</li>
-                </ul>
-                <h4>What We Do for People</h4>
-                <p>We teach them things.</p>
-            </section>
-            <!--</div>-->
-    
-            Style guide: components.weteachcs
+            /* FAQ: The global CSS styles this with a border bottom,
+                    but neglects to remove browsers' dotted underline style
+                    (has style: Firefox, Chrome…; no style: Safari…) */
+                    abbr[title] { text-decoration: none; }
+            /* TODO: Use this scope instead of `style` tags */
+            /* WARN: Duplicated in:
+                     - `epic/weteachcs/about`
+                     - `epic/weteachcs/goals-and-outcomes`
             */
-            .weteachcs-content h4 {
-                margin-top: 20px;
-            }</style>
+                /*
+                WeTeach CS - Content (would be a `s-` i.e. "Scope" namespace)
+    
+                Any stakeholder-provided content on a WeTeach page. Later,
+    
+                > **Extra Information**
+                >
+                > The WeTeach CS website receives enough edits (as of 2019-10/11) to merit candidacy for testing out changes to generic scope styling of stakeholder-provided content through scope styles.
+    
+                Markup:
+                <!--<div class="weteachcs-content">-->
+                <section class="weteachcs-content">
+                    <h3>About</h3>
+                    <div><pre>(introductory content or media)</pre></div>
+                    <h4>What We Do to Things</h4>
+                    <ul>
+                        <li>
+                            Improve things.</li>
+                        <li>
+                            Increase things.</li>
+                        <li>
+                            Better things.</li>
+                        <li>
+                            Strengthen things.</li>
+                    </ul>
+                    <h4>What We Do for People</h4>
+                    <p>We teach them things.</p>
+                </section>
+                <!--</div>-->
+    
+                Style guide: components.weteachcs
+                */
+                .weteachcs-content h4 {
+                    margin-top: 20px;
+                }</style>
     <style id="style--weteachcs-card" type="text/css">
     /* TODO: Use this component instead of `style` tags */
-        /* WARN: Duplicated in:
-                 - `epic/weteachcs`
-                 - `epic/weteachcs/goals-and-outcomes`
-        */
-            /*
-            WeTeach CS - Card
+            /* WARN: Duplicated in:
+                     - `epic/weteachcs`
+                     - `epic/weteachcs/goals-and-outcomes`
+            */
+                /*
+                WeTeach CS - Card
     
-            An independent piece of figure/text content that can be an item of a greater context.
+                An independent piece of figure/text content that can be an item of a greater context.
     
-            > The `weteachcs-card--highlight` style was previously manually added via inline styles: `background-color: #f1f1f1; margin: 30px 0px 20px 0px; padding:20px;`.
+                > The `weteachcs-card--highlight` style was previously manually added via inline styles: `background-color: #f1f1f1; margin: 30px 0px 20px 0px; padding:20px;`.
     
-            .weteachcs-card--highlight - This card is distinct from other cards so as to draw more attention.
-            .weteachcs-card--chart - This card shows a chart figure and a caption.
+                .weteachcs-card--highlight - This card is distinct from other cards so as to draw more attention.
+                .weteachcs-card--chart - This card shows a chart figure and a caption.
+    
+                Markup:
+                <article class="weteachcs-card weteachcs-card--{{modifier}}">
+                    <!-- FAQ: The media could also be the `__figure`, but do not apply media-specific CSS to the core component styles -->
+                    <div class="weteachcs-card__figure">
+                        <img class="weteachcs-card__media"  data-cke-saved-src="https://www.tacc.utexas.edu/tacc-new-theme/images/logo.svg" src="https://www.tacc.utexas.edu/tacc-new-theme/images/logo.svg" />
+                    </div>
+                    <div class="weteachcs-card__content">
+                        <h3 class="weteachcs-card__title">TACC</h3>
+                        <!-- FAQ: The `<time>` could also be the `__datetime`, but do not apply `<time>`-specific CSS to the core component styles -->
+                        <h5 class="weteachcs-card__datetime">
+                            <time datetime="2020-06-22">June 22, 2020</time>
+                        </h5>
+                        <p>The Texas Advanced Computing Center (TACC) designs and operates some of the world's most powerful computing resources. The center's mission is to enable discoveries that advance science and society through the application of advanced computing technologies.</p>
+                        <a class="weteachcs-card__cta"   data-cke-saved-href="https://www.tacc.utexas.edu/about/" href="https://www.tacc.utexas.edu/about/" target="_blank">Learn more about TACC.</a></div>
+                </article>
+    
+                Style guide: components.weteachcs.card
+                */
+                .weteachcs-card {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    margin-bottom: 20px;
+                }
+                .weteachcs-card + .weteachcs-card {
+                    margin-top: 30px;
+                }
+    
+                .weteachcs-card--highlight {
+                    padding: 20px;
+                    background-color: #f1f1f1;
+                    font-size: 16px;
+                }
+                .weteachcs-card--understate {
+                    padding: 20px;
+                    font-size: small;
+                }
+    
+                .weteachcs-card__title {
+                    margin-top: 0;
+                }
+    
+                .weteachcs-card--chart .weteachcs-card__media {
+                    /* Use a border style that exists on the page */
+                    /* SEE: .portlet-navigation .nav-menu > .layouts a */
+                    border: 1px solid #ddd;
+                }</style>
+    <style id="style--weteachcs-card" type="text/css">
+    /*
+            Article List
+    
+            A list of articles; it may be ordered or unordered.
+    
+            .weteachcs-card--ordered - Each article is decorated to show its order within the list.
     
             Markup:
-            <article class="weteachcs-card weteachcs-card--{{modifier}}">
-                <!-- FAQ: The media could also be the `__figure`, but do not apply media-specific CSS to the core component styles -->
-                <div class="weteachcs-card__figure">
-                    <img class="weteachcs-card__media"  data-cke-saved-src="https://www.tacc.utexas.edu/tacc-new-theme/images/logo.svg" src="https://www.tacc.utexas.edu/tacc-new-theme/images/logo.svg" />
-                </div>
-                <div class="weteachcs-card__content">
-                    <h3 class="weteachcs-card__title">TACC</h3>
-                    <!-- FAQ: The `<time>` could also be the `__datetime`, but do not apply `<time>`-specific CSS to the core component styles -->
-                    <h5 class="weteachcs-card__datetime">
-                        <time datetime="2020-06-22">June 22, 2020</time>
-                    </h5>
-                    <p>The Texas Advanced Computing Center (TACC) designs and operates some of the world's most powerful computing resources. The center's mission is to enable discoveries that advance science and society through the application of advanced computing technologies.</p>
-                    <a class="weteachcs-card__cta"   data-cke-saved-href="https://www.tacc.utexas.edu/about/" href="https://www.tacc.utexas.edu/about/" target="_blank">Learn more about TACC.</a></div>
-            </article>
+            <section class="article-list article-list--{{modifier}}">
+                <article class="article-list__item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna metus, pellentesque at ullamcorper ac, sagittis non lectus. Cras non diam magna. Donec dolor diam, gravida vel ultricies eget, efficitur nec odio. Integer sodales lectus nec porta pulvinar. Aenean malesuada a tortor sit amet dictum. Integer gravida scelerisque neque, quis fringilla leo. Pellentesque ullamcorper vestibulum risus, eu ullamcorper metus mattis imperdiet. Pellentesque aliquam lectus quam, eu vestibulum felis fringilla sed. Pellentesque egestas nunc vitae purus vehicula ullamcorper. Aliquam diam lacus, eleifend eget mollis quis, venenatis at metus. Nulla eget ligula vitae tortor pulvinar viverra.</p>
+                </article>
+            </section>
     
-            Style guide: components.weteachcs.card
+            Style guide: components.generic.article-list
             */
-            .weteachcs-card {
-                margin-left: 0px;
-                margin-right: 0px;
-                margin-bottom: 20px;
-            }
-            .weteachcs-card + .weteachcs-card {
-                margin-top: 30px;
-            }
+                .article-list--ordered {
+                    counter-reset: article;
+                }
+                .article-list--ordered .article-list__item {
+                    position: relative;
+                }
+                .article-list--ordered .article-list__item::before {
+                    counter-increment: article;
+                    content: counter(article) ".";
     
-            .weteachcs-card--highlight {
-                padding: 20px;
-                background-color: #f1f1f1;
-                font-size: 16px;
-            }
-            .weteachcs-card--understate {
-                padding: 20px;
-                font-size: small;
-            }
+                    opacity: 0.25;
     
-            .weteachcs-card__title {
-                margin-top: 0;
-            }
-    
-            .weteachcs-card--chart .weteachcs-card__media {
-                /* Use a border style that exists on the page */
-                /* SEE: .portlet-navigation .nav-menu > .layouts a */
-                border: 1px solid #ddd;
-            }</style>
-    <style id="style--weteachcs-card" type="text/css">
-        /*
-        Article List
-
-        A list of articles; it may be ordered or unordered.
-
-        .weteachcs-card--ordered - Each article is decorated to show its order within the list.
-
-        Markup:
-        <section class="article-list article-list--{{modifier}}">
-            <article class="article-list__item">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna metus, pellentesque at ullamcorper ac, sagittis non lectus. Cras non diam magna. Donec dolor diam, gravida vel ultricies eget, efficitur nec odio. Integer sodales lectus nec porta pulvinar. Aenean malesuada a tortor sit amet dictum. Integer gravida scelerisque neque, quis fringilla leo. Pellentesque ullamcorper vestibulum risus, eu ullamcorper metus mattis imperdiet. Pellentesque aliquam lectus quam, eu vestibulum felis fringilla sed. Pellentesque egestas nunc vitae purus vehicula ullamcorper. Aliquam diam lacus, eleifend eget mollis quis, venenatis at metus. Nulla eget ligula vitae tortor pulvinar viverra.</p>
-            </article>
-        </section>
-
-        Style guide: components.generic.article-list
-        */
-            .article-list--ordered {
-                counter-reset: article;
-            }
-            .article-list--ordered .article-list__item {
-                position: relative;
-            }
-            .article-list--ordered .article-list__item::before {
-                counter-increment: article;
-                content: counter(article) ".";
-
-                opacity: 0.25;
-
-                text-align: center;
-                font-size: xxx-large;
-            }</style>
+                    text-align: center;
+                    font-size: xxx-large;
+                }</style>
     <section class="weteachcs-content">
         <h3>
             Goals and Outcomes</h3>
@@ -207,7 +207,7 @@
                 </div>
             </article>
         </section>
-        <p class="weteachcs-card weteachcs-card--understate">
+        <!-- RT16651: Removed 2019-11-27 --><!--<p class="weteachcs-card weteachcs-card--understate">
             On December 15, 2017, The University of Texas at Austin announced that WeTeach_CS had received a $5 million grant from the Texas Education Agency (TEA) to provide professional development to computer science teachers around the state and to help increase the number of certified <abbr title="Computer Science">CS</abbr> teachers in Texas. Thirty-one WeTeach_CS Collaboratives were funded for 2018.</p>
         <h4>
             <abbr title="Computer Science">CS</abbr> Professional Development Outreach</h4>
@@ -216,6 +216,6 @@
         <h4>
             <abbr title="Computer Science">CS</abbr> Teacher Certification In Grades 8-12</h4>
         <p>
-            488 in-service teachers have completed <abbr title="Computer Science">CS</abbr> Certification with support from WeTeach_CS, since Summer 2014.</p>
+            488 in-service teachers have completed <abbr title="Computer Science">CS</abbr> Certification with support from WeTeach_CS, since Summer 2014.</p>-->
     </section>
     
