@@ -15,3 +15,8 @@
             (has style: Firefox, Chrome…; no style: Safari…) */
     abbr[title] { text-decoration: none; }
     ```
+
+## Content
+
+1. For EPIC pages, replace abbreviations for CS with the words computer science.
+1. For EPIC pages, use abbreviations and/or links for project/partner names.
