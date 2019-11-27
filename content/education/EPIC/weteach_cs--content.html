@@ -1,59 +1,72 @@
-<style type="text/css" id="style--weteachcs-card">
+<style id="style--weteachcs-card" type="text/css">
     /* TODO: Use this component instead of `style` tags */
-    /* WARN: Duplicated in:
-             - `epic/weteachcs`
-             - `epic/weteachcs/goals-and-outcomes`
-    */
-        /*
-        WeTeach CS - Card
-        
-        An independent piece of figure/text content that can be an item of a greater context.
-        
-        .weteachcs-card--highlight - This card is distinct from other cards so as to draw more attention.
-        
-        Markup:
-        <div class="weteachcs-card weteachcs-card--highlight" <!--style="background-color: #f1f1f1; margin: 30px 0px 20px 0px; padding:20px;"-->>
-            <!-- FAQ: The media could also be the `__figure`, but do not apply media-specific CSS to the core component styles -->
-            <div class="weteachcs-card__figure">
-                <img data-cke-saved-src="https://www.tacc.utexas.edu/tacc-new-theme/images/logo.svg" src="https://www.tacc.utexas.edu/tacc-new-theme/images/logo.svg" />
-            </div>
-            <div class="weteachcs-card__content">
-                <h3 class="weteachcs-card__title">TACC</h3>
-                <!-- FAQ: The `<time>` could also be the `__datetime`, but do not apply `<time>`-specific CSS to the core component styles -->
-                <h5 class="weteachcs-card__datetime">
-                    <time datetime="2020-06-22">June 22, 2020</time>
-                </h5>
-                <p>The Texas Advanced Computing Center (TACC) designs and operates some of the world's most powerful computing resources. The center's mission is to enable discoveries that advance science and society through the application of advanced computing technologies.</p>
-                <a class="weteachcs-card__cta"  data-cke-saved-href="https://www.tacc.utexas.edu/about/" href="https://www.tacc.utexas.edu/about/" target="_blank">Learn more about TACC.</a></div>
-        </div>
-        
-        Style guide: components.weteachcs.card
+        /* WARN: Duplicated in:
+                    - `epic/weteachcs`
+                    - `epic/weteachcs/goals-and-outcomes`
         */
-        .weteachcs-card {
-            margin-left: 0px;
-            margin-right: 0px;
-            margin-bottom: 20px;
-        }
-        .weteachcs-card + .weteachcs-card {
-            margin-top: 30px;
-        }
+            /*
+            WeTeach CS - Card
     
-        .weteachcs-card--highlight {
-            padding: 20px;
-            background-color: #f1f1f1;
-            font-size: 16px;
-        }
+            An independent piece of figure/text content that can be an item of a greater context.
     
-        .weteachcs-card__title {
-            margin-top: 0;
-        }</style>
+            > The `weteachcs-card--highlight` style was previously manually added via inline styles: `background-color: #f1f1f1; margin: 30px 0px 20px 0px; padding:20px;`.
+    
+            .weteachcs-card--highlight - This card is distinct from other cards so as to draw more attention.
+            .weteachcs-card--chart - This card shows a chart figure and a caption.
+    
+            Markup:
+            <article class="weteachcs-card weteachcs-card--{{modifier}}">
+                <!-- FAQ: The media could also be the `__figure`, but do not apply media-specific CSS to the core component styles -->
+                <div class="weteachcs-card__figure">
+                    <img class="weteachcs-card__media"  data-cke-saved-src="https://www.tacc.utexas.edu/tacc-new-theme/images/logo.svg" src="https://www.tacc.utexas.edu/tacc-new-theme/images/logo.svg" />
+                </div>
+                <div class="weteachcs-card__content">
+                    <h3 class="weteachcs-card__title">TACC</h3>
+                    <!-- FAQ: The `<time>` could also be the `__datetime`, but do not apply `<time>`-specific CSS to the core component styles -->
+                    <h5 class="weteachcs-card__datetime">
+                        <time datetime="2020-06-22">June 22, 2020</time>
+                    </h5>
+                    <p>The Texas Advanced Computing Center (TACC) designs and operates some of the world's most powerful computing resources. The center's mission is to enable discoveries that advance science and society through the application of advanced computing technologies.</p>
+                    <a class="weteachcs-card__cta"   data-cke-saved-href="https://www.tacc.utexas.edu/about/" href="https://www.tacc.utexas.edu/about/" target="_blank">Learn more about TACC.</a></div>
+            </article>
+    
+            Style guide: components.weteachcs.card
+            */
+            .weteachcs-card {
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+            .weteachcs-card + .weteachcs-card {
+                margin-top: 30px;
+            }
+    
+            .weteachcs-card--highlight {
+                padding: 20px;
+                background-color: #f1f1f1;
+                font-size: 16px;
+            }
+            .weteachcs-card--understate {
+                padding: 20px;
+                font-size: small;
+            }
+    
+            .weteachcs-card__title {
+                margin-top: 0;
+            }
+    
+            .weteachcs-card--chart .weteachcs-card__media {
+                /* Use a border style that exists on the page */
+                /* SEE: .portlet-navigation .nav-menu > .layouts a */
+                border: 1px solid #ddd;
+            }</style>
     <div class="weteachcs-card weteachcs-card--highlight"><div class="row">
         <!--<div class="row" style="background-color: #f1f1f1; margin: 0px 0px 20px 0px; padding:20px;">-->
         <div class="col-sm-3 weteachcs-card__figure">
-            <img class="img-responsive" src="/documents/1084364/1750990/wtcs-Lightbulb-5color.png/" style="margin:4px 0px 0px 0px; padding:0px;" /></div>
+            <img class="img-responsive" src="/documents/1084364/1750990/wtcs-Lightbulb-5color.png/" /></div>
         <div class="col-sm-9 weteachcs-card__content">
             <p>
-                WeTeach_CS educates, empowers, and inspires K-12 CS teachers, administrators, professional development providers, and university instructors to realize the vision of CS for ALL. The Expanding Pathways in Computing (EPIC) group at The University of Texas at Austin's Texas Advanced Computing Center (TACC) serves as the backbone organization for the WeTeach_CS collective impact network which serves hundreds of districts, schools, and educators in Texas and across the nation. WeTeach_CS is dedicated to broadening participation in computing for every student regardless of race, gender, income, or location and leverages the TACC's internationally recognized computing expertise to guide strategic improvement in computing education at a state and national level.</p>
+                WeTeach_CS educates, empowers, and inspires K-12 CS teachers, administrators, professional development providers, and university instructors to realize the vision of <strong>computer science for <em>all</em></strong>. The Expanding Pathways in Computing (EPIC) group at The University of Texas at Austin's Texas Advanced Computing Center (TACC) serves as the backbone organization for the WeTeach_CS collective impact network which serves hundreds of districts, schools, and educators in Texas and across the nation. WeTeach_CS is dedicated to broadening participation in computing for every student regardless of race, gender, income, or location and leverages the TACC's internationally recognized computing expertise to guide strategic improvement in computing education at a state and national level.</p>
         </div>
     </div></div>
     <div class="weteachcs-card"><div class="row">
@@ -66,7 +79,7 @@
             <h3>
                 Goals and Outcomes</h3>
             <p>
-                WeTeach_CS educates, empowers, and inspires K-12 CS teachers, administrators, professional development providers, and university instructors to realize the vision of CSforALL.</p>
+                WeTeach_CS educates, empowers, and inspires K-12 CS teachers, administrators, professional development providers, and university instructors to realize the vision of <strong>computer science for <em>all</em></strong>.</p>
             <p>
                 <em><a href="/web/website/weteachcs/goals-and-outcomes">Learn more<span class="sr-only"> about WeTeach_CS goals and outcomes</span></a></em></p>
         </div>
@@ -101,7 +114,7 @@
             <time datetime="2020-06-24">
                 24, 2020</time>
             <p>
-                The WeTeach_CS Summit is a 3-day event which educates, empowers, and inspires K-12 CS teachers, advocates, administrators, professional development providers, university instructors, and policy-makers to advance the goal of CS for all in Texas and beyond.</p>
+                The WeTeach_CS Summit is a 3-day event which educates, empowers, and inspires K-12 CS teachers, advocates, administrators, professional development providers, university instructors, and policy-makers to advance the goal of computer science <em>for all</em> in Texas and beyond.</p>
             <p>
                 <strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSck4-4dL0r9ek9qK1IuCL8wRq1dar1o1qt81V_9x3k6nJJhbQ/viewform" title="Online form to propose presentation at WeTeach_CS Summit 2020">Call for proposals now open<span class="sr-only">, submit a WeTeach_CS Summit Presentation Proposal Form</span>.</a></strong></p>
             <p>
