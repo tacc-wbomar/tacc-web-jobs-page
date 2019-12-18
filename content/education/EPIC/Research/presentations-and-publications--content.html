@@ -1,0 +1,266 @@
+<style id="style--home-boxes" type="text/css">
+    /* FAQ: These styles existed before Wesley B. editted EPIC pages in 2019.
+            He has editted the styles slightly to remain aesthetically "okay"
+            with the newly-added epic/weteachs styles. These styles will remain
+            until RT16653 changes the layout from cards to a table. */
+    .home-boxes {
+        background-color: #f1f1f1;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .home-boxes + .home-boxes {
+        margin-top: 30px;
+    }
+    .home-boxes h4 {
+        margin-top: 0 !important; /* overwrite `.weteachcs-content h4` */
+    }</style>
+    <style id="style--weteachcs-content" type="text/css">
+    /* TODO: Use this scope instead of `style` tags */
+            /* WARN: Duplicated in:
+                        - `epic/research/presentations-and-publications`
+                        - `epic/weteachcs/about`
+                        - `epic/weteachcs/goals-and-outcomes`
+            */
+                /*
+                WeTeach CS - Content (would be a `s-` i.e. "Scope" namespace)
+    
+                Any stakeholder-provided content on a WeTeach page. Later,
+    
+                > **Extra Information**
+                >
+                > The WeTeach CS website receives enough edits (as of 2019-10/11) to merit candidacy for testing out changes to generic scope styling of stakeholder-provided content through scope styles.
+    
+                Markup:
+                <!--<div class="weteachcs-content">-->
+                <section class="weteachcs-content">
+                    <h3>About</h3>
+                    <div><pre>(introductory content or media)</pre></div>
+                    <h4>What We Do to Things</h4>
+                    <ul>
+                        <li>
+                            Improve things.</li>
+                        <li>
+                            Increase things.</li>
+                        <li>
+                            Better things.</li>
+                        <li>
+                            Strengthen things.</li>
+                    </ul>
+                    <h4>What We Do for People</h4>
+                    <p>We teach them things.</p>
+                </section>
+                <!--</div>-->
+    
+                Style guide: components.weteachcs
+                */
+                .weteachcs-content h4 {
+                    margin-top: 20px;
+                }</style>
+    <style id="style--weteachcs-card" type="text/css">
+    /* TODO: Use this component instead of `style` tags */
+                    /* WARN: Duplicated in:
+                             - `epic/research/presentations-and-publications`
+                             - `epic/weteachcs`
+                             - `epic/weteachcs/goals-and-outcomes`
+                    */
+                        /*
+                        WeTeach CS - Card
+    
+                        An independent piece of figure/text content that can be an item of a greater context.
+    
+                        > The `weteachcs-card--highlight` style was previously manually added via inline styles: `background-color: #f1f1f1; margin: 30px 0px 20px 0px; padding:20px;`.
+    
+                        .weteachcs-card--highlight - This card is distinct from other cards so as to draw more attention (can be combined with `weteachcs-card--understate`).
+                        .weteachcs-card--understate - This card is distinct form other cards so as to draw less attention (can be combined with `weteachcs-card--highlight`).
+                        .weteachcs-card--chart - This card shows a chart figure and a caption.
+    
+                        Markup:
+                        <article class="weteachcs-card weteachcs-card--{{modifier}}">
+                            <!-- FAQ: The media could also be the `__figure`, but do not apply media-specific CSS to the core component styles -->
+                            <div class="weteachcs-card__figure">
+                                <img class="weteachcs-card__media"  data-cke-saved-src="https://www.tacc.utexas.edu/tacc-new-theme/images/logo.svg" src="https://www.tacc.utexas.edu/tacc-new-theme/images/logo.svg" />
+                            </div>
+                            <div class="weteachcs-card__content">
+                                <h3 class="weteachcs-card__title">TACC</h3>
+                                <!-- FAQ: The `<time>` could also be the `__datetime`, but do not apply `<time>`-specific CSS to the core component styles -->
+                                <h5 class="weteachcs-card__datetime">
+                                    <time datetime="2020-06-22">June 22, 2020</time>
+                                </h5>
+                                <p>The Texas Advanced Computing Center (TACC) designs and operates some of the world's most powerful computing resources. The center's mission is to enable discoveries that advance science and society through the application of advanced computing technologies.</p>
+                                <a class="weteachcs-card__cta"   data-cke-saved-href="https://www.tacc.utexas.edu/about/" href="https://www.tacc.utexas.edu/about/" target="_blank">Learn more about TACC.</a></div>
+                        </article>
+    
+                        Style guide: components.weteachcs.card
+                        */
+                        .weteachcs-card {
+                            margin-left: 0px;
+                            margin-right: 0px;
+                            margin-bottom: 20px;
+                        }
+                        .weteachcs-card + .weteachcs-card {
+                            margin-top: 30px;
+                        }
+    
+                        .weteachcs-card--highlight {
+                            padding: 20px;
+                            background-color: #f1f1f1;
+                            font-size: 16px;
+                        }
+                        /* FAQ: Remove the default bottom margin of the last
+                                `p` within a `weteachcs-card--highlight`,
+                                so space around card content is equal. */
+                        .weteachcs-card--highlight *:last-child {
+                            margin-bottom: 0;
+                        }
+                        .weteachcs-card--understate {
+                            padding: 20px;
+                            font-size: small;
+                        }
+    
+                        .weteachcs-card__title {
+                            margin-top: 0;
+                        }
+    
+                        .weteachcs-card--chart .weteachcs-card__media {
+                            /* Use a border style that exists on the page */
+                            /* SEE: .portlet-navigation .nav-menu > .layouts a */
+                            border: 1px solid #ddd;
+                        }</style>
+    <section class="weteachcs-content">
+        <h3>
+            Presentations and Publications</h3>
+        <article class="weteachcs-card weteachcs-card--highlight">
+            <p class="weteachcs-card__content">
+                More presentations can be found on the <a href="https://www.slideshare.net/weteachcs" target="_blank">WeTeach_CS Slideshare</a> page.</p>
+        </article>
+        <!-- RT16653: Removed 2019-12-07 --><!--<img alt="Preparing Texas Students for the Cyber Economy" class="weteachcs-card__media img-responsive" src="/documents/1084364/1750990/presentations-pdf-thumbnail.png" style="margin-top:20px;" />-->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="home-boxes">
+                    <h4>
+                        <b><a href="https://utexas.box.com/shared/static/1tr5yp2iy1bqz91laq1ck2dd26ys3jht" target="_blank">Streamlining Evaluation "Steal This" Session</a></b></h4>
+                    <p>
+                        <b>Lisa Garbrecht, Ph.D., UT STEM Center<br />
+                        March 2019<br />
+                        100Kin10 Summit – San Diego, CA</b></p>
+                    <b><strong><a href="https://utexas.box.com/shared/static/1tr5yp2iy1bqz91laq1ck2dd26ys3jht" target="_blank">Download</a></strong> </b></div>
+                <div class="home-boxes">
+                    <h4>
+                        <b><a href="https://www.slideshare.net/weteachcs/weteachcs-and-you-can-too-128338395" target="_blank">WeTeach_CS and You Can Too!</a></b></h4>
+                    <p>
+                        <b>Carol Fletcher, Ph.D., WeTeach_CS<br />
+                        January 2019<br />
+                        Texas STEM Conference - San Antonio, TX</b></p>
+                    <b><strong><a href="https://www.slideshare.net/weteachcs/weteachcs-and-you-can-too-128338395" target="_blank">View/Download</a> </strong> </b></div>
+                <div class="home-boxes">
+                    <h4>
+                        <b><a href="https://www.slideshare.net/weteachcs/wtcs-for-hs-texas-stem-conference-jan-2019" target="_blank">WeTeach_CS for HS</a></b></h4>
+                    <p>
+                        <b>John Owen, WeTeach_CS<br />
+                        January 2019<br />
+                        Texas STEM Conference - San Antonio, TX</b></p>
+                    <b><strong><a href="https://www.slideshare.net/weteachcs/wtcs-for-hs-texas-stem-conference-jan-2019" target="_blank">View/Download</a> </strong> </b></div>
+                <div class="home-boxes">
+                    <h4>
+                        <b><a href="https://www.slideshare.net/weteachcs/c3-coding-clubs-and-camps-texas-stem-conference-jan-2019" target="_blank">C3: Coding Clubs and Camps</a></b></h4>
+                    <p>
+                        <b>Debi Pfitzenmaier, Youth Code Jam<br />
+                        January 2019<br />
+                        Texas STEM Conference - San Antonio, TX</b></p>
+                    <b><strong><a href="https://www.slideshare.net/weteachcs/c3-coding-clubs-and-camps-texas-stem-conference-jan-2019" target="_blank">View/Download</a></strong> </b></div>
+                <div class="home-boxes">
+                    <h4>
+                        <b><a href="https://utexas.box.com/s/s4ayf8lflvg0uiqr62svxyd8q3d4kg7p" target="_blank">El Paso CS Policy &amp; Code</a></b></h4>
+                    <p>
+                        <b>Carol Fletcher, Ph.D., UT STEM Center<br />
+                        September 5, 2018<br />
+                        TEALS El Paso Administrator and Counselor Computer Science Workshop</b></p>
+                    <b><strong><a href="https://utexas.box.com/s/s4ayf8lflvg0uiqr62svxyd8q3d4kg7p" target="_blank">View/Download</a> </strong> </b></div>
+                <div class="home-boxes">
+                    <h4>
+                        <b><a href="https://utexas.box.com/s/s4ayf8lflvg0uiqr62svxyd8q3d4kg7p" target="_blank">WeTeach_ CS and You Can Too!</a></b></h4>
+                    <p>
+                        <b>Carol Fletcher, Ph.D., UT STEM Center<br />
+                        July 2019<br />
+                        Lone Star STEM Grantee Webinar</b></p>
+                    <b><strong><a href="https://utexas.box.com/s/gvr3vwpkbgsubmi6jud47wm6lk4w5yih" target="_blank">View/Download</a> </strong> </b></div>
+                <div class="home-boxes">
+                    <h4>
+                        <b><a href="https://utexas.box.com/s/s4ayf8lflvg0uiqr62svxyd8q3d4kg7p" target="_blank">Increasing Capacity for CS Education in Rural Areas</a></b></h4>
+                    <p>
+                        <b>Jayce R. Warner, Ph.D., Carol L. Fletcher, Ph.D., Ryan Torbey, Lisa S. Garbrecht Ph.D.<br />
+                        September 5, 2018<br />
+                        SIGCSE 2019</b></p>
+                    <b><strong><a href="https://utexas.box.com/s/p60sw6pympx2cdzakfc35vdlrx208zhi" target="_blank">View/Download</a> </strong> </b></div>
+            </div>
+            <div class="col-sm-6">
+                <div class="home-boxes">
+                    <h4>
+                        <b><a href="https://utexas.box.com/s/irr1jymzazpbxo3b4b7dgf1oe647t0wc" target="_blank">Implementing the Tri-Agency Report &amp; Preparing All Students for 60×30 TX</a></b></h4>
+                    <p>
+                        <b>Carol Fletcher, Ph.D., UT STEM Center<br />
+                        October 2017<br />
+                        TASA/TASB Conference – Dallas, TX</b></p>
+                    <b><strong><a href="https://utexas.box.com/s/irr1jymzazpbxo3b4b7dgf1oe647t0wc" target="_blank">View/Download</a></strong> </b></div>
+                <div class="home-boxes" style="margin-top: 20px;">
+                    <h4>
+                        <b><a href="https://utexas.box.com/s/2uvlodqv9dln5okaes6uqvm5jqryomlm" target="_blank">Texas K-12 Computer Science Education Policy</a></b></h4>
+                    <p>
+                        <b>Carol Fletcher, Ph.D., UT STEM Center<br />
+                        July 25, 2018</b></p>
+                    <b><strong><a href="https://utexas.box.com/s/2uvlodqv9dln5okaes6uqvm5jqryomlm" target="_blank">View/Download</a> </strong> </b></div>
+                <div class="home-boxes">
+                    <h4>
+                        <b><a href="https://utexas.box.com/s/8f5goszirqvgh6lkucy1tu1nqf8tspow" target="_blank">WeTeach_CS: What's Next?</a></b></h4>
+                    <p>
+                        <b>Carol Fletcher, Ph.D., UT STEM Center<br />
+                        June 18-20, 2018<br />
+                        2018 WeTeach_CS Summit</b></p>
+                    <b><strong><a href="https://utexas.box.com/s/8f5goszirqvgh6lkucy1tu1nqf8tspow" target="_blank">View/Download</a> </strong> </b></div>
+                <div class="home-boxes">
+                    <h4>
+                        <b><a href="https://utexas.box.com/s/tc40g915bbkp4efniteig0oj456898zl" target="_blank">Education in the Innovation Age: Meeting the K-12 CS Challenge</a></b></h4>
+                    <p>
+                        <b>Carol Fletcher, Ph.D., UT STEM Center<br />
+                        June 18-20, 2018<br />
+                        2018 WeTeach_CS Summit</b></p>
+                    <b><strong><a href="https://utexas.box.com/s/tc40g915bbkp4efniteig0oj456898zl" target="_blank">View/Download</a> </strong> </b></div>
+                <div class="home-boxes">
+                    <h4>
+                        <b><a href="https://utexas.box.com/s/5anm6cez1z96vxb4ie0extuscb8xjj6f" target="_blank">WeTeach_CS Support for AP CSA and CSP</a></b></h4>
+                    <p>
+                        <b>Carol Fletcher, Ph.D., UT STEM Center<br />
+                        John Owen, UT STEM Center<br />
+                        February 7, 2018<br />
+                        TCEA 2018 – Austin, TX</b></p>
+                    <b><strong><a href="https://utexas.box.com/s/5anm6cez1z96vxb4ie0extuscb8xjj6f" target="_blank">View/Download</a> </strong> </b></div>
+                <div class="home-boxes">
+                    <h4>
+                        <b><a href="https://utexas.box.com/s/v24u6tamrwvcf78vrtturveffmilgcje" target="_blank">Building a K-12 CS Pipeline</a></b></h4>
+                    <p>
+                        <b>Carol Fletcher, Ph.D., UT STEM Center<br />
+                        February 6, 2018<br />
+                        TCEA 2018 – Austin, TX</b></p>
+                    <b><strong><a href="https://utexas.box.com/s/v24u6tamrwvcf78vrtturveffmilgcje" target="_blank">View/Download</a></strong> </b></div>
+                <div class="home-boxes">
+                    <h4>
+                        <b><a href="https://utexas.box.com/s/chw66f2ne9krak0s83fiw1sh0quutdry" target="_blank">CS Education in Texas ISDs: Partnerships for Success</a></b></h4>
+                    <p>
+                        <b>Carol Fletcher, Ph.D., UT STEM Center<br />
+                        Pauline Dow, Ph.D., Deputy Superintendent, San Antonio ISD<br />
+                        October, 2017<br />
+                        TASA/TASB Conference – Dallas, TX</b></p>
+                    <b><strong><a href="https://utexas.box.com/s/chw66f2ne9krak0s83fiw1sh0quutdry" target="_blank">Download</a> </strong> </b></div>
+                <div class="home-boxes">
+                    <h4>
+                        <b><a href="https://utexas.box.com/s/chw66f2ne9krak0s83fiw1sh0quutdry" target="_blank">Methods for Measuring Inequities in CS Education</a></b></h4>
+                    <p>
+                        <b>Jayce R. Warner, Ph.D., Carol L. Fletcher, Ph.D., Lisa S. Garbrecht, Ph.D. 2019<br />
+                        2019<br />
+                        TASA/TASB Conference – Dallas, TX</b></p>
+                    <b><strong><a href="https://utexas.box.com/s/llovod6afe7ucuwzlrvf1bgbfdnayfgb" target="_blank">Download</a> </strong> </b></div>
+            </div>
+        </div>
+    </section>
+    
