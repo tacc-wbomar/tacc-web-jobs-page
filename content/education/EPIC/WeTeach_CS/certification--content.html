@@ -1,6 +1,12 @@
 <style id="style--dfn" type="text/css">
 /* TODO: Add this to global CSS */
 dfn { font-style: normal; }</style>
+<style id="style--abbr-title" type="text/css">
+/* TODO: Add this to global CSS */
+/* FAQ: The global CSS styles this with a border bottom,
+        but neglects to remove browsers' dotted underline style
+        (has style: Firefox, Chrome…; no style: Safari…) */
+        abbr[title] { text-decoration: none; }</style>
 <style id="style--weteachcs-content" type="text/css">
 /* TODO: Use this scope instead of `style` tags */
 /* WARN: Duplicated in:
@@ -47,6 +53,10 @@ Style guide: components.weteachcs
 }
 .weteachcs-content dt {
 	display: list-item;
+}
+.weteachcs-content dt small {
+	font-weight: normal;
+	font-size: 100%;
 }</style>
 <style id="style--weteachcs-card" type="text/css">
 /* TODO: Use this component instead of `style` tags */
@@ -169,21 +179,21 @@ Style guide: components.weteachcs.cta
 	<h4>
 		Learn About CS Certification</h4>
 	<p>
-		Please visit Pearson's website for details and registration: <a href="http://www.tx.nesinc.com" target="_blank">http://www.tx.nesinc.com</a></p>
+		Please visit <abbr title="Pearson Education, Inc.">Pearson</abbr>'s website for details and registration: <a href="http://www.tx.nesinc.com" target="_blank">http://www.tx.nesinc.com</a></p>
 	<p>
 		Passing the Texas Education Agency's (TEA) Computer Science 8-12 Certification Test, Test Code 241 (CS 8-12 Test) is required to teach the following high school programming-based courses: Fundamentals of CS (can also be taught in Middle School), CS I, CS II and CS III. See the <a href="http://ritter.tea.state.tx.us/rules/tac/chapter126/ch126c.html" target="_blank">TEA's CS course detail</a> for more information on each course. This test is also recommended to teach the two Advanced Placement (AP) Computer Science courses: <a href="http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/231724.html" target="_blank">AP Computer Science Principles</a> and <a href="http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/4483.html" target="_blank">AP Computer Science A</a>. Please note that while some resources are free, there are also approximately $180 in TEA registration and application fees for the test and certification. WeTeach_CS provides a limited number of $1000 stipends for teachers who become CS certified. It is essential that you apply for the CIP program before registering for the test to verify availability. The Register and Take Test section provides details.</p>
 	<p>
 		The CS 8-12 Test 241 covers four domains. (Scoring weight indicated below.)</p>
-	<ul>
-		<li>
-			<b>Domain I – Technology Applications Core</b> (12.5%) – Understand how to use applications, data, networks, and the Internet to complete simple tasks and large projects.</li>
-		<li>
-			<b>Domain II – Program Design and Development</b> (35%) – Understand how to design and plan coding efforts.</li>
-		<li>
-			<b>Domain III – Programming Language Topics</b> (40%) – Write code using data, data types, arrays, loops, control structures, and data structures.</li>
-		<li>
-			<b>Domain IV – Specialized Topics</b> (12.5%) – This section covers advanced topics such as robotics, digital forensics, discrete math, and game design.</li>
-	</ul>
+	<dl>
+		<dt>Domain I – Technology Applications Core <small>(12.5%)</small></dt>
+			<dd>Understand how to use applications, data, networks, and the Internet to complete simple tasks and large projects.</dd>
+		<dt>Domain II – Program Design and Development <small>(35%)</small></dt>
+			<dd>Understand how to design and plan coding efforts.</dd>
+		<dt>Domain III – Programming Language Topics <small>(40%)</small></dt>
+			<dd>Write code using data, data types, arrays, loops, control structures, and data structures.</dd>
+		<dt>Domain IV – Specialized Topics <small>(12.5%)</small></dt>
+			<dd>This section covers advanced topics such as robotics, digital forensics, discrete math, and game design.</dd>
+	</dl>
 	<h4>
 		Prepare</h4>
 	<p>
