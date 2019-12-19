@@ -4,49 +4,53 @@
         but neglects to remove browsers' dotted underline style
         (has style: Firefox, Chrome…; no style: Safari…) */
         abbr[title] { text-decoration: none; }</style>
-    <style id="style--weteachcs-content" type="text/css">
-    /* TODO: Use this scope instead of `style` tags */
-        /* WARN: Duplicated in:
-                    - `epic/weteachcs/about`
-                    - `epic/weteachcs/about/projects`
-                    - `epic/weteachcs/certification`
-                    - `epic/weteachcs/goals-and-outcomes`
+<style id="style--weteachcs-content" type="text/css">
+/* TODO: Use this scope instead of `style` tags */
+    /* WARN: Duplicated in:
+                - `epic/weteachcs/about`
+                - `epic/weteachcs/about/projects`
+                - `epic/weteachcs/certification`
+                - `epic/weteachcs/goals-and-outcomes`
+    */
+        /*
+        WeTeach CS - Content (would be a `s-` i.e. "Scope" namespace)
+
+        Any stakeholder-provided content on a WeTeach page. Later,
+
+        > **Extra Information**
+        >
+        > The WeTeach CS website receives enough edits (as of 2019-10/11) to merit candidacy for testing out changes to generic scope styling of stakeholder-provided content through scope styles.
+
+        Markup:
+        <!--<div class="weteachcs-content">-->
+        <section class="weteachcs-content">
+            <h3>About</h3>
+            <div><pre>(introductory content or media)</pre></div>
+            <h4>What We Do to Things</h4>
+            <dl>
+                <dt>Make Bigger</dt>
+                    <dd>We increase things.</dd>
+                <dt>Make Better</dt>
+                    <dd>We improve things.</dd>
+                <dt>Make Stronger</dt>
+                    <dd>We strengthen things.</dd>
+            </dl>
+            <h4>What We Do for People</h4>
+            <p>We teach them things.</p>
+            <h5>What We Do for Specific People</h5>
+            <p>We certify them to teach things.</p>
+        </section>
+        <!--</div>-->
+
+        Style guide: components.weteachcs
         */
-            /*
-            WeTeach CS - Content (would be a `s-` i.e. "Scope" namespace)
-
-            Any stakeholder-provided content on a WeTeach page. Later,
-
-            > **Extra Information**
-            >
-            > The WeTeach CS website receives enough edits (as of 2019-10/11) to merit candidacy for testing out changes to generic scope styling of stakeholder-provided content through scope styles.
-
-            Markup:
-            <!--<div class="weteachcs-content">-->
-            <section class="weteachcs-content">
-                <h3>About</h3>
-                <div><pre>(introductory content or media)</pre></div>
-                <h4>What We Do to Things</h4>
-                <ul>
-                    <li>
-                        Improve things.</li>
-                    <li>
-                        Increase things.</li>
-                    <li>
-                        Better things.</li>
-                    <li>
-                        Strengthen things.</li>
-                </ul>
-                <h4>What We Do for People</h4>
-                <p>We teach them things.</p>
-            </section>
-            <!--</div>-->
-
-            Style guide: components.weteachcs
-            */
-            .weteachcs-content h4 {
-                margin-top: 20px;
-            }</style>
+        .weteachcs-content h4,
+        .weteachcs-content h5 {
+            margin-top: 20px;
+        }
+        .weteachcs-content dt {
+            display: list-item;
+        }</style>
 <style id="style--weteachcs-card" type="text/css">
 /* TODO: Use this component instead of `style` tags */
 /* WARN: Duplicated in:

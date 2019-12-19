@@ -38,26 +38,30 @@
             <h3>About</h3>
             <div><pre>(introductory content or media)</pre></div>
             <h4>What We Do to Things</h4>
-            <ul>
-                <li>
-                    Improve things.</li>
-                <li>
-                    Increase things.</li>
-                <li>
-                    Better things.</li>
-                <li>
-                    Strengthen things.</li>
-            </ul>
+            <dl>
+                <dt>Make Bigger</dt>
+                    <dd>We increase things.</dd>
+                <dt>Make Better</dt>
+                    <dd>We improve things.</dd>
+                <dt>Make Stronger</dt>
+                    <dd>We strengthen things.</dd>
+            </dl>
             <h4>What We Do for People</h4>
             <p>We teach them things.</p>
+            <h5>What We Do for Specific People</h5>
+            <p>We certify them to teach things.</p>
         </section>
         <!--</div>-->
 
         Style guide: components.weteachcs
         */
-        .weteachcs-content h4 {
+        .weteachcs-content h4,
+        .weteachcs-content h5 {
             margin-top: 20px;
-        }</style>
+        }
+		.weteachcs-content dt {
+			display: list-item;
+		}</style>
 <style id="style--weteachcs-card" type="text/css">
 /* TODO: Use this component instead of `style` tags */
     /* WARN: Duplicated in:
