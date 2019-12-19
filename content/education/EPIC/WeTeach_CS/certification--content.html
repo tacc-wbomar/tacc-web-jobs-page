@@ -60,8 +60,8 @@ An independent piece of figure/text content that can be an item of a greater con
 
 > The `weteachcs-card--highlight` style was previously manually added via inline styles: `background-color: #f1f1f1; margin: 30px 0px 20px 0px; padding:20px;`.
 
-.weteachcs-card--highlight - This card is distinct from other cards so as to draw more attention (can be combined with `weteachcs-card--understate`).
-.weteachcs-card--understate - This card is distinct form other cards so as to draw less attention (can be combined with `weteachcs-card--highlight`).
+.weteachcs-card--highlight - This card should draw more attention (can be combined with `weteachcs-card--understate`).
+.weteachcs-card--understate - This card should draw less attention (can be combined with `weteachcs-card--highlight`).
 .weteachcs-card--chart - This card shows a chart figure and a caption.
 
 Markup:
@@ -107,6 +107,10 @@ Style guide: components.weteachcs.card
 .weteachcs-card--understate {
     padding: 20px;
     font-size: small;
+}
+.weteachcs-card--highlight.weteachcs-card--understate {
+	font-size: 14px;
+	letter-spacing: normal;
 }
 
 .weteachcs-card__title {

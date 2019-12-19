@@ -108,12 +108,13 @@
             background-color: #f1f1f1;
             font-size: 16px;
         }
-        /* FAQ: Remove the default bottom margin of the last
-                `p` within a `weteachcs-card--highlight`,
-                so space around card content is equal. */
-        .weteachcs-card--highlight *:last-child {
-            margin-bottom: 0;
-        }
+        /* FAQ: Remove default bottom margin of the last `p` within a
+                `weteachcs-card--highlight`, so space around card content is equal. */
+        .weteachcs-card--highlight *:last-child { margin-bottom: 0; }
+        /* FAQ: Remove default top margin of any headings that begin a
+                `weteachcs-card--highlight`, so space around card content is equal. */
+        .weteachcs-card--highlight *:first-child { margin-top: 0; }
+
         .weteachcs-card--understate {
             padding: 20px;
             font-size: 12px;
