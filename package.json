@@ -6,8 +6,8 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "postinstall": "npm run postinstall:sc19",
-    "postinstall:sc19": "cd src/sc19 && npm install",
+    "postinstall": "npm run install:sc19",
+    "install:sc19": "cd src/sc19 && npm install",
     "build": "npm run build:sc19",
     "build:sc19": "cd src/sc19 && npm run build"
   },
