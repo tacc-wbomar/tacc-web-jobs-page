@@ -10,7 +10,7 @@
   },
   "// scripts": {
     "start": "Allow running `scripts` via `nps …` from `package-scripts.yml`",
-    "prebuild": "Delete then create an output directory",
+    "prebuild": "Delete then create output directory",
     "build": "Build temporary partial templates, then build final markup",
     "postbuild": "Export final markup file, then run cleanup tasks"
   },
@@ -18,7 +18,7 @@
     "start": "nps",
     "prebuild": "nps setup",
     "build": "nps build",
-    "postbuild": "nps export clean"
+    "postbuild": "nps clean"
   },
   "license": "UNLICENSED"
 }

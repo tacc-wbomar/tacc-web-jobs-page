@@ -25,10 +25,7 @@ scripts:
     -p ./_events.conf.mustache
     -p ./social-media.mustache
     ./events.booth.json ./body.mustache >
-    ./dist/sc19--body.html
-
-  # Move final markup file to relevant location within static web content
-  export: shx mv ./dist/sc19--body.html ../../content/news/conferences/sc/sc19-body.html
+    ./dist/sc19--content.html
 
   # Delete temporary partials
   clean: rm ./_events.*

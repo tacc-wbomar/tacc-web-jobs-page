@@ -1,5 +1,6 @@
 # Dynamically created directories
 node_modules/
+dist/
 
 # Manually created templates or template directories
 _*/

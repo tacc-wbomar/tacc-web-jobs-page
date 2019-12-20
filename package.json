@@ -4,12 +4,24 @@
   "description": "A collection of web content history and markup templating utilities for Liferay Portal web content in the TACC Website",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "shx": "^0.3.2"
+  },
+  "// scripts": {
+    "postinstall": "After installing dependencies, do so all child projects",
+    "install:…": "Install dependencies for one project",
+    "build": "Build markup for all projects",
+    "build:…": "Build markup for one project",
+    "postbuild:…": "Perform tasks after building markup",
+    "export:…": "Move markup to relevant location within static web content"
+  },
   "scripts": {
     "postinstall": "npm run install:sc19",
     "install:sc19": "cd src/sc19 && npm install",
     "build": "npm run build:sc19",
-    "build:sc19": "cd src/sc19 && npm run build"
+    "build:sc19": "cd src/sc19 && npm run build",
+    "postbuild:sc19": "npm run export:sc19",
+    "export:sc19": "shx mv ./src/sc19/dist/* ./content/news/conferences/sc/"
   },
   "repository": {
     "type": "git",
