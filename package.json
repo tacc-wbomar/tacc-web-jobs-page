@@ -5,17 +5,11 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {},
-  "// devDependencies": {
-    "shx": "^0.3.2"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "// scripts": {
-    "preinstall": "npm run preinstall:sc19",
-    "preinstall:sc19": "shx cd src/sc19 && npm install",
-    "test": "npm run pretest:sc19",
-    "test:sc19": "shx cd src/sc19 && npm install"
+    "postinstall": "npm run postinstall:sc19",
+    "postinstall:sc19": "cd src/sc19 && npm install",
+    "build": "npm run build:sc19",
+    "build:sc19": "cd src/sc19 && npm run build"
   },
   "repository": {
     "type": "git",

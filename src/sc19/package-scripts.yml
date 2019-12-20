@@ -1,0 +1,34 @@
+scripts:
+  # Delete then create output directory
+  setup: rm -rf ./dist && shx mkdir -p ./dist
+
+  # Build temporary partial templates, then build final markup
+  build: nps build:partials build:markup
+
+  # Build each temporary partial
+    # NOTE: Partials can not load from `./dist` directory, so prefix them
+    #       with underscore (such files should be ignored via a `.gitignore`)
+    # SEE:  https://github.com/janl/mustache.js/issues/726
+  build:partials: nps build:partials:events:booth build:partials:events:conf
+    # Via Mustache (`mustache`) apply data (`….json`)
+    # into template (`….mustache`) to make partial (`….mustache`)
+  build:partials:events:booth: mustache ./events.booth.json ./events.mustache ./_events.booth.mustache
+  build:partials:events:conf: mustache ./events.conf.json ./events.mustache ./_events.conf.mustache
+
+  # Build final markup
+    # Import partial template(s) (`-p ….mustache`)
+    # Apply data into template, then ouput to… (`….json ….mustache >`)
+    # Final markup file (`….html`)
+  build:markup: mustache
+    -p ./styles.mustache
+    -p ./_events.booth.mustache
+    -p ./_events.conf.mustache
+    -p ./social-media.mustache
+    ./events.booth.json ./body.mustache >
+    ./dist/sc19--body.html
+
+  # Move final markup file to relevant location within static web content
+  export: shx mv ./dist/sc19--body.html ../../content/news/conferences/sc/sc19-body.html
+
+  # Delete temporary partials
+  clean: rm ./_events.*
