@@ -3,7 +3,7 @@
 ## Architecture
 
 1. Make exported file name be passed via build command; ideas:
-    - NPM `config` variablge (that can be set on command line)
+    - NPM `config` variable (that can be set on command line)
     - Create an NPM script (that uses `yargs`)
     - Add another dependency (to support cross-browser npm script arg passing)
 2. Organize styles and templates.
