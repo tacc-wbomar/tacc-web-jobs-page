@@ -8,9 +8,9 @@ This directory has directories that are each a self-contained utility to produce
 2. Each utility **must** have instructions in a `README.md` within its directory.
 3. Each utility **should** be a Node package.\*
     - If an alternate language is used, then that **must** be stated in the utility `README.md`.
-3. Each utility **should** support passing an output directory.†
+4. Each utility **should** support passing an output directory.†
     - If you are unsure how to do this, then refer to other utilities.
-4. Each utility **must** produce final content at `[page]--[content].[ext]`‡.
+5. Each utility **must** produce final content at `[page]--[content].[ext]`‡.
 
 \* This allows consistent behavior and similar usage across Operating Systems.
 
@@ -20,7 +20,7 @@ This directory has directories that are each a self-contained utility to produce
 
 ## Dependencies
 
-- If adding a new dependency, then use the flag `--save-dev` (compile time dependency) **or** `--save` (runtime dependency).
+- If adding a new dependency, then use the flag `--save-dev` (build-time dependency) **or** `--save` (run-time dependency).
 
 
 

@@ -1,12 +1,4 @@
 {
-	"TODO": [ {
-		"name": "Use functions for time and date",
-		"tasks": [
-			"Convert `.json` to `.js` (`modules.exports = { … }).",
-			"Create functions to output time, date (see https://github.com/janl/mustache.js/#functions).",
-			"If you want to use `toLocaleDateString` or `toLocaleTimeString`, see https://stackoverflow.com/a/47808440."
-		]
-	} ],
 	"days": [ {
 		"is_column": true,
 		"date": "Tuesday, November 19",
