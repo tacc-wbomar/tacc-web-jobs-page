@@ -6,9 +6,11 @@ scripts:
   build: nps build:partials build:markup
 
   # Build each temporary partial
-    # NOTE: Partials can not load from `./dist` directory, so prefix them
-    #       with underscore (such files should be ignored via a `.gitignore`)
-    # SEE:  https://github.com/janl/mustache.js/issues/726
+    # WARNING: Do not put temporary partials in `./dist`, because
+    #          partials can not load from a `./dist` directory
+    # SEE:     https://github.com/janl/mustache.js/issues/726
+    # FAQ:     Prefix temporary partials with underscore, to identify them
+    #          as temporary (also, add underscore pattern to `.gitignore`)
   build:partials: nps build:partials:events:booth build:partials:events:conf
     # Via Mustache (`mustache`) apply data (`….json`)
     # into template (`….mustache`) to make partial (`….mustache`)

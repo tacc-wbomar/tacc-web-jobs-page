@@ -2,8 +2,7 @@
 node_modules/
 dist/
 
-# Manually created templates or template directories
-_*/
+# Dynamically created temporary templates
 _*
 
 # Operating System files
