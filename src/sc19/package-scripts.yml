@@ -29,5 +29,5 @@ scripts:
     ./events.booth.json ./body.mustache >
     ./dist/sc19--content.html
 
-  # Delete temporary partials
-  clean: rm ./_events.*
+  # Delete temporary files
+  clean: rm ./_*.*
