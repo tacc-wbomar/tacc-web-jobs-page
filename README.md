@@ -38,10 +38,6 @@ See [`./content/README.md`](./content/README.md).
 
 ### Setup
 
-> **To Do**
->
-> Move this documentation (and expand with external references) to Confluence as a basic intro to a Node project.
-
 > **Notice**
 >
 > To be effectual, the following commands:
@@ -52,25 +48,25 @@ See [`./content/README.md`](./content/README.md).
 >
 > \* If `npm install` produces an error that mentions `cannot run in wd`, you are likely trying to run the command as root/sudo. If so, add the flag `--unsafe-perm`.
 
-1. Install packages:
+1. Install dependencies:
 
-    - (normal install)
+    - (normal install or re-install)
 
         ```npm install```
 
-    - (clean then install)
-    
+    - (remove dependencies, then re-install)
+
         ```npm ci```
 
 2. Run script:
 
     - (see available scripts)
-    
+
         ```npm run```
 
-    - (run specific script)
-    
-        ```npm run …```
+    - (build final markup)
+
+        ```npm run build```
 
 ### Usage
 
