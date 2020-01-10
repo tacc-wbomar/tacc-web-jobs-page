@@ -22,7 +22,7 @@ scripts:
     ./_staff.json ./staff.mustache >
     ./dist/staff.html
 
-  report: echo "Copy relevant markup from `./dist/staff.html`"
+  report: echo "Copy relevant markup from './dist/staff.html'"
 
   # Delete temporary files
   clean: rm ./_*.*
