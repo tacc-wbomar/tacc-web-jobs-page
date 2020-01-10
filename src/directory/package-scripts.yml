@@ -19,7 +19,7 @@ scripts:
     -p ./staff--row.mustache
     -p ./staff--img.mustache
     -p ./staff--bio.mustache
-    ./_staff.json ./staff.mustache >
+    ./staff.js ./staff.mustache >
     ./dist/staff.html
 
   report: echo "Copy relevant markup from './dist/staff.html'"

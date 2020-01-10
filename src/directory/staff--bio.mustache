@@ -17,8 +17,7 @@
 <hr class="blueline" />
 
 <!-- Biography Section -->
-<p>
-    {{biography}}</p>
+{{{biography}}}
 
 <!-- Additional Information -->
 {{#info-rows}}
@@ -60,14 +59,13 @@
         {{#education}}
 
             {{#degree}}<h4>{{degree}}</h4>{{/degree}}
-            {{#school}}<p>{{school}}</p>{{/school}}
+            {{#school}}<p>{{school}}{{#year}}, {{year}}{{/year}}</p>{{/school}}
         {{/education}}
         {{/show-education}}
         {{! Section: Publications }}
         {{#show-publications}}
         {{^custom_heading}}<h2>Selected Publications:</h2>{{/custom_heading}}
         {{#publications}}
-
             <p>{{.}}</p>
         {{/publications}}
         {{/show-publications}}

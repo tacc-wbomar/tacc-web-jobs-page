@@ -1,19 +1,21 @@
-b:
-  anchor: B
-bob-man:
-  code: bob-man
+sample-dude:
+  code: sample-dude
   name:
-    first: Bob
-    last: Man
-  title: Web Developer
-  group: CMD
-  phone: 512-122-3345
-  email: bstaff@tacc.utexas.edu
+    first: Sample
+    last: Dude
+  title: Some Kind of Scientist
+  group: Network, Security, and Operations
+  phone: 512-475-9411
+  email: sdude@tacc.utexas.edu
   url:
     image: /documents/1084364/1085221/utaustin-seal.png
+  biography: |-
+    The best *human* ever.
 
-  biography: The best human ever.
+    Who did these things:
 
+    - Thing 1
+    - Thing 2
   info-rows:
     - info-cols:
       - layout:
@@ -40,16 +42,18 @@ bob-man:
         custom_heading: Actions
         show-custom_list--paragraph: TRUE
         custom_list--paragraph:
-          - I did that
-          - I did this
+          - He did that
+          - He did this
       - layout:
           colspan: 6
         show-education: TRUE
         education:
           - degree: PHD, humanity
             school: UT
+            year: 1990
           - degree: Masters, soemthing
             school: Baylor
+            year: 1980
       - layout:
           colspan: 6
         show-experience: TRUE
@@ -60,7 +64,44 @@ bob-man:
           - date_range: 2017
             institution: Baylor
             role: teacher
-        show-publications--unordered: TRUE
-        publications--unordered:
-          - apple
-          - banana
+        show-publications: TRUE
+        publications:
+          - "Book #1 of Things"
+          - "Book #2 of Stuff"
+
+tony-violante:
+  code: tony-violante
+  name:
+    first: Tony
+    last: Violante
+  title: Engineering Scientist
+  group: Network, Security, Operations
+  phone: +1 203.722.0453 (mobile)
+  email: tviolante@tacc.utexas.edu
+  url:
+    image: /documents/1084364/1085221/tony-violante.jpg
+  biography: |-
+    Tony joined TACC in the Fall of 2019 (from UT Center for Agile Technology working government cyber security accreditation contract for US Army). He is a member of the Network, Security, and Operations team. Tony’s key areas of responsibility is Cybersecurity Accreditations in support of TACC Federal government-funded efforts.
+
+    Prior to joining TACC, Tony spent eight years with Army civilian as ERP Project Manager and as a financial manager. Stops along the way after undergrad college graduation (and prior to joining the US Army):
+
+    - US Navy (Submarines, Active Duty; Naval Intelligence, Reserve Duty).
+    - Johns Hopkins APL (weapons tactics development and system employment tests and modeling)
+    - Pitney Bowes, Technical Systems Div. (smart cards, PKI crypto apps., historian)
+    - IBM, Software Group (payment systems and smart cards) and Watson Research Center (orphan placement)
+  info-rows:
+    - info-cols:
+      - layout:
+          colspan: 6
+        custom_heading: Current Projects
+        show-custom_list--unordered: TRUE
+        custom_list--unordered:
+          - NIST Cybersecurity accreditations for TACC
+      - layout:
+          colspan: 6
+        show-education: TRUE
+        education:
+          - degree: B.S., Physics
+            school: U.S. Naval Academy
+          - degree: MBA, Finance
+            school: Rensselaer Polytechnic University
