@@ -1,12 +1,13 @@
 {
   "name": "tacc-web-content--sc19",
   "version": "1.0.0",
-  "description": "A utility to create markup for SC19 page based on flatfile data",
+  "description": "A utility to create markup for Staff Directory pages based on flatfile data",
   "main": "index.js",
   "devDependencies": {
     "mustache": "^3.2.0",
     "nps": "^5.9.12",
-    "shx": "^0.3.2"
+    "shx": "^0.3.2",
+    "yamljs": "^0.3.0"
   },
   "// scripts": {
     "start": "Allow running `scripts` via `nps …` from `package-scripts.yml`",
@@ -18,7 +19,7 @@
     "start": "nps",
     "prebuild": "nps setup",
     "build": "nps build",
-    "postbuild": "nps clean"
+    "postbuild": "nps clean report"
   },
   "license": "UNLICENSED"
 }

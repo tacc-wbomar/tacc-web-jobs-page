@@ -1,0 +1,66 @@
+b:
+  anchor: B
+bob-man:
+  code: bob-man
+  name:
+    first: Bob
+    last: Man
+  title: Web Developer
+  group: CMD
+  phone: 512-122-3345
+  email: bstaff@tacc.utexas.edu
+  url:
+    image: /documents/1084364/1085221/utaustin-seal.png
+
+  biography: The best human ever.
+
+  info-rows:
+    - info-cols:
+      - layout:
+          colspan: 6
+        custom_heading: Fruit
+        show-custom_list--unordered: TRUE
+        custom_list--unordered:
+          - apple
+          - banana
+      - layout:
+          colspan: 6
+        custom_heading: Things
+        show-custom_list--definition: TRUE
+        custom_list--definition:
+          - term: edible
+            definition: animals & plants
+          - term: huggable
+            definition: people & plants
+          - term: legible
+            definition: writing & text
+    - info-cols:
+      - layout:
+          colspan: 12
+        custom_heading: Actions
+        show-custom_list--paragraph: TRUE
+        custom_list--paragraph:
+          - I did that
+          - I did this
+      - layout:
+          colspan: 6
+        show-education: TRUE
+        education:
+          - degree: PHD, humanity
+            school: UT
+          - degree: Masters, soemthing
+            school: Baylor
+      - layout:
+          colspan: 6
+        show-experience: TRUE
+        experience:
+          - date_range: 2017—Present
+            institution: UT
+            role: janitor
+          - date_range: 2017
+            institution: Baylor
+            role: teacher
+        show-publications--unordered: TRUE
+        publications--unordered:
+          - apple
+          - banana
