@@ -6,15 +6,15 @@
   "dependencies": {},
   "devDependencies": {
     "npm-run-all": "^4.1.5",
+    "nps": "^5.9.12",
     "shx": "^0.3.2"
   },
   "// scripts": {
     "postinstall": "After installing dependencies, do so all child projects",
-    "install:…": "Install dependencies for one project",
     "build": "Build markup for all projects",
+    "install:…": "Install dependencies for one project",
     "build:…": "Build markup for one project",
-    "postbuild:…": "Perform tasks after building markup",
-    "export:…": "Move markup to relevant location within static web content"
+    "postbuild:…": "Perform tasks after building markup"
   },
   "scripts": {
     "postinstall": "npm-run-all --parallel install:*",
@@ -22,12 +22,14 @@
     "install:sc19": "cd src/sc19 && npm install",
     "build:sc19": "cd src/sc19 && npm run build",
     "postbuild:sc19": "npm-run-all --sequential postbuild:sc19:*",
+    "postbuild:sc19:open": "open './src/directory/dist/staff.html'",
     "postbuild:sc19:export": "shx mv ./src/sc19/dist/sc19--content.html ./content/news/conferences/sc/",
+    "postbuild:sc19:report": "echo \"Markup exported to './content/news/conferences/sc/'\"",
     "install:dir": "cd src/directory && npm install",
     "build:dir": "cd src/directory && npm run build",
     "postbuild:dir": "npm-run-all --sequential postbuild:dir:*",
-    "postbuild:dir:open": "open './src/directory/dist/staff.html'",
-    "postbuild:dir:report": "echo \"Open './src/directory/dist/staff.html'\""
+    "postbuild:dir:open": "open \"./src/directory/dist/staff.html\"",
+    "postbuild:dir:report": "echo \"Markup available in './src/directory/dist/staff.html'\""
   },
   "repository": {
     "type": "git",
