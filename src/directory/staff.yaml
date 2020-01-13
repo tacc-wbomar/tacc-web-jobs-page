@@ -1,8 +1,9 @@
+
 sample-dude:
-  code: sample-dude
   name:
     first: Sample
     last: Dude
+    code: sample-dude
   title: Some Kind of Scientist
   group: Network, Security, and Operations
   phone: 512-475-9411
@@ -66,14 +67,14 @@ sample-dude:
             role: teacher
         show-publications: TRUE
         publications:
-          - "Book #1 of Things"
-          - "Book #2 of Stuff"
+          - Book 1 of Things
+          - Book 2 of Stuff
 
 tony-violante:
-  code: tony-violante
   name:
     first: Tony
     last: Violante
+    code: tony-violante
   title: Engineering Scientist
   group: Network, Security, Operations
   phone: +1 203.722.0453 (mobile)
@@ -93,9 +94,8 @@ tony-violante:
     - info-cols:
       - layout:
           colspan: 6
-        custom_heading: Current Projects
-        show-custom_list--unordered: TRUE
-        custom_list--unordered:
+        show-projects: TRUE
+        projects:
           - NIST Cybersecurity accreditations for TACC
       - layout:
           colspan: 6
@@ -105,3 +105,154 @@ tony-violante:
             school: U.S. Naval Academy
           - degree: MBA, Finance
             school: Rensselaer Polytechnic University
+
+nashid-afreen:
+  name:
+    first: Nashid
+    last: Afreen
+    code: nashid-afreen
+  title: Engineering Scientist Associate
+  group: User Services
+  phone: 512-475-9411
+  email: nafreen@tacc.utexas.edu
+  url:
+    image: /documents/1084364/1085221/nashid-afreen.jpg
+  biography: |-
+    Nashid has joined TACC as a member of the User Services group in 2020. She works as an Engineering Scientist in the development of Database-Driven Applications. Prior to that she worked as a Software Developer in Full Stack Application Development utilizing a variety of tools and technologies, in Mixed-signal Design Engineering with semiconductor industry and teaching assistant at the University of Colorado. She has an interest in the area of Data Science/Analysis with new technology.
+  info-rows:
+    - info-cols:
+      - layout:
+          colspan: 12
+        show-research: TRUE
+        research:
+          - Studying tunable ferroelectric thin film capacitors and implementation of circuits.
+      - layout:
+          colspan: 6
+        show-education: TRUE
+        education:
+          - degree: M.S., Electrical Engineering
+            school: University of Colorado at Colorado Springs
+          - degree: B.S., Electrical Engineering
+            school: Bangladesh University of Engineering & Technology
+
+aubrey-white:
+  name:
+    first: Aubrey
+    last: White
+    code: aubrey-white
+  title: Project Manager
+  group: Network, Security, and Operations
+  phone: 512-475-9411
+  email: awhite@tacc.utexas.edu
+  url:
+    image: /documents/1084364/1085221/aubrey-white.jpg
+  biography: |-
+    Previous experience as an Army Project Manager for major Army Command and Control System, test management, Combat Arms Commander, Industrial Base operations. Departed Army as full Colonel. Previous assignment at UT with Center for Agile Technologies and Principle Investigator UXXI. Joined TACC this past summer. My role is primarily assisting the Compliance lead as requested and seeking opportunities to work with our military.
+  info-rows:
+    - info-cols:
+      - layout:
+          colspan: 12
+        show-research: TRUE
+        research:
+          - Applied research and  studies in support of our military to include Future learning for the Air Force
+          - Central Texas Support Facility digitization and networking and 36 projects in support of military operations
+      - layout:
+          colspan: 12
+        show-projects: TRUE
+        projects:
+          - Interface with Military Organizations
+          - Central Texas Support Facility digitization and networking and 36 projects in support of military operations
+      - layout:
+          colspan: 12
+        show-organizations: TRUE
+        organizations:
+          - Association U.S. Army, Military Officers Association, Central Texas Veterans Organization (Ft. Hood)
+      - layout:
+          colspan: 12
+        custom_heading: Education
+        show-custom_list--unordered: TRUE
+        custom_list--unordered:
+          - BBA, St. Mary’s University
+          - MS, Central Texas A&M University (formerly American Technology University)
+          - MS, The University of Texas at Austin
+          - Command and General Staff College, Ft. Leavenworth, KS
+          - U.S. Army War College, Carlisle, PA
+          - Defense Systems Management College, Ft. Belvoir, VA
+    - info-cols:
+      - layout:
+          colspan: 12
+        show-publications: TRUE
+        publications:
+          - Command and Control Systems Architecture, U.S. Army War College
+          - A Macro Look at Modeling and Simulation as a Combat Multiplier, U.S. Army, Ft. Hood
+
+amit-ruhela:
+  name:
+    first: Amit
+    last: Ruhela
+    code: amit-ruhela
+  title: Research Associate
+  group: High Performance Computing
+  phone: 512-475-9411
+  email: aruhela@tacc.utexas.edu
+  url:
+    image: /documents/1084364/1085221/amit-ruhela.jpg
+  biography: |-
+    Dr. Ruhela will join High Performance Computing (HPC) group at TACC Austin in January 2020. He has 16 years of academic and industrial research and development work experience in HPC, Social Computing, and Telecommunication domains. He is currently working in the Network-Based Computing Laboratory at The Ohio State University.  He has carried out extensive performance evaluations and scalability studies at leading supercomputers.  Leveraging the latest features and mechanisms in modern interconnects and many-core processors, he has explored new designs, protocols, and algorithms in the MPI library to deliver the best performance and scalability for scientific and engineering applications.
+
+    Dr. Ruhela received his Ph.D. degree from IIT Delhi and B.Tech degree from NIT Kurukshetra, both in Computer Science. He has worked closely with researchers from NICTA Australia (now called Data61), IIT Delhi, and C-DOT Delhi.  He has also worked with computational scientists and researchers of TACC, SDSC, OSC, UMH, LLNS, University of Oregon, NCAR, and EPFL on NSF and XSEDE proposals.
+  info-rows:
+    - info-cols:
+      - layout:
+          colspan: 12
+        show-research: TRUE
+        research:
+          - High Performance Computing
+          - Network-based Computing
+          - Parallel Computer architecture and algorithms
+          - Microbenchmarks and Multiscale HPC, Cloud and DL applications 
+          - Information Retrieval and Data Mining
+          - Machine Learning and Deep Learning
+      - layout:
+          colspan: 12
+        show-projects: TRUE
+        projects:
+          -	Multiscale High Performance Computing
+          -	Performance measurement, analysis, and benchmarking
+          -	HPC Software tools
+      - layout:
+          colspan: 12
+        show-organizations: TRUE
+        organizations:
+          - Member, ACM
+    - info-cols:
+      - layout:
+          colspan: 12
+        show-publications: TRUE
+        publications:
+          sections:
+            - custom_heading: Journal
+              items:
+                - 'Amit Ruhela, Hari Subramoni, Sourav Chakraborty, Mohammadreza Bayatpour, Pouya Kousha, and Dhabaleswar K. Panda. "Efficient design for MPI asynchronous progress without dedicated resources", Parallel Computing, Volume 85, 2019, Pages 13-26, ISSN 0167-8191, Impact Factor: 0.938'
+                - 'Srinivasan Ramesh, Aurèle Mahéo, Sameer Shende, Allen D. Malony, Hari Subramoni, Amit Ruhela, Dhabaleswar K. (DK) Panda, "MPI performance engineering with the MPI tool interface: The integration of MVAPICH and TAU, Parallel Computing", Volume 77, 2018, Pages 19-37, ISSN 0167-8191, Impact Factor: 0.938'
+                - 'Amit Ruhela, Amitabha Bagchi, Anirban Mahanti and Aaditeshwar Seth. "The rich and middle classes on Twitter: Are popular users indeed different from regular users", Special issue on Online Social Networks in Elsevier COMCOM Journal, ISSN 0140-3664, Jul 2015, Impact Factor: 2.099, h5-index :49, h5-median : 71'
+            - custom_heading: Conferences
+              items:
+                - 'Amit Ruhela, Bharath Ramesh, Sourav Chakraborty, Hari Subramoni, Jahanzeb Maqbool Hashmi, and Dhabaleswar K. (DK) Panda. "Leveraging Network-level parallelism with Multiple Process-Endpoints for MPI Broadcast", In Proceedings of the Third Annual Workshop on Emerging Parallel and Distributed Runtime Systems and Middleware (IPDRM ''19). Denver, Colorado, USA'
+                - 'Karthik Vadambacheri Manian, Ammar Ahmad Awan, Amit Ruhela, Ching-Hsiang Chu, Hari Subramoni, and Dhabaleswar K. Panda. "Characterizing CUDA Unified Memory (UM)- Aware MPI Designs on Modern GPU Architectures", In Proceedings of the 12th Workshop on General Purpose Processing Using GPUs (GPGPU ''19). ACM, New York, NY, USA'
+                - 'Amit Ruhela, Hari Subramoni, Sourav Chakraborty, Mohammadreza Bayatpour, Pouya Kousha, and Dhabaleswar K. Panda. 2018. "Efficient Asynchronous Communication Progress for MPI without Dedicated Resources", In Proceedings of The EuroMPI 2018 (EuroMPI 2018). ACM, New York, NY, USA, 11 pages. Rank : B1(QUALIS)'
+                - 'Amit Ruhela, Sipat Triukose, Sebastien Ardon, Amitabha Bagchi, Aaditeshwar Seth and Anirban Mahanti. "The Scope for Online Social Network Aided Caching in Web CDNs", 9th ACM/IEEE Symposium on Architectures for Networking and Communications Systems (ANCS 2013), Oct. 2013, Rank: B1(QUALIS)'
+                - 'Sebastien Ardon, Amitabha Bagchi, Anirban Mahanti, Amit Ruhela, Aaditeshwar Seth, Rudra Mohan Tripathy and Sipat Triukose, "Spatio-Temporal and Events Based Analysis of Topic Popularity in Twitter", 22nd ACM International Conference on Information and Knowledge Management (CIKM 2013), Oct. 2013, Rank: A(CORE13,ERA), A1(QUALIS)'
+                - 'Amit Ruhela. "Scalable content distribution for social networking websites", 4th International Conference on Communication Systems and Networks (COMSNETS). 3-7 Jan. 2012, doi: 0.1109/COM- SNETS.2012.6151360 Best presentation in PhD forum Acceptance Rate: 27.9%'
+                - 'Amit Ruhela, Rudra Mohan Tripathy, Sipat Triukose, Sebastien Ardon, Amitabha Bagchi, and Aaditeshwar Seth. "Towards the use of online social networks for efficient Internet content distribution", 5th International Conference on Advanced Networks and Telecommunication Systems (ANTS), Dec. 2011, Acceptance Rate: 35%'
+    - info-cols:
+      - layout:
+          colspan: 6
+        show-education: TRUE
+        education:
+          - degree: Postdoctoral research in HPC
+            school: The Ohio State University
+          - degree: Ph.D. in Computer Science 
+            school: IIT Delhi
+          - degree: B. Tech in Computer Science
+            school: NIT Kurukshetra
