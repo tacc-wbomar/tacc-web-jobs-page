@@ -1,7 +1,5 @@
 # Staff Directory - To Do List
 
-## Testing
+## Ideas
 
-1. Test a few existing biographies, like:
-    - [Ritu Arora](https://www.tacc.utexas.edu/about/directory/ritu-arora)
-    - [Dan Stanzione](https://www.tacc.utexas.edu/about/directory/dan-stanzione)
+1. See [Ideas - Add User to Staff Directory](https://confluence.tacc.utexas.edu/x/joAwBQ).
