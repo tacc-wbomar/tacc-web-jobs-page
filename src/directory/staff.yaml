@@ -5,7 +5,7 @@ sample-dude:
     last: Dude
     code: sample-dude
   title: Some Kind of Scientist
-  group: Network, Security, and Operations
+  group: Networking, Security, and Operations
   phone: 512-475-9411
   email: sdude@tacc.utexas.edu
   url:
@@ -76,13 +76,13 @@ tony-violante:
     last: Violante
     code: tony-violante
   title: Engineering Scientist
-  group: Network, Security, Operations
+  group: Networking, Security, Operations
   phone: +1 203.722.0453 (mobile)
   email: tviolante@tacc.utexas.edu
   url:
     image: /documents/1084364/1085221/tony-violante.jpg
   biography: |-
-    Tony joined TACC in the Fall of 2019 (from UT Center for Agile Technology working government cyber security accreditation contract for US Army). He is a member of the Network, Security, and Operations team. Tony’s key areas of responsibility is Cybersecurity Accreditations in support of TACC Federal government-funded efforts.
+    Tony joined TACC in the Fall of 2019 (from UT Center for Agile Technology working government cyber security accreditation contract for US Army). He is a member of the Networking, Security, and Operations team. Tony’s key areas of responsibility is Cybersecurity Accreditations in support of TACC Federal government-funded efforts.
 
     Prior to joining TACC, Tony spent eight years with Army civilian as ERP Project Manager and as a financial manager. Stops along the way after undergrad college graduation (and prior to joining the US Army):
 
@@ -141,7 +141,7 @@ aubrey-white:
     last: White
     code: aubrey-white
   title: Project Manager
-  group: Network, Security, and Operations
+  group: Networking, Security, and Operations
   phone: 512-475-9411
   email: awhite@tacc.utexas.edu
   url:
