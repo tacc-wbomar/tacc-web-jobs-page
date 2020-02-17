@@ -8,7 +8,7 @@ sample-dude:
   phone: 512-475-9411
   email: sdude@tacc.utexas.edu
   url:
-    image: /documents/1084364/1085221/utaustin-seal.png
+    image: 
   biography: |-
     The best *human* ever.
 
@@ -326,3 +326,15 @@ brajesh-gupt:
               school: Birla Institute of Technology, Ranchi, India
             - degree: Ph.D., Physics
               school: Louisiana State University, Baton Rouge LA
+
+owais-jamil:
+  name:
+    first: Owais
+    last: Jamil
+    code: owais-jamil
+  title: Engineering Scientist Associate
+  group: Networking, Security, and Operations
+  phone: 512-475-9411
+  email: ojamil@tacc.utexas.edu
+  url:
+    image: 
