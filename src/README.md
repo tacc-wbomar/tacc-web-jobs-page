@@ -7,7 +7,7 @@ This directory has directories that are each a self-contained utility to produce
 
 1. Edit templates and data:
     - `__PROJECT_DIR__/….mustache` templates
-    - `__PROJECT_DIR__/….json` data
+    - `__PROJECT_DIR__/….json` or `__PROJECT_DIR__/….yaml` data
 2. Run build script (inside `__PROJECT_DIR__`):
     - `npm run build`
 3. Confirm changes to content:

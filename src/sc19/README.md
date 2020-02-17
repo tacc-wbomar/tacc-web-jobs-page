@@ -4,7 +4,7 @@ This project compiles data into templates to create markup for the body of the [
 
 ## Usage
 
-See [`../README.md`](../README.md) "Usage" section.
+See [`/src/README.md`](../README.md) "Usage" section.
 
 
 [tacc-sc19]: https://www.tacc.utexas.edu/sc19 "TACC: Super Computing 2019"

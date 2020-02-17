@@ -9,7 +9,7 @@ _The "CMS" referenced in this document, as of 2019, is [Liferay Portal 6.1.20 CE
 
 ## Web Content History
 
-### Usage
+### Version Control Usage
 
 1. Find the repository file content matching the relevant CMS web content.\*
 2. Compare CMS web content to repository file(s) content.
@@ -68,7 +68,7 @@ See [`./content/README.md`](./content/README.md).
 
         ```npm run build```
 
-### Usage
+### Template Utility Usage
 
 1. Find/Create relevant utility as a child directory of `src/`.
 2. Update utility source files as necessary.
