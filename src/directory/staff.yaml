@@ -338,3 +338,54 @@ owais-jamil:
   email: ojamil@tacc.utexas.edu
   url:
     image: 
+
+pat-scherer:
+  name:
+    first: Pat
+    last: Scherer
+    code: pat-scherer
+  title: Data Systems Engineer
+  group: Data Management & Collections
+  phone: 512-475-9411
+  email: pscherer@tacc.utexas.edu
+  url:
+    image: /documents/1084364/1085221/pat-scherer.jpg
+  biography: |-
+    Pat joined TACC in January 2020 as a Data Systems Engineer working with data providers, consumers, systems experts and other stakeholders to design, develop and deploy data services. Prior to joining TACC, Pat managed the deployment, support and adoption of new DevOps and project management applications across the UT Austin campus. Prior to joining UT in 2015, Pat had a 30-year career initially as a strategic planner (IBM) which evolved into leading the strategy, design, development and adoption of global software and SaaS initiatives across multiple industries.
+  info-rows:
+    - info-cols:
+        - layout:
+            colspan: 6
+          show-education: TRUE
+          education:
+            - degree: Post-Graduate Certificate, Computer Science
+              school: University of Texas at Austin
+            - degree: IBM University Level Computer Science Program
+              school: " "
+            - degree: MBA, Industrial Management
+              school: University of North Texas
+            - degree: BA, Microbiology (Honors Program)
+              school: University of North Texas
+            - degree: Certified Scrum Master (CSM)
+              school: Scrum Alliance
+
+janie-bushn:
+  name:
+    first: Janie
+    last: Bushn
+    code: janie-bushn
+  title: Center Operations and Administration
+  group: Special Projects
+  phone: 512-232-3701
+  email: jbushn@tacc.utexas.edu
+  url:
+    image: /documents/1084364/1085221/JanieBushn.png
+  biography: |-
+    Janie Bushn has 30 years of experience at The University of Texas at Austin. At TACC, Janie serves in the role of providing coordination and execution of special projects. Prior to coming to TACC, Ms. Bushn worked with the High Performance Computing Facility, Texas Education Network, Charles A. Dana Center, and with the FIATECH initiative (Fully Integrated and Automated Technology) of the Construction Industry Institute.
+  info-rows:
+    - info-cols:
+        - layout:
+            colspan: 12
+          show-education: TRUE
+          education:
+            - degree: BBA, Management
