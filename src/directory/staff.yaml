@@ -375,7 +375,7 @@ janie-bushn:
     last: Bushn
     code: janie-bushn
   title: Administrative Manager
-  group: Center Operations and Administration / Special Projects
+  group: Center Operations & Administration / Special Projects
   phone: 512-232-3701
   email: jbushn@tacc.utexas.edu
   url:
@@ -399,6 +399,20 @@ stephen-harrell:
   group: High Performance Computing
   phone: 512-475-9411
   email: sharrell@tacc.utexas.edu
+  url:
+    image: 
+  biography: 
+  info-rows: 
+
+loren-cain:
+  name:
+    first: Loren
+    last: Cain
+    code: loren-cain
+  title: Project Coordinator
+  group: Center Operations & Administration
+  phone: 512-475-9411
+  email: lcain@tacc.utexas.edu
   url:
     image: 
   biography: 
