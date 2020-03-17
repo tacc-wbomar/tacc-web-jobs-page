@@ -4,7 +4,7 @@ sample-dude:
     last: Dude
     code: sample-dude
   title: Some Kind of Scientist
-  group: Networking, Security, and Operations
+  group: Networking, Security and Operations
   phone: 512-475-9411
   email: sdude@tacc.utexas.edu
   url:
@@ -374,8 +374,8 @@ janie-bushn:
     first: Janie
     last: Bushn
     code: janie-bushn
-  title: Center Operations and Administration
-  group: Special Projects
+  title: Administrative Manager
+  group: Center Operations and Administration / Special Projects
   phone: 512-232-3701
   email: jbushn@tacc.utexas.edu
   url:
@@ -389,3 +389,17 @@ janie-bushn:
           show-education: TRUE
           education:
             - degree: BBA, Management
+
+stephen-harrell:
+  name:
+    first: Stephen
+    last: Harrell
+    code: stephen-harrell
+  title: HPC Engineering Scientist
+  group: Special Projects
+  phone: 512-475-9411
+  email: sharrell@tacc.utexas.edu
+  url:
+    image: 
+  biography: 
+  info-rows: 
