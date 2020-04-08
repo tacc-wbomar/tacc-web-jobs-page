@@ -72,12 +72,12 @@
             {{^custom_heading}}<h2>Selected Publications</h2>{{/custom_heading}}
             {{#publications}}
                 {{^sections}}
-                <p>{{.}}</p>
+                <p>{{{.}}}</p>
                 {{/sections}}
                 {{#sections}}
                     {{#custom_heading}}<h3>{{custom_heading}}</h3>{{/custom_heading}}
                     {{#items}}
-                    <p>{{.}}</p>
+                    <p>{{{.}}}</p>
                     {{/items}}
                 {{/sections}}
             {{/publications}}

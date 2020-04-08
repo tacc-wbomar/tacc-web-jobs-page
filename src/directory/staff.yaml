@@ -64,6 +64,8 @@ sample-dude:
             - date_range: 2017
               institution: Baylor
               role: teacher
+        - layout:
+            colspan: 6
           show-publications: TRUE
           publications:
             - Book 1 of Things
@@ -242,7 +244,7 @@ amit-ruhela:
                   - 'Amit Ruhela, Hari Subramoni, Sourav Chakraborty, Mohammadreza Bayatpour, Pouya Kousha, and Dhabaleswar K. Panda. 2018. "Efficient Asynchronous Communication Progress for MPI without Dedicated Resources", In Proceedings of The EuroMPI 2018 (EuroMPI 2018). ACM, New York, NY, USA, 11 pages. Rank : B1(QUALIS)'
                   - 'Amit Ruhela, Sipat Triukose, Sebastien Ardon, Amitabha Bagchi, Aaditeshwar Seth and Anirban Mahanti. "The Scope for Online Social Network Aided Caching in Web CDNs", 9th ACM/IEEE Symposium on Architectures for Networking and Communications Systems (ANCS 2013), Oct. 2013, Rank: B1(QUALIS)'
                   - 'Sebastien Ardon, Amitabha Bagchi, Anirban Mahanti, Amit Ruhela, Aaditeshwar Seth, Rudra Mohan Tripathy and Sipat Triukose, "Spatio-Temporal and Events Based Analysis of Topic Popularity in Twitter", 22nd ACM International Conference on Information and Knowledge Management (CIKM 2013), Oct. 2013, Rank: A(CORE13,ERA), A1(QUALIS)'
-                  - 'Amit Ruhela. "Scalable content distribution for social networking websites", 4th International Conference on Communication Systems and Networks (COMSNETS). 3-7 Jan. 2012, doi: 0.1109/COM- SNETS.2012.6151360 Best presentation in PhD forum Acceptance Rate: 27.9%'
+                  - 'Amit Ruhela. "Scalable content distribution for social networking websites", 4th International Conference on Communication Systems and Networks (COMSNETS). 3-7 Jan. 2012, [doi](): 0.1109/COM- SNETS.2012.6151360 Best presentation in PhD forum Acceptance Rate: 27.9%'
                   - 'Amit Ruhela, Rudra Mohan Tripathy, Sipat Triukose, Sebastien Ardon, Amitabha Bagchi, and Aaditeshwar Seth. "Towards the use of online social networks for efficient Internet content distribution", 5th International Conference on Advanced Networks and Telecommunication Systems (ANTS), Dec. 2011, Acceptance Rate: 35%'
     - info-cols:
         - layout:
@@ -318,6 +320,7 @@ brajesh-gupt:
             - "Rebentrost, P., B. Gupt , & Bromley, T. R. “Photonic quantum algorithm for Monte Carlo integration” 2018, arXiv e-prints, arXiv:1809.02579."
             - "Bjorklund, A., B. Gupt , & Quesada, N. “A faster hafnian formula for complex matrices and its benchmarking on a supercomputer”, arXiv:1805.12498. Journal of Experimental Algorithmics, Vol. 24, 1 (2019)"
             - 'Rebentrost, P., B. Gupt , & Bromley, T. R. “Quantum computational finance: Monte Carlo pricing of financial derivatives" 2018, Physical Review A, 98, 22321. arXiv:1805.00109'
+    - info-cols:
         - layout:
             colspan: 12
           show-education: TRUE
@@ -401,8 +404,50 @@ stephen-harrell:
   email: sharrell@tacc.utexas.edu
   url:
     image: 
-  biography: 
+  biography: |-
+    Stephen joined TACC in 2020 as member of the HPC Performance & Architectures group. Prior to TACC he served as a Senior Computational Scientist in Research Computing at Purdue University. Previously, Stephen spent more than 6 years as a Senior HPC System Administrator at Purdue and has more than 15 years of experience in system administration at scale. 
   info-rows: 
+    - info-cols:
+        - layout:
+            colspan: 12
+          show-research: TRUE
+          research:
+            - Performance Portability
+            - Non-Traditional Scientific Software Workflows
+            - HPC Training for Undergraduates
+            - HPC System Administrator Training
+        - layout:
+            colspan: 12
+          show-publications: TRUE
+          publications:
+            - |-
+              <strong>Teaching HPC System Administrators.</strong> Younts, A., Harrell, S., Journal of Computational Science Education, Volume 11, Issue 1, Pages 100-105, 2020 (<a href="https://doi.org/10.22369/issn.2153-4136/11/1/16">doi</a>)
+            - |-
+              <strong>Research Computing Desktops: Demystifying Research Computing for Non-Linux Users.</strong> Thota, A., Weakley, L. M., Fulton, Ben., Younts, A., Harrell, S., Dennis, H. E., Huber, L., Michael, S., Snapp-Childs, W., Dietz, D., Phillips, C., Zhu, X. PEARC19: Proceedings of the Practice and Experience in Advanced Research Computing 2019 on Sustainability, Success and Impact, Chicago, IL, July 28th - August 1st, 2019. (<a href="https://dl.acm.org/doi/10.1145/3332186.3332206">doi</a>)
+            - |-
+              <strong>Effective Performance Portability.</strong> Harrell, S., Kitson, J., Bird, R., Pennycook, J., Sewall, J., Jacobsen, D., Asanza, D., Hsu, A., Kim, H., Robey, R. P3HPC18: International Workshop on Performance, Portability and Productivity in HPC, Dallas, TX. November 16th, 2018. (<a href="https://doi.org/10.1109/P3HPC.2018.00006">doi</a>)
+            - |-
+              <strong>Special Issue on SCC’17 Reproducibility Initiative.</strong> Garrett, C. Kris, Harrell, S., Heroux, M. Parallel Computing, Volume 79, November 2018, Pages 48-49 (<a href="https://doi.org/10.1016/j.parco.2018.10.001">doi</a>)
+            - |-
+              <strong>A Study of Failures in Community Clusters: The Case of Conte.</strong> Mitra, S., Javagal, S., Maji, A., Gamblin, T., Moody, A., Harrell, S., Bagchi, S. 7th IEEE International Workshop on Program Debugging (IWPD 2016), Ottawa, Canada, October 23rd-27th, 2016. (<a href="https://doi.org/10.1109/ISSREW.2016.7">doi</a>)
+            - |-
+              <strong>Windows-based Workflows on Linux-based Beowulf Clusters.</strong> Grant, R., Smith, S., Harrell, S., Younts, A., Smith, P., PEARC18: Proceedings of the Practice and Experience in Advanced Research Computing 2018 on Sustainability, Success and Impact, Pittsburgh, PA. July 22nd-26th, 2018. (<a href="https://doi.org/10.1145/3219104.3219118">doi</a>)
+            - |-
+              <strong>Student Cluster Competition: A Multi-disciplinary Undergraduate HPC Educational Tool.</strong> Harrell, S. Nam, H. A., Vergara, V., Keville, K., Kamalic, D. EduHPC-15: Workshop on Education for High-Performance Computing, Austin, TX. November 16th, 2015. (<a href="http://doi.org/10.1145/2831425.2831428">doi</a>)
+            - |-
+              <strong>Cost-effective HPC: The Community or the Cloud?</strong> Carlyle, A., Harrell, S., Smith, P. IEEE International Conference on Cloud Computing Technology and Science. Indianapolis, IN. November 30th-December 3rd, 2010. (<a href="http://doi.org/10.1109/CloudCom.2010.115">doi</a>)
+    - info-cols:
+        - layout:
+            colspan: 5
+          show-education: TRUE
+          education:
+            - degree: B.S., Computer Science
+              school: Purdue University
+        - layout:
+            colspan: 7
+          show-organizations: TRUE
+          organizations:
+            - Student Programs Coordinator, ACM SIGHPC
 
 loren-cain:
   name:
