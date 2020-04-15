@@ -619,11 +619,58 @@ th{
 				<li>
 					Any bedroom attire is prohibited outside of the dorms; pajama tops or bottoms, slippers, etc...</li>
 			</ul>
-			<hr />
 		</div>
 	</div>
-	<p>
-		&nbsp;</p>
+	<style id="o-gallery-styles">
+		/* WARN: Duplicated in:
+			- `stem-programs/code-at-tacc/cybersecurity`
+			- `epic/funders-and-project-partners`
+		*/
+		.o-gallery {
+			--min-item-width: 300px;
+			--grid-gap: 30px;
+
+			display: grid;
+			grid-gap: var(--grid-gap);
+			grid-template-columns: repeat(auto-fit, minmax(var(--min-item-width), 1fr));
+			justify-items: center;
+			align-items: center;
+		}
+	</style>
+	<style id="s-gallery-styles">
+		/* WARN: Duplicated in:
+			- `stem-programs/code-at-tacc/cybersecurity`
+			- `epic/funders-and-project-partners`
+		*/
+		.s-gallery li {
+			list-style-type: none;
+		}
+	</style>
+	<style id="cybersecurity-unique-gallery-styles">
+		.o-gallery {
+			--smallest-image-width: 310px;
+			--smallest-image-height: 310px;
+			--min-item-width: var(--smallest-image-width);
+			--grid-gap: 25px;
+
+			margin: 25px auto 0;
+		}
+		.s-gallery li > img {
+			max-width: var(--smallest-image-width);
+			max-height: var(--smallest-image-height);
+		}
+	</style>
+	<div class="row">
+		<div class="col-sm-12">
+			<h2 id="aui_3_4_0_1_1282" style="text-align:center; margin:75px 0px 25px 0px; padding:0px;">
+				Funding</h2>
+			<p style="text-align:center">The camp was funded with the generosity from Cisco University Research Program Fund and Silicon Valley Community Foundation.</p>
+			<ul class="o-gallery  s-gallery">
+				<li><img src="/documents/1084364/1822769/silicon-valley-logo.png" alt="Silicon Valley Logo" /></li>
+				<li><img src="/documents/1084364/1822769/cisco-logo-blue-2016.png" alt="CISCO Logo" /></li>
+			</ul>
+		</div>
+	</div>
 	<!--
 	<div class="row">
 		<div style="margin:50px 0px;padding: 0px;">
