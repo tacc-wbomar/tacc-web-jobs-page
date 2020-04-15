@@ -622,13 +622,24 @@ th{
 		</div>
 	</div>
 	<style id="o-gallery-styles">
+		/*
+		Gallery (Object)
+
+		A gallery of apps to launch, images to view, etc.
+
+		Markup:
+		<ul class="o-gallery">
+			<li>…</li>
+			<li>…</li>
+		</ul>
+		*/
 		/* WARN: Duplicated in:
 			- `stem-programs/code-at-tacc/cybersecurity`
 			- `epic/funders-and-project-partners`
 		*/
 		.o-gallery {
-			--min-item-width: 300px;
 			--grid-gap: 30px;
+			--min-item-width: 300px;
 
 			display: grid;
 			grid-gap: var(--grid-gap);
@@ -638,6 +649,11 @@ th{
 		}
 	</style>
 	<style id="s-gallery-styles">
+		/*
+		Gallery (Scope)
+
+		Styles often added for instances of `o-gallery`, but independent of `o-gallery` layout.
+		*/
 		/* WARN: Duplicated in:
 			- `stem-programs/code-at-tacc/cybersecurity`
 			- `epic/funders-and-project-partners`
@@ -648,12 +664,15 @@ th{
 	</style>
 	<style id="cybersecurity-unique-gallery-styles">
 		.o-gallery {
-			--smallest-image-width: 310px;
-			--smallest-image-height: 310px;
-			--min-item-width: var(--smallest-image-width);
 			--grid-gap: 25px;
+			/* FAQ: This variable is borrowed from `.s-gallery` */
+			--min-item-width: var(--smallest-image-width);
 
 			margin: 25px auto 0;
+		}
+		.s-gallery {
+			--smallest-image-width: 310px;
+			--smallest-image-height: 106px;
 		}
 		.s-gallery li > img {
 			max-width: var(--smallest-image-width);
