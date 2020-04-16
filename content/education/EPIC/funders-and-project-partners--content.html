@@ -166,22 +166,28 @@ Style guide: components.weteachcs
         .o-gallery {
             --grid-gap: 25px;
             --min-item-width: 150px;
+            --max-item-height: calc( var(--min-item-width) * 0.75 );
 
             margin: 0 auto;
         }
-        .s-gallery li > img {
+        .o-gallery img {
             max-width: 100%;
-            max-height: 100%;
+            max-height: var(--max-item-height);
         }
         @media only screen and (min-width: 355px) {
             .o-gallery__square {
                 max-width: calc( var(--min-item-width) / 2 );
                 max-height: calc( var(--min-item-width) / 2 );
             }
+            .o-gallery__square img {
+                height: auto;
+                width: 100%;
+            }
         }
         @media only screen and (max-width: 354px) {
-            .o-gallery__square {
-                height: calc( var(--min-item-width) * 0.75 );
+            .o-gallery__square img {
+                height: 100%;
+                width: auto;
             }
         }
     </style>
