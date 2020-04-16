@@ -121,37 +121,101 @@ Style guide: components.weteachcs
                 /* SEE: .portlet-navigation .nav-menu > .layouts a */
                 border: 1px solid #ddd;
             }</style>
+    <style id="o-gallery-styles">
+        /*
+        Gallery (Object)
+
+        A gallery of apps to launch, images to view, etc.
+
+        Markup:
+        <ul class="o-gallery">
+            <li>…</li>
+            <li>…</li>
+        </ul>
+        */
+        /* WARN: Duplicated in:
+            - `stem-programs/code-at-tacc/cybersecurity`
+            - `epic/funders-and-project-partners`
+        */
+        .o-gallery {
+            --grid-gap: 30px;
+            --min-item-width: 300px;
+
+            display: grid;
+            grid-gap: var(--grid-gap);
+            grid-template-columns: repeat(auto-fit, minmax(var(--min-item-width), 1fr));
+            justify-items: center;
+            align-items: center;
+        }
+    </style>
+    <style id="s-gallery-styles">
+        /*
+        Gallery (Scope)
+
+        Styles often added for instances of `o-gallery`, but independent of `o-gallery` layout.
+        */
+        /* WARN: Duplicated in:
+            - `stem-programs/code-at-tacc/cybersecurity`
+            - `epic/funders-and-project-partners`
+        */
+        .s-gallery li {
+            list-style-type: none;
+        }
+    </style>
+    <style id="epic-unique-gallery-styles">
+        .o-gallery {
+            --grid-gap: 25px;
+            --min-item-width: 150px;
+
+            margin: 0 auto;
+        }
+        .s-gallery li > img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        @media only screen and (min-width: 355px) {
+            .o-gallery__square {
+                max-width: calc( var(--min-item-width) / 2 );
+                max-height: calc( var(--min-item-width) / 2 );
+            }
+        }
+        @media only screen and (max-width: 354px) {
+            .o-gallery__square {
+                height: calc( var(--min-item-width) * 0.75 );
+            }
+        }
+    </style>
 <section class="weteachcs-content">
-	<div class="weteachcs-card weteachcs-card--highlight">
-		<div class="weteachcs-card__content">
-			<p>
-				Thank you to all of the funders and project partners of EPIC and WeTeach_CS. Without them, our work would not be possible.</p>
-		</div>
-	</div>
-	<h3>
-		Thank You</h3>
-	<ul>
-		<li>
-			<img alt="NSF" src="" /></li>
-		<li>
-			<img alt="Google" src="" /></li>
-		<li>
-			<img alt="100kin10" src="" /></li>
-		<li>
-			<img alt="Microsoft" src="" /></li>
-		<li>
-			<img alt="KLE Foundation" src="" /></li>
-		<li>
-			<img alt="Seigel Family Endowment" src="" /></li>
-		<li>
-			<img alt="Jobs for the Future" src="" /></li>
-		<li>
-			<img alt="Texas Education Agency" src="" /></li>
-		<li>
-			<img alt="Robin Hood Learning and Technology Fund" src="" /></li>
-		<li>
-			<img alt="Texas Instruments" src="" /></li>
-		<li>
-			<img alt="Code.org" src="" /></li>
-	</ul>
+    <div class="weteachcs-card weteachcs-card--highlight">
+        <div class="weteachcs-card__content">
+            <p>
+                Thank you to all of the funders and project partners of EPIC and WeTeach_CS. Without them, our work would not be possible.</p>
+        </div>
+    </div>
+    <h3>
+        Thank You</h3>
+    <ul class="o-gallery  s-gallery">
+        <li class="o-gallery__square">
+            <img alt="NSF" src="https://www.tacc.utexas.edu/documents/1084364/1852071/nsf.png/27118cfa-da8b-421c-82b3-1d08237bd9ff?t=1586990485263" /></li>
+        <li>
+            <img alt="Google" src="https://www.tacc.utexas.edu/documents/1084364/1852071/google.png/e183d226-2a45-41ee-816e-e1d6cc638453?t=1586990439597" /></li>
+        <li>
+            <img alt="100kin10" src="https://www.tacc.utexas.edu/documents/1084364/1852071/100k-in-10.png/d276169c-f4c5-4fa1-9163-d8a159f327d7?t=1586990419693" /></li>
+        <li>
+            <img alt="Microsoft" src="https://www.tacc.utexas.edu/documents/1084364/1852071/microsoft.png/3b4020ff-b13d-44dc-aff4-4d5937619595?t=1586990464378" /></li>
+        <li class="o-gallery__square">
+            <img alt="KLE Foundation" src="https://www.tacc.utexas.edu/documents/1084364/1852071/kle.png/c525d494-a6fc-448c-88e7-662bec4c0186?t=1586990455704" /></li>
+        <li class="o-gallery__square">
+            <img alt="Seigel Family Endowment" src="https://www.tacc.utexas.edu/documents/1084364/1852071/seigel-family-endowment.png/0562d883-663b-41e1-bf72-3ad674839280?t=1586990737890" /></li>
+        <li class="o-gallery__square">
+            <img alt="Jobs for the Future" src="https://www.tacc.utexas.edu/documents/1084364/1852071/jobs-for-the-future.png/e0600c3b-5809-41ed-be5a-6d82d56d0b03?t=1586990447346" /></li>
+        <li class="o-gallery__square">
+            <img alt="Texas Education Agency" src="https://www.tacc.utexas.edu/documents/1084364/1852071/texas-education-agency.png/0236f591-8f44-4f00-a5f4-dca0dbb4dce1?t=1586990507243" /></li>
+        <li>
+            <img alt="Robin Hood Learning and Technology Fund" src="https://www.tacc.utexas.edu/documents/1084364/1852071/robin-hood.png/709fdb54-b35a-4ed8-8c18-2e2055a02c81?t=1586990475552" /></li>
+        <li>
+            <img alt="Texas Instruments" src="https://www.tacc.utexas.edu/documents/1084364/1852071/texas-instruments.png/953697d6-0497-4b38-9ab4-4a5a20c0996b?t=1586990518112" /></li>
+        <li class="o-gallery__square">
+            <img alt="Code.org" src="https://www.tacc.utexas.edu/documents/1084364/1852071/code-org.png/1822d086-4190-4dcc-befe-b480f79b7db2?t=1586990430843" /></li>
+    </ul>
 </section>
