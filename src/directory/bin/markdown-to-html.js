@@ -5,6 +5,7 @@ const remarkHtml = require('remark-html')
 
 // Arguments
 // TODO: Define these values externally
+const __DATA_PROP_NAME__ = 'entries';
 const __MARKDOWN_PROP_NAME__ = 'biography';
 const __LIST_TYPE__ = 'object';
 
@@ -20,14 +21,15 @@ function convert(markdown) {
 }
 
 /** Convert all relevant content, within given entries, from Markdown to HTML */
-function convertAll(entries) {
+function convertAll(data) {
   let entryName, entry, markdown, markup;
   const property = __MARKDOWN_PROP_NAME__;
+  const entries = data[__DATA_PROP_NAME__];
   const isIterable = (typeof entries === 'object' && entries !== null);
 
   // Fail early
   if ( ! isIterable) {
-    throw new Error(`The provided data (of type ${typeof entries}) is not iterable`);
+    throw new Error(`The provided data (of type ${(typeof entries)}) is not iterable`);
   }
 
   switch (__LIST_TYPE__) {
