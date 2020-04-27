@@ -1,6 +1,6 @@
 scripts:
   # Delete then create output directory
-  setup: rm -rf ./dist && shx mkdir -p ./dist
+  setup: shx rm -rf ./dist && shx mkdir -p ./dist
 
   # Build temporary partial templates, then build final markup
   build: nps build:data build:markup
@@ -12,17 +12,14 @@ scripts:
   build:data: yaml2json --pretty ./assets/data.yaml > ./assets/_data.json
 
   # Build final markup
-    # Import partial template(s) (`-p ….mustache`)
     # Apply data into template, then ouput to… (`….json ….mustache >`)
     # Final markup file (`….html`)
   build:markup: mustache
-    -p ./templates/partials/row.mustache
-    -p ./templates/partials/img.mustache
-    -p ./templates/partials/bio.mustache
     ./bin/markdown-to-html.js ./templates/index.mustache >
     ./dist/output.html
 
-  report: echo "Copy relevant markup from './dist/output.html'"
+  # Tell user what to do (after task is complete)
+  report: echo "Use relevant markup from './dist/output.html'"
 
   # Delete temporary files
-  clean: rm ./assets/_*.*
+  clean: shx rm ./assets/_*.*
