@@ -6,19 +6,20 @@ This directory has directories that are each a self-contained utility to produce
 ## Usage
 
 1. Edit templates and data:
-    - `__PROJECT_DIR__/….mustache` templates
-    - `__PROJECT_DIR__/….json` or `__PROJECT_DIR__/….yaml` data
+    - `__PROJECT_DIR__/templates/`
+    - `__PROJECT_DIR__/data/`
 2. Run build script (inside `__PROJECT_DIR__`):
     - `npm run build`
-3. Confirm changes to content:
-    - `/content/…/….html`
-4. Test content:
-    - Save `/content/…/….html` content as CMS web content on a private or test page.
-5. Copy saved CMS web content back to `/content/…/….html` file.
-6. If the content is identical, then move to step #7, otherwise
-   repeat steps #1—#6 until the CMS does not change the markup.[^1]
-7. Save CMS web content into `/content/…/….html` file.
-8. Commit and push changes.
+3. Confirm output:
+    - `__PROJECT_DIR__/dist/`
+4. Test output in context:
+    - Copy content from `__PROJECT_DIR__/dist/` into markup of private/test/in-browser page.
+5. If the content renders as expected, then
+   Save content into:
+    - relevant `/content/…/….html` file
+    - relevant CMS web content
+6. Ensure any relevant `/content/…/….html` file matches the corresponding CMS web content.[^1]
+7. Commit and push changes.
 
 [^1]: There could be a discrepancy between the built markup and the CMS web content; to learn more, see [known content conflicts][doc-conflicts].
 

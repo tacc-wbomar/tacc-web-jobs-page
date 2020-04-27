@@ -1,6 +1,6 @@
 # Staff Directory
 
-This project compiles data into templates to create markup for the body of the [SC2019 standalone webpage][tacc-sc19].
+This project compiles data into templates to create markup for the body of the [TACC Staff Directory][tacc-dir].
 
 ## Usage
 

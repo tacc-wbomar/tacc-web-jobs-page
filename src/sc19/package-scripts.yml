@@ -27,7 +27,9 @@ scripts:
     -p ./_events.conf.mustache
     -p ./social-media.mustache
     ./events.booth.json ./body.mustache >
-    ./dist/sc19--content.html
+    ./dist/output.html
+
+  report: echo "Copy relevant markup from './dist/output.html'"
 
   # Delete temporary files
   clean: rm ./_*.*
