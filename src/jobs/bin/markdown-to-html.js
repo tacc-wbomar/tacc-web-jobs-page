@@ -5,11 +5,12 @@ const remarkHtml = require('remark-html')
 
 // Arguments
 // TODO: Define these values externally
+const __DATA_PROP_NAME__ = 'entries';
 const __MARKDOWN_PROP_NAME__ = 'description';
 const __LIST_TYPE__ = 'array';
 
 // Get and parse jobs data
-const json = fs.readFileSync(`_data.json`);
+const json = fs.readFileSync('./assets/_data.json');
 const data = JSON.parse(json);
 
 /** Convert content from Markdown to HTML */
@@ -20,14 +21,15 @@ function convert(markdown) {
 }
 
 /** Convert all relevant content, within given entries, from Markdown to HTML */
-function convertAll(entries) {
-  let entry, markdown, markup;
+function convertAll(data) {
+  let entryName, entry, markdown, markup;
   const property = __MARKDOWN_PROP_NAME__;
+  const entries = data[__DATA_PROP_NAME__];
   const isIterable = (typeof entries === 'object' && entries !== null);
 
   // Fail early
   if ( ! isIterable) {
-    throw new Error(`The provided data (of type ${typeof entries}) is not iterable`);
+    throw new Error(`The provided data (of type ${(typeof entries)}) is not iterable`);
   }
 
   switch (__LIST_TYPE__) {
@@ -35,15 +37,18 @@ function convertAll(entries) {
       entries.forEach( entry => {
         markdown = entry[property];
         markup = convert(markdown);
+
         entry[property] = markup;
         // console.debug({markup});
       });
       break;
 
     case 'object':
-      for (entry in entries) {
+      for (entryName in entries) {
+        entry = entries[entryName];
         markdown = entry[property];
         markup = convert(markdown);
+
         entry[property] = markup;
         // console.debug({markup});
       }
