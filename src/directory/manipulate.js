@@ -5,8 +5,9 @@ const remarkHtml = require('remark-html')
 
 // Arguments
 // TODO: Define these values externally
-const __MARKDOWN_PROP_NAME__ = 'description';
-const __LIST_TYPE__ = 'array';
+const __DATA_PROP_NAME__ = 'entries';
+const __MARKDOWN_PROP_NAME__ = 'biography';
+const __LIST_TYPE__ = 'object';
 
 // Get and parse jobs data
 const json = fs.readFileSync(`_data.json`);
