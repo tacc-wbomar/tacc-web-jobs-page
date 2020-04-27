@@ -1,5 +1,5 @@
 {
-  "name": "tacc-web-content--sc19",
+  "name": "tacc-web-jobs-page",
   "version": "1.0.0",
   "description": "A utility to create markup for Jobs pages based on flatfile data",
   "main": "index.js",
