@@ -1,40 +1,27 @@
 {
-  "name": "tacc-web-content",
+  "name": "tacc-web-content--sc19",
   "version": "1.0.0",
-  "description": "A collection of web content history and markup templating utilities for Liferay Portal web content in the TACC Website",
+  "description": "A utility to create markup for Jobs pages based on flatfile data",
   "main": "index.js",
-  "dependencies": {},
   "devDependencies": {
-    "npm-run-all": "^4.1.5",
+    "mustache": "^3.2.0",
     "nps": "^5.9.12",
-    "shx": "^0.3.2"
+    "remark": "^11.0.2",
+    "remark-html": "^10.0.0",
+    "shx": "^0.3.2",
+    "yamljs": "^0.3.0"
   },
   "// scripts": {
-    "postinstall": "After installing dependencies, do so all child projects",
-    "build": "Build markup for all projects",
-    "install:…": "Install dependencies for one project",
-    "build:…": "Build markup for one project",
-    "postbuild:…": "Perform tasks after building markup"
+    "start": "Allows running `scripts` via `nps …` from `package-scripts.yml`",
+    "prebuild": "Delete then create output directory",
+    "build": "Build temporary partial templates, then build final markup",
+    "postbuild": "Export final markup file, then run cleanup tasks"
   },
   "scripts": {
-    "postinstall": "npm-run-all --parallel install:*",
-    "build": "npm-run-all --parallel build:*",
-    "install:sc19": "cd src/sc19 && npm install",
-    "build:sc19": "cd src/sc19 && npm run build",
-    "postbuild:sc19": "npm-run-all --sequential postbuild:sc19:*",
-    "postbuild:sc19:export": "shx mv ./src/sc19/dist/sc19--content.html ./content/news/conferences/sc/",
-    "postbuild:sc19:open": "open './content/news/conferences/sc/sc19--content.html'",
-    "postbuild:sc19:report": "echo \"Markup exported to './content/news/conferences/sc/'\"",
-    "install:dir": "cd src/directory && npm install",
-    "build:dir": "cd src/directory && npm run build",
-    "postbuild:dir": "npm-run-all --sequential postbuild:dir:*",
-    "postbuild:dir:open": "open \"./src/directory/dist/staff.html\"",
-    "postbuild:dir:report": "echo \"Markup available in './src/directory/dist/staff.html'\""
+    "start": "nps",
+    "prebuild": "nps setup",
+    "build": "nps build",
+    "postbuild": "nps clean report"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org/taccaci/tacc-web-content.git"
-  },
-  "license": "UNLICENSED",
-  "homepage": "https://bitbucket.org/taccaci/tacc-web-content#readme"
+  "license": "UNLICENSED"
 }
