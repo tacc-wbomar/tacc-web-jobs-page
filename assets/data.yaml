@@ -4,3 +4,8 @@ entries:
   url: https://utaustin.wd1.myworkdayjobs.com/en-US/UTstaff/job/PICKLE-RESEARCH-CAMPUS/Research-Associate_R_00006550
   description: |-
     The Research Associate is a position in the Scalable Computational Intelligence (SCI) group at TACC. The individual will contribute to research, development, and support activities involving data mining and machine learning technologies and the interfaces by which users can transparently harness these techniques and technologies.
+- title: Storage Administrator
+  id: storage-administrator
+  url: https://utaustin.wd1.myworkdayjobs.com/UTstaff/job/PICKLE-RESEARCH-CAMPUS/Storage-Administrator_R_00009605
+  description: |-
+    Support production storage systems in TACC's Advanced Computing Systems group in addition to administering parallel file systems and demonstrated skills in systematic Linux troubleshooting.
