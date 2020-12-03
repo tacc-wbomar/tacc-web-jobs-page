@@ -9,3 +9,8 @@ entries:
   url: https://utaustin.wd1.myworkdayjobs.com/UTstaff/job/PICKLE-RESEARCH-CAMPUS/Storage-Administrator_R_00009605
   description: |-
     Support production storage systems in TACC's Advanced Computing Systems group in addition to administering parallel file systems and demonstrated skills in systematic Linux troubleshooting.
+- title: Systems Administrator II
+  id: systems-administrator-ii
+  url: https://utaustin.wd1.myworkdayjobs.com/UTstaff/job/PICKLE-RESEARCH-CAMPUS/Systems-Administrator-II_R_00006714
+  description: |-
+    Provide Linux systems administration and hardware support for HPC systems.Interact in a multi-vendor, high performance computing environment that includes petascale HPC and storage systems and high-speed networking infrastructure.
