@@ -1,16 +1,21 @@
 entries:
-- title: Engineering Scientist Associate
-  id: engineering-scientist-associate
-  url: https://utaustin.wd1.myworkdayjobs.com/UTstaff/job/PICKLE-RESEARCH-CAMPUS/Engineering-Scientist-Associate_R_00011186
+- title: Senior Python Developer
+  id: senior-python-developer
+  url: https://utaustin.wd1.myworkdayjobs.com/UTstaff/job/PICKLE-RESEARCH-CAMPUS/Senior-Python-Developer_R_00013540
   description: |-
-    Position will work on software development tasks including front-, middle- and back-end tiers.
-- title: Research Associate
+    This position will contribute to the design, implementation and operation of cloud native applications and infrastructure supporting computational science endeavors.
+- title: Senior DevOps Developer
+  id: senior-devops-developer
+  url: https://utaustin.wd1.myworkdayjobs.com/UTstaff/job/PICKLE-RESEARCH-CAMPUS/Senior-DevOps-Engineer_R_00013541
+  description: |-
+    This position will design, implement and operate an on-premise, national-scale Kubernetes platform as a service for the research computing community.
+- title: Research Associate (HPC)
+  id: research-associate-for-hpc
+  url: https://utaustin.wd1.myworkdayjobs.com/UTstaff/job/PICKLE-RESEARCH-CAMPUS/Research-Associate_R_00013319
+  description: |-
+    This position will work with TACC/DesignSafe users to integrate HPC technologies into their research and development activities and to measure the impact of TACC's HPC systems on their research capabilities.
+- title: Research Associate (SCI)
   id: research-associate-for-sci
   url: https://utaustin.wd1.myworkdayjobs.com/en-US/UTstaff/job/PICKLE-RESEARCH-CAMPUS/Research-Associate_R_00006550
   description: |-
     The Research Associate is a position in the Scalable Computational Intelligence (SCI) group at TACC. The individual will contribute to research, development, and support activities involving data mining and machine learning technologies and the interfaces by which users can transparently harness these techniques and technologies.
-- title: Senior Outreach Program Coordinator
-  id: senior-outreach-program-coordinator
-  url: https://utaustin.wd1.myworkdayjobs.com/UTstaff/job/PICKLE-RESEARCH-CAMPUS/Senior-Outreach-Program-Coordinator_R_00011479
-  description: |-
-    Position will provide assistance with coordinating and managing education and outreach activities at the Texas Advanced Computing Center.
